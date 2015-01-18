@@ -49,6 +49,7 @@
 ;; Auto-enabled ido-mode
 (require 'ido)
 (ido-mode t)
+(setq ido-enable-flex-matching t)  ; fuzzy matching is a must have
 
 ;; aliasing yes or no to y or n only
 (defalias 'yes-or-no-p 'y-or-n-p)
