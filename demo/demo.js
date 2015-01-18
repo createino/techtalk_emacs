@@ -1,5 +1,5 @@
 function f () {
-    this.name = "techtalk";
-    this.presenter = "kholid";
-    this.theme = "emacs";
+    var name = "techtalk";
+    var presenter = "kholid";
+    var theme = "emacs";
 }
