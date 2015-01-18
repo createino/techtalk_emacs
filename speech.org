@@ -48,7 +48,10 @@ Remember, this, of course, is highly subjective :)
 my [[./demo/.emacs][~/.emacs]] file
 * Footnotes
 [fn:1] [[./demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
+
 [fn:2] [[./demo/demo.py][demo.py]]
+
 [fn:3] [[./demo/snippets.el][snippets.el]]
+
 [fn:4] [[./demo/pdf/tesis.org][tesis.org]]
 
