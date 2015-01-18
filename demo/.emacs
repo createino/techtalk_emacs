@@ -138,8 +138,13 @@
 ;; try to automagically figure out indentation
 (setq py-smart-indentation t)
 
+;; ace-jump-mode
+(require 'cl) ;; patch to fix ace-jump-mode
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+
 ;; my package
 ; multiple-cursor (mc)
 ; expand-region
 ; magit
 ; slime
+; ace jump mode
