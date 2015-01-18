@@ -1,7 +1,7 @@
 keyboard macro demo
 ===================
 
-satu 1 
+satu 1
 dua 2
 tiga 3
 empat 4
@@ -10,15 +10,15 @@ enam 6
 tujuh 7
 delapan 8
 sembilan 9
-
-
-
-
-
-
-
-
-
+1
+2
+3
+4
+5
+6
+7
+8
+9
 
 clear ring demo
 ===============
