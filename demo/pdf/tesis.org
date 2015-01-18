@@ -1,0 +1,2895 @@
+#+TITLE: Analisis Teknikal Terhadap Harga Saham JII
+#+AUTHOR: Kholid Fuadi
+#+LATEX_CLASS: tesis
+#+LATEX_HEADER: \usepackage[utf8]{inputenc}
+#+LATEX_HEADER: \usepackage[T1]{fontenc}
+#+LATEX_HEADER: \usepackage{fixltx2e}
+#+LATEX_HEADER: \usepackage{graphicx}
+#+LATEX_HEADER: \usepackage{longtable}
+#+LATEX_HEADER: \usepackage{float}
+#+LATEX_HEADER: \usepackage{wrapfig}
+#+LATEX_HEADER: \usepackage{soul}
+#+LATEX_HEADER: \usepackage{textcomp}
+#+LATEX_HEADER: \usepackage{marvosym}
+#+LATEX_HEADER: \usepackage{wasysym}
+#+LATEX_HEADER: \usepackage{latexsym}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{hyperref}
+#+LATEX_HEADER: \tolerance=1000
+#+LATEX_HEADER: \usepackage{minted}
+#+LATEX_HEADER: \usepackage[top=4cm,right=3cm,bottom=3cm,left=4cm]{geometry}
+#+LATEX_HEADER: \usepackage[bahasa]{babel}
+#+LATEX_HEADER: \usepackage{minted}
+#+LATEX_HEADER: \usepackage{arabtex}
+#+LATEX_HEADER: \usepackage{utf8}
+#+LATEX_HEADER: \setcode{utf8}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \cfoot{}
+#+LATEX_HEADER: \rfoot{\thepage}
+
+
+* Pendahuluan
+** Latar Belakang Masalah
+Agama diturunkan oleh Tuhan dengan tujuan untuk menjawab persoalan
+manusia baik dalam skala makro maupun mikro. Hal ini berarti bahwa
+agama memang harus dilaksanakan dalam setiap aspek kehidupan dalam
+rangka mewujudkan kesejahteraan sosial manusia. Proses ini melibatkan
+penterjemahan dan pentafsiran dari ajaran agama itu sendiri. Di dunia,
+agama harus dicari relevansinya, sehingga dapat mewarnai tata
+kehidupan sosial-ekonomi, politik dan budaya masyarakat.[fn:8]
+
+Syariah dalam Islam adalah seperangkat aturan tentang apa yang boleh
+dan yang tidak boleh dilakukan, yang mengatur persoalan ibadah dan
+muamalah. Landasan syariah adalah kebijaksanaan dan kebahagiaan
+manusia di dunia dan akhirat.[fn:12]
+
+Kehidupan sosial ekonomi secara umum dan kegiatan investasi secara
+khusus juga tidak luput dari pengaturan tersebut, dan dalam hal ini
+masuk ke dalam lingkup /syariah muamalah/. Keuangan islam adalah
+/syariah-based finance/, keuangan yang secara logis menggunakan
+prinsip, prosedur, asumsi, sekaligus instrumentasi dan aplikasi dari
+nilai epistemologi (sumber pengetahuan) Islam, dalam hal ini yang
+utama adalah Al-Qur'an dan Sunnah. Secara sederhana, dapat pula
+dikatakan bahwa Keuangan Islam merupakan sistem keuangan yang
+didasarkan pada etika Islam.[fn:13]
+
+Keuangan Islam merupakan salah satu industri yang bertumbuh paling
+cepat secara global, dari 80 milyar dolar Amerika pada tahun 2000
+menjadi 1100 milyar dolar Amerika pada akhir tahun 2011.[fn:16] Nilai
+industri ini dimungkinkan masih akan terus tumbuh dan berkembang untuk
+menyerap dana dari surplus unit masyarakat muslim yang tersebar di
+seluruh dunia, termasuk salah satunya Indonesia.
+
+Saat ini yang sudah berkembang dengan baik adalah industri perbankan
+Islam, sementara /Islamic equity fund/ mulai bergerak tumbuh semenjak
+pertama kali dikenalkan oleh National Commercial Bank di Saudi Arabia
+pada tahun 1995.[fn:67] /Islamic equity fund/ berperan sebagai pihak yang
+membantu pihak yang surplus unit melakukan kegiatan penempatan
+investasi. /Islamic equity fund/ ditujukan untuk memenuhi kebutuhan
+kelompok investor yang peduli dengan isu publik dan keadilan sosial,
+yang juga menginginkan perolehan /earning/ dari sumber yang bersih
+serta sesuai dengan prinsip agama.
+
+Dalam terminologi struktur organisasi, /Islamic equity fund/ mirip
+dengan reksa dana atau /mutual fund/ konvensional, di mana
+portofolionya ditangani oleh manajer profesional. Analoginya dapat
+pula dibuat dengan reksa dana yang didasarkan pada istilah /socially
+responsible investment/ atau /ethical investment/. Perbedaannya dengan
+reksa dana konvensional terletak pada proses manajemen portofolio,
+dari /screening/, /valuation/, strategi, hingga /controlling/ atau
+/benchmarking/ yang harus dikembalikan pada prinsip-prinsip /Islamic
+finance/.[fn:17]
+
+Pada dasarnya, investasi tidak dapat dilakukan pada perusahaan yang
+menjalankan kegiatan yang ditetapkan haram menurut /fiqh/, misalnya
+saham perusahaan yang melakukan usaha /gharar/ dan /maysir/ (spekulasi
+dan judi), terlibat kegiatan /riba/, memproduksi /khamar/ (minuman
+keras) atau /hinzir/ (daging haram).
+
+Sejalan dengan perkembangan ekonomi, investasi juga berkembang, baik
+dari segi jumlah maupun bentuk, misalnya pembelian tanah (bangunan)
+yang nilainya diharapkan akan bertambah di masa datang, penyimpanan
+uang di bank dengan harapan mendapatkan bagi hasil dari perbankan
+syariah, menanamkan dana pada sektor riil yang dikelola oleh investor,
+atau yang sedang marak adalah menanamkan modal pada produk keuangan
+diantaranya saham.
+
+Seiring dengan perkembangan jaman yang semakin kompleks, dibutuhkan
+proses-proses baru dalam hal pembumian ajaran langit, sehingga agama
+tidak terkesan berada dalam wilayah normatif saja, namun juga dapat
+digiring menuju tataran teoretis-keilmuan yang faktual yang diharapkan
+dapat mendorong upaya-upaya kreatif yang baru yang dapat memberikan
+kemanfaatan yang lebih besar dengan tingkat /mudharat/ yang minimum.
+
+Investasi menurut Harianto dan Sudomo (1998)[fn:2] adalah suatu
+kegiatan menempatkan dana pada satu atau lebih dari satu aset
+(/assets/) selama periode tertentu dengan harapan dapat memperoleh
+penghasilan dan/atau peningkatan nilai investasi. Definisi ini lebih
+sesuai dengan prinsip syariah Islam, yakni keuntungan yang akan
+diperoleh merupakan bagian dari ketidakpastian yang perlu
+dipertimbangkan sebagai unsur risiko. Secara sederhana tujuan
+investasi adalah untuk meningkatkan kesejahteraan manusia, baik di
+masa sekarang maupun di masa yang akan datang.[fn:1] Mengacu pada
+tujuan ini, maka memegang kas atau uang tunai bukan merupakan
+investasi karena tidak memberi penghasilan dan nilainya akan turun
+ketika inflasi terjadi. Sebaliknya menyimpan uang di bank dalam bentuk
+deposito memberikan penghasilan dalam bentuk bagi hasil.
+
+Secara garis besar, investasi dibagi menjadi dua[fn:4], yakni dari
+sisi aset, dan dari sisi model penanaman dana. Dari sisi aset,
+investasi dapat dibagi menjadi dua, /real asset investment/, dan
+/financial asset investment/.  /Real asset investment/ adalah komitmen
+mengikat pada aset sektor riil, sebagai contoh pembelian tanah, ruko,
+apartemen, dan logam mulia. Karakter investor pada aset riil adalah
+perantara tidak mutlak diperlukan dan karena objek investasinya dapat
+dilihat secara nyata, maka informasi bisa didapat secara langsung dari
+lapangan. Jenis investasi kedua, /financial asset investment/, adalah
+komitmen untuk mengikatkan aset yang dimiliki pada surat-surat
+berharga (/securities/) yang diterbitkan oleh pihak
+penerbit. Perbedaan di antara keduanya terletak pada peran perantara,
+yakni tidak mutlak diperlukan pada /real asset investment/, namun
+mutlak diperlukan pada /financial asset investment/. Perbedaan lainnya
+adalah keberadaan informasi, di mana pada /financial asset
+investment/, informasi hanya dapat diperoleh pada laporan tahunan,
+prospektus atau proposal yang diterbitkan oleh perusahaan.
+
+Sedangkan dari jenis penanaman dana, investasi dapat dibedakan menjadi
+investasi langsung dan tidak langsung. Investor dikatakan melakukan
+investasi langsung jika membeli dan memiliki keuangan secara langsung,
+contohnya, jika investor membeli saham, maka secara langsung ia
+memiliki klaim terhadap penghasilan residual perusahaan yang
+mengeluarkan saham tersebut. Sebaliknya, investasi tidak langsung
+terjadi apabila investor membeli kertas berharga yang menunjukkan
+kepemilikan atas suatu perusahaan investasi, di mana selanjutnya
+perusahaan investasi tersebut membeli sekumpulan atau portofolio aset
+keuangan atas nama pemilik perusahaan investasi tersebut. Contoh
+investasi tidak langsung adalah reksadana (/mutual fund/), yang
+merupakan suatu portofolio efek yang didiversifikasi dan dikeluarkan
+oleh perusahaan investasi.
+
+Sebagai negara dengan mayoritas penduduk muslim, Indonesia pada 3 Juli
+2000 mulai mengembangkan /Jakarta Islamic Index (JII)/, salah satu
+indeks saham yang ada di Indonesia yang menghitung indeks harga rerata
+saham untuk jenis saham yang memenuhi kriteria syariah. Pembentukan
+JII tidak lepas dari kerjasama antara Pasar Modal Indonesia (dalam hal
+ini PT. Bursa Efek Jakarta) dengan PT. Danareksa Investment Management
+(PT. DIM).  Tujuan dari dibentuknya instrumen syariah ini adalah untuk
+mendukung pembentukan Pasar Modal Syariah yang kemudian diluncurkan di
+Jakarta pada 14 Maret 2003. Mekanisme Pasar Modal Syariah meniru pola
+serupa di Malaysia yang digabungkan dengan bursa konvensional seperti
+Bursa Efek Jakarta dan Bursa Efek Surabaya. Setiap periodenya, saham
+yang masuk JII berjumlah 30 saham yang memenuhi kriteria syariah. JII
+menggunakan hari dasar tanggal 1 Januari 1995 dengan nilai dasar 100.
+
+Tujuan pembentukan JII adalah untuk meningkatkan kepercayaan investor
+untuk melakukan investasi pada saham berbasis syariah dan memberikan
+manfaat bagi pemodal dalam menjalankan syariah Islam untuk melakukan
+investasi di bursa efek. JII juga diharapkan dapat mendukung proses
+transparansi dan akuntabilitas saham berbasis syariah di
+Indonesia. JII menjadi jawaban atas keinginan investor yang ingin
+berinvestasi sesuai syariah. Dengan kata lain, JII menjadi pemandu
+bagi investor yang ingin menanamkan dananya secara syariah tanpa takut
+tercampur dengan dana ribawi. Selain itu, JII menjadi tolak ukur
+kinerja (/benchmark/) dalam memilih portofolio saham yang halal.[fn:6]
+
+Penentuan kriteria dalam pemilihan saham dalam JII melibatkan Dewan
+Pengawas Syariah PT DIM. Saham yang masuk JII harus melalui proses
+penyaringan syariah terlebih dahulu. Berdasarkan arahan Dewan Pengawas
+Syariah PT DIM, ada 4 syarat yang harus dipenuhi agar saham dapat
+masuk ke JII:
+
+1. Emiten tidak menjalankan usaha perjudian dan permainan yang
+   tergolong judi atau perdagangan yang dilarang.
+2. Bukan lembaga keuangan konvesional yang menerapkan sistem riba,
+   termasuk perbankan dan asuransi konvensional.
+3. Usaha yang dilakukan bukan memproduksi, mendistribusikan dan
+   memperdagangkan makanan/minuman yang haram.
+4. Tidak menjalankan usaha memproduksi, mendistribusikan dan
+   menyediakan barang/jasa yang merusak moral dan bersifat mudlarat.
+
+Syarat dan aturan tentang efek syariah selanjutnya diatur dalam
+Peraturan Bapepam & LK, di antaranya Peraturan Bapepam & LK
+No. IX.A.13 tentang Penerbitan Efek Syariah, Peraturan Bapepam & LK No
+IX.A.14 tentang Akad-akad Yang Digunakan Dalam Penerbitan Efek Syariah
+di Pasar Modal, dan Peraturan Bapepam & LK No II.K.1 tentang Kriteria
+dan Penerbitan Daftar Efek Syariah.[fn:68]
+
+Dalam perkembangannya, saham yang masuk pada indeks syariah berjumlah
+30 emiten, diurutkan berdasarkan tingkat likuiditas rata-rata nilai
+perdagangan reguler selama 1 tahun terakhir. 30 emiten sudah lebih dari
+cukup bagi investor muslim untuk mulai berpetualang dalam dunia investasi
+saham.
+
+Investor berbeda dengan spekulator, investor sebelum mengambil
+keputusan untuk membeli atau menjual asetnya, tentu menggunakan
+analisis yang rasional dan terstruktur, untuk itu diperlukan pemahaman
+tentang metode pengambilan keputusan investasi pada saham. Ada dua
+pendekatan yang dapat digunakan dalam analisis pasar saham, yakni
+pendekatan fundamental dan pendekatan teknikal.
+
+Masing-masing dari pendekatan tersebut memiliki penganut yang
+cenderung fanatik sehingga kadang tampak seperti bumi dan langit jika
+dibandingkan kedua pendapatnya. Penganut pendekatan fundamental
+meyakini bahwa harga bergerak secara acak (/random/) sehingga arahnya
+tidak mungkin bisa diprediksi. Upaya untuk meramal pergerakan harga,
+menurut penganut pendekatan fundamental adalah spekulasi belaka. Di
+sisi lain, penganut pendekatan teknikal berpendapat bahwa harga yang
+terbentuk di pasar sudah mencerminkan semua faktor fundamental saham
+yang ada, sehingga tidak perlu ditinjau lagi sebagai pertimbangan.
+
+Dasar perkiraan harga menurut pendekatan fundamental adalah
+faktor-faktor fundamental seperti laporan keuangan, informasi penting
+lain terkait dengan tindakan perusahaan (/corporate action/), kondisi
+ekonomi mikro dan makro sebuah industri atau negara, maupun
+berita-berita lain dalam bidang politik, sosial bahkan cuaca yang
+dianggap berpengaruh terhadap kinerja emiten bersangkutan.
+
+Dasar peramalan harga menurut pendekatan teknikal adalah pergerakan
+harga di masa lalu (historis), di mana data harga ini dapat diakses
+secara terbuka oleh semua pihak dan jika dianalisis dalam rentang
+waktu tertentu akan menunjukkan pola kecenderungan (tren) dari saham
+bersangkutan. Tren inilah yang kemudian dijadikan dasar pengambilan
+keputusan dalam melakukan investasi di pasar saham.
+
+Jika ditinjau dari prinsip syariah, transaksi dengan menggunakan
+analisis fundamental semata dapat digolongkan kedalam transaksi
+/gharar/, alasannya adalah tidak setiap orang mampu menyerap semua
+informasi fundamental yang ada, karena beberapa hal, misalnya
+keterbatasan akses terhadap informasi berkaitan, kemampuan penyerapan
+informasi dan faktor subyektifitas investor itu sendiri dalam
+menerjemahkan informasi yang ada.[fn:3]
+
+Sebaliknya, informasi pasar yang dapat diperoleh secara lengkap adalah
+informasi harga dan volume yang disajikan secara terbuka dan dapat
+diakses dengan mudah oleh semua pihak, sehingga analisis teknikal
+sangat cocok digunakan sebagai metode untuk mengurangi ketidakpastian
+dan sifat perjudian yang ada.
+
+Analisis teknikal sudah dikenal sejak lama (sekitar tahun 1800-an),
+namun pendekatan ini sampai sekarang masih tetap kontroversial
+(terutama di kalangan akademis), dan semakin kontroversial sejak
+ditemukannya teori tentang Hipotesis Pasar yang Efisien dalam karya
+desertasi oleh Profesor Eugene Fama (akademisi di University of
+Chicago Booth School of Business) pada awal tahun 1960.[fn:18]
+
+Pada kenyataannya, materi investasi yang diajarkan di
+universitas-universitas akhirnya akan bersinggungan juga dengan
+analisis teknikal, karena banyak investor, perusahaan penasihat
+investasi, dan juga media massa banyak memperbincangkan dan
+menggunakan analisis teknikal. Lebih jauh lagi, analisis teknikal ini
+memberikan sudah pandangan baru tentang dimensi psikologis dari
+pasar. Analisis teknikal menjadi semakin terkait dengan
+/behavioral finance/, salah satu bidang studi yang cukup populer
+sekarang ini, yang salah satu manfaatnya adalah penggunaan
+indikator-indikator teknikal sebagai alat untuk mengukur emosi
+investor.
+
+Sudah banyak penelitian yang dilakukan oleh akademisi dalam bidang
+analisis teknikal, Atmeh dan Dobbs (2006)[fn:20] menyebutkan beberapa
+peneliti yang menggunakan pendekatan teknikal diantaranya, Neil
+(1931), Schabacker (1930), Gartley (1930), Caslow (1966), LeBorn
+(1990), Brock, Lakonicshok dan LeBaron (1992), Roberts (1959), Brealey
+(1960), Fama dan Blume (1966) dan Jensen bersama Benongton
+(1970). Sebagian besar dari penelitian ini menggunakan salah satu
+/rule/ yang sudah terkenal dalam analisis teknikal, yakni /Moving
+Average/.
+
+Atmeh dan Dobbs juga menyebutkan bahwa sebagian besar dari penelitian
+ini dilakukan di pasar modal yang sudah terkenal seperti NYSE
+(\emph{New York Stock Exchange}), namun akhir-akhir ini tidak sedikit
+juga penelitian yang dilakukan di pasar modal negara-negara
+berkembang, seperti penelitian yang dilakukan oleh Ratner dan Leal
+(1999)[fn:69] yang meneliti tingkat keuntungan potensial analisis teknikal
+pada 10 pasar modal yang sedang berkembang di beberapa negara
+berkembang di benua Amerika Latin dan benua Asia. Hasil dari
+penelitian Renter dan Leal menunjukkan bahwa analisis teknikal
+terbukti dapat memberikan keuntungan pada beberapa negara, dan
+sebagian lagi tidak menguntungkan. 
+
+Ada sebagian peneliti yang menduga bahwa analisis teknikal dapat
+bekerja lebih baik jika diterapkan di pasar modal yang sedang
+berkembang dan beberapa hasil penelitian akademis terbukti mendukung
+kesimpulan tersebut, seperti Harvey (1995)[fn:70] melakukan penelitian
+terhadap nilai autokorelasi /return/ (tingkat kembalian) saham pada
+pasar modal di negara berkembang dan membandingkannya dengan nilai
+autokorelasi /return/ (tingkat kembalian) saham pada pasar modal di
+negara maju (sudah berkembang /well-developed countries/). Harvey
+menyimpulkan bahwa tingkat autokorelasi nilai kembalian saham pada
+pasar modal di negara-negara berkembang lebih tinggi dibanding dengan
+nilai kembalian saham pada pasar modal di negara-negara maju.[fn:25]
+
+Hal lain yang perlu diperhatikan dalam penelitian adalah terkait
+dengan biaya transaksi (/transaction costs/). Beberapa penelitian
+terdahulu, seperti Alexander (1961)[fn:26] melakukan penelitian
+menggunakan analisis teknikal dan berkesimpulan bahwa analisis
+teknikal terbukti dapat digunakan dalam memprediksi pergerakan harga
+di masa yang akan datang, namun ketika melakukan penelitian ulang
+dengan melibatkan komponen biaya transaksi pada tahun 1964, hasilnya
+menunjukkan bahwa hanya sebagian kecil saja yang mampu menghasilkan
+keuntungan. Biaya transaksi, meskipun penting, karena
+ketidaktersediaan data, diasumsikan nol dalam penelitian ini.
+
+Meskipun penelitian terdahulu banyak menemukan hasil bahwa analisis
+teknikal tidak efektif, namun hasil penelitian akhir-akhir ini
+menunjukkan bahwa analisis teknikal terbukti efektif. Sebagai contoh,
+Fama dan Blume (1966)[fn:71] mempelajari /Dow 30/ pada akhir tahun
+1950-an menyimpulkan bahwa analisis teknikal, setelah dikurangkan
+dengan biaya transaksi, terbukti menunjukkan hasil yang tidak
+menguntungkan. Sweeney (1988)[fn:72], dengan menggunakan sampel yang
+sama tetapi periode penelitian lebih baru, menunjukkan bahwa
+pendekatan analisis teknikal mampu menghasilkan keuntungan yang
+signifikan. Beberapa penelitian lain yang mendukung teori bahwa
+analisis teknikal terbukti dapat digunakan untuk memprediksi
+pergerakan harga saham di masa yang akan datang antara lain, Neftei
+(1991), Brock Lakonishok dan LeBaron (1992), Neely, Welle dan Dittmar
+(1997), Neely dan Weller (1999), dan Osler dan Chang(1995).[fn:27]
+
+Dari uraian panjang di atas, dapat diambil beberapa poin utama, yakni
+adanya anggapan bahwa harga saham bergerak secara acak (/random/),
+sehingga tidak mungkin diramalkan, dan ketersediaan informasi dan data
+dapat mengurangi investor ke dalam transaksi yang bersifat /gharar/.
+Poin inilah yang dijadikan dasar oleh penulis untuk mengambil tema
+penulisan tesis dengan judul /``Analisis Teknikal terhadap Pergerakan
+Harga Saham JII``/ untuk menjawab pertanyaan apakah pendekatan
+teknikal dapat digunakan untuk meramalkan harga saham di masa yang
+akan datang dalam konteks saham yang terdaftar pada JII.
+
+JII (/Jakarta Islamic Index/) digunakan sebagai objek penelitian
+karena perusahaan yang terdaftar dalam JII sudah memenuhi kriteria
+investasi di pasar modal berdasarkan prinsip syariah dan juga
+saham-saham yang tergabung dalam JII rata-rata memiliki kapitalisasi
+besar sehingga penelitian terhindar dari potensi penggunaan saham
+tidur (tidak aktif diperdagangkan).
+
+Dalil yang digunakan sebagai dasar pemilihan tema ini adalah kaidah
+/fiqh/ bahwa semua jenis /muamalah/, hukum dasarnya adalah boleh
+sampai ditemukan dalil yang melarangnya. Dengan kata lain, adanya
+anjuran untuk mengamalkan muamalah, mempelajari, mengkaji serta
+mengembangkannya. Inilah sisi rahmat Allah SWT terbesar yang
+dianugerahkan kepada manusia.
+
+** Rumusan Masalah
+Seperti yang disebutkan dalam bagian sebelumnya, terdapat 2 pendekatan
+dalam kaitannya dengan pengambilan keputusan investasi pada pasar
+saham, yakni pendekatan fundamental dan pendekatan teknikal. Kedua
+pendekatan ini penting karena tanpanya keputusan yang diambil
+cenderung bersifat spekulasi, bukan keputusan yang didasarkan pada
+analisis lagi.  Beberapa kekurangan dari analisis fundamental adalah
+tidak semua informasi dapat diakses secara terbuka oleh semua pihak,
+belum lagi faktor subyektifitas pengambil keputusan dalam
+menterjemahkan informasi yang ada.
+
+Disisi lain, bagi yang beranggapan bahwa harga bergerak secara acak,
+analisis teknikal tidak lebih adalah kegiatan spekulasi belaka,
+sehingga jika ditinjau dari perspektif syariah termasuk dalam kategori
+judi. Berkaitan dengan hal tersebut, fokus masalah dalam penelitian
+ini adalah:
+1. Apakah analisis teknikal yang menggunakan data harga saham historis
+   dapat meramalkan pergerakan harga saham yang akan datang pada saham
+   JII? Hal ini dapat dilihat dari besaran angka korelasi antara harga
+   di masa lalu dengan harga di masa yang akan datang.
+2. Bagaimana tingkat efisiensi pasar pada saham-saham yang tergolong
+   kedalam JII?
+
+** Tujuan dan Kegunaan Penelitian
+Tujuan dari penelitian ini adalah:
+1. Menguji tingkat korelasi antara harga saham di masa lalu dengan
+   harga saham di masa yang akan datang dengan objek penelitian
+   saham-saham yang terdaftar dalam JII.
+2. Menguji tingkat efisiensi pasar saham JII
+
+Manfaat penelitian ini antara lain:
+1. Memberikan informasi bagi investor dalam rangka pengambilan
+   keputusan investasi yang lebih baik dan rasional.
+2. Memberikan gambaran tentang kondisi efisiensi pasar saham di Indonesia.
+3. Dapat digunakan sebagai acuan bagi pihak yang akan mengadakan
+   penelitian serupa di masa yang akan datang.
+4. Bagi penulis, penelitian ini diharapkan dapat memberikan bahan
+   perbandingan antara teori dan kajian akademis dengan kondisi nyata
+   di lapangan.
+5. Bagi dunia akademis, diharapkan penelitian ini dapat memperkaya
+   khazanah diskusi mengenai pasar modal pada umumnya dan analisis
+   teknikal pada khususnya, sehingga diharapkan dapat mendorong
+   penelitian-penelitian selanjutnya di masa yang akan datang.
+
+Penelitian ini membatasi bahasan pada:
+1. Penggunaan analisis teknikal, sama sekali tidak melibatkan analisis
+   fundamental.
+2. Penghitungan koefisien korelasi antara harga saham sebelum dan sesudah.
+3. Penggunaan data harga saham JII dalam analisis.
+4. Saham yang diteliti adalah semua saham yang terdaftar dalam JII
+   periode 2004 - 2013 (10 tahun).
+5. Biaya transaksi (/transaction costs/) diasumsikan tidak ada atau nol.
+
+** Sistematika Pembahasan
+
+Penulisan tesis dibagi menjadi 5 bab penulisan. Bab I (Pendahuluan),
+berisi sekilas tentang peran agama bagi umat manusia, sekilas tentang
+prinsip syariah, sekilas tentang keuangan islam dan perkembangannya,
+serta lebih khusus lagi tentang proses investasi yang sesuai dengan
+prinsip syariah. Dalam bab ini juga berisi tentang analisis teknikal,
+serta beberapa penelitian terdahulu yang menggunakan analisis
+teknikal. Dan pada akhirnya ditutup dengan alasan pemilihan judul yang
+digunakan dalam penelitian ini.
+
+Bab II (Landasan Teori) berisi tentang tinjauan pustaka terhadap tema
+yang dipilih. Pertama membahas tentang ekonomi sebagai salah satu
+aspek kehidupan manusia tidak dapat dilepaskan dari kaidah dan aturan
+yang ditetapkan Tuhan terhadap manusia. Selanjutnya membahas sejarah
+dan perkembangan dan arti penting pasar modal di Indonesia. Sub-topik
+yang dibahas berikutnya adalah teori Hipotesis Pasar yang Efisien,
+serta kaitannya dengan aktivitas spekulasi pada pasar
+saham. Selanjutnya dibahas mengenai pentingnya pengembangan konsep
+investasi syariah bagi Islam agar umat Islam terhindar dari transaksi
+yang bertentangan dengan /fiqh/. Terakhir bab ini membahas metode
+analisis pergerakan harga saham, meliputi analisis teknikal dan
+fundamental, kemudian ditutup dengan hipotesis.
+
+Bab III (Metodologi Penelitian) berisi tentang data yang dipakai dalam
+penelitian, uji korelasi dan sekilas tentang alat bantu yang digunakan
+dalam analisis data (=Python= dan =Pandas=).
+
+Bab IV (Analisis Data dan Pembahasan) berisi tentang metode
+pengumpulan data, penyaringan data dan teknik uji korelasi serta
+pembacaan hasil uji korelasi masing-masing emiten saham.
+
+Bab V (Penutup) berisi kesimpulan dan saran yang dapat diambil dari
+penelitian ini.
+
+* Landasan Teori
+** Pengaturan Ekonomi dalam Islam
+Islam hadir dalam rangka membebaskan manusia dari ancaman, kebodohan,
+dekadensi moral, memerangi kemiskinan dan merealisasikan kemakmuran
+kehidupan manusia. Aturan Islam meliputi akidah, ibadah, moral,
+syariat, hukum keputusan dan perdagangan. Ini berarti setiap individu
+muslim penting untuk memahami dan mengetahui bahwa aktivitas yang
+dilakukan tidak melenceng dari prinsip yang sudah diatur, dalam rangka
+mewujudkan tujuan Islam di atas.
+
+Setiap aktivitas muslim dinilai sebagai ibadah yang akan diberikan
+balasan pahala bagi siapa pun yang melaksanakan dan ancaman bagi siapa
+pun yang meninggalkan. Hidup merupakan ibadah kepada Allah dan setiap
+aktivitas baik skala mikro maupun makro otomatis menjadi bagian dari
+ibadah tersebut. Allah Maha Mengetahui yang terbaik bagi makhluk-Nya, 
+Dia menetapkan hukum yang sesuai dengan persepsi, indra, dan emosional 
+manusia yang secara preventif menjaga penyimpangan dengan tujuan
+menjaga eksistensi kemaslahatan manusia.
+
+Dan Allah menjangkau semua yang ada di dunia baik yang tersembunyi
+maupun terang-terangan.
+
+
+#+BEGIN_LATEX
+    \begin{arabtex}
+    
+  قَالَ عِلْمُهَا عِندَ رَبِّي فِي كِتَابٍ ۖ لَّا يَضِلُّ رَبِّي وَلَا يَنسَى
+    
+    \end{arabtex}
+#+END_LATEX
+
+/Artinya:/
+
+/Musa menjawab: "Pengetahuan tentang itu ada di sisi Tuhanku, di dalam
+sebuah kitab, Tuhan kami tidak akan salah dan tidak (pula) lupa;/
+Q.S. Thoha (20): 52.
+
+Dalam bidang ekonomi, Islam memiliki beberapa kaidah dan aturan
+tersendiri. Model transaksi yang diperbolehkan oleh hukum syariah seperti
+jual beli, pesan, gadai, transfer, asosiasi, persekutuan, penghindaran dari
+hal-hal yang haram lainnya.[fn:9]
+
+Kaidah dan aturan Islam tidak hanya mengikat permasalahan peribadahan,
+tetapi juga sebagai tuntunan terbaik dari Tuhan untuk mencapai
+kesejahteraan, kesuksesan, dan kebahagiaan di dunia dan akhirat, baik
+secara pribadi maupun sosial. 
+
+Dalam kaitannya dengan keuangan Islam, Iggi (2000)[fn:73] membagi
+konsep keuangan Islam menjadi 4 konsep:
+
+1. Kepemilikan atau harta benda
+2. Pelarangan riba
+3. Perjudian dan risiko
+4. Kontrak komersial atau transaksi
+
+Konsep pertama terkait dengan dasar manajemen harta dan kewajiban
+zakat sebagai bagian tidak terpisahkan. Konsep kedua membawa
+konsekuensi logis tentang penggunaan hutang, peninjauan kembali konsep
+/time value of money/ dan juga /cost of capital/. Konsep ketiga
+meliputi spekulasi dan perilaku terhadap risiko. Dan konsep keempat
+terkait dengan evaluasi atas institusi-institusi dan
+instrumen-instrumen yang boleh atau tidak boleh digunakan, berikut
+cara pengelolaan yang dilakukan.
+
+** Pasar Modal Indonesia
+Secara historis, pasar modal telah hadir jauh sebelum Indonesia
+merdeka. Pasar modal atau bursa efek telah hadir sejak jaman kolonial
+Belanda dan tepatnya pada tahun 1912 di Batavia. Pasar modal ketika
+itu didirikan oleh pemerintah Hindia Belanda untuk kepentingan
+pemerintah kolonial atau VOC.
+
+Meskipun pasar modal telah ada sejak tahun 1912, perkembangan dan
+pertumbuhan pasar moda tidak berjalan seperti yang diharapkan, bahkan
+pada beberapa periode kegiatan pasar modal mengalami kevakuman. Hal
+tersebut disebabkan oleh beberapa faktor seperti perang dunia I dan II,
+perpindahan kekuasaan dari pemerintah kolonial kepada pemerintah Republik
+Indonesia, dan berbagai kondisi yang menyebabkan operasi bursa efek tidak
+berjalan sebagaimana mestinya.
+
+Pemerintah Republik Indonesia mengaktifkan kembali pasa modal pada
+tahun 1977, dan beberapa tahun kemudian pasar modal mengalami pertumbuhan
+seiring dengan berbagai insentif dan regulasi yang dikeluarkan pemerintah.
+
+Secara singkat, tonggak perkembangan pasar modal Indonesia dapat dilihat
+sebagai berikut:[fn:28]
+
+#+BEGIN_LATEX
+
+  \begin{table}[H]
+  \centering
+  \footnotesize
+  \begin{tabular}{c|l}
+   Desember 1912  &  Bursa efek pertama di Indonesia dibentuk di Batavia oleh \\
+   & pemerintah Hindia Belanda.       \\
+  \hline
+   1914 - 1918  &  Bursa efek di Batavia ditutup selama Perang Dunia I       \\
+  \hline
+  1925 - 1942 & Bursa Efek di Jakarta dibuka kembali bersama dengan Bursa \\
+  & Efek di Semarang dan Surabaya. \\
+  \hline
+  Awal tahun 1939 & Karena isu politik (Perang Dunia II) Bursa Efek di Semarang \\
+  & dan Surabaya ditutup. \\
+  \hline
+  1942 - 1952 & Bursa Efek di Jakarta ditutup kembali selama Perang Dunia II \\
+  \hline
+  1956 & Program nasionalisasi perusahaan Belanda. Bursa Efek semakin \\
+  & tidak aktif. \\
+  \hline
+  1956 - 1977 & Perdagangan di Bursa Efek vakum. \\
+  \hline
+  10 Agustus 1977 & Bursa Efek diresmikan kembali oleh Presiden Soeharto. BEJ \\
+  & dijalankan di bawah BAPEPAM (Badan Pelaksana Pasar Modal). \\
+  & Tanggal 10 Agustus diperingati sebagai HUT Pasar Modal. \\
+  & Pengaktifan kembali pasar modal ini juga ditandai dengan go public \\
+  & PT. Semen Cibinong sebagai emiten pertama. \\
+  \hline
+  1977 - 1987 & Perdagangan di Bursa Efek sangat lesu. Jumlah emiten hingga \\
+  & tahun 1987 baru mencapai 24. Masyarakat lebih memilih instrumen \\
+  & perbankan dibandingkan instrumen Pasar Modal. \\
+  \hline
+  1987 & Ditandai dengan hadirnya Paket Desember 1987 (PAKDES 87) yang \\
+  & memberikan kemudahan bagi perusahaan untuk melakukan \\ 
+  & Penawaran Umum dan investor asing menanamkan modal di \\
+  & Indonesia. \\
+  \hline
+  1988 - 1990 & Paket deregulasi di bidang Perbankan dan Pasar Modal \\
+  & diluncurkan. Pintu BEJ terbuka untuk asing. Aktivitas bursa \\
+  & terlihat meningkat. \\
+  \hline
+  2 Juni 1988 & Bursa Paralel Indonsia (BPI) mulai beroperasi dan dikelola \\
+  & oleh Persatuan Perdagangan Uang dan Efek (PPUE), sedangkan \\
+  & organisasinya terdiri dari broker dan dealer. \\
+  \hline
+  Desember 1988 & Pemerintah mengeluarkan Paket Desember 88 (PAKDES 88) \\
+  & yang memberikan kemudahan perusahaan untuk go public dan \\ 
+  & beberapa kebijakan lain yang positif bagi pertumbuhan pasar modal. \\
+  \hline
+  16 Juni 1989 & Bursa Efek Surabaya (BES) mulai beroperasi dan dikelola \\
+  & oleh Perseroan Terbatas milik swasta yaitu PT. Bursa Efek Surabaya. \\
+  \hline
+  13 Juli 1992 & Swastanisasi BEJ. BAPEPAM berubah menjadi Badan Pengawas \\
+  & Pasar Modal. Tanggal ini diperingati sebagai HUT BEJ. \\
+  \hline
+  22 Mei 1995 & Sistem otomasi perdagangan di BEJ dilaksanakan dengan \\
+  & sistem komputer JATS (Jakarta Automated Trading Systems). \\
+  \hline
+  10 November 1995 & Pemerintah mengeluarkan Undang-Undang No.8 \\
+  & Tahun 1995 tentang Pasar Modal. Undang-undang ini mulai diberlakukan \\
+  & Januari 1996. \\
+  \hline
+  1995 & Bursa Paralel Indonesia merger dengan Bursa Efek Surabaya. \\
+  \hline
+  2000 & Sistem Perdagangan Tanpa Warkat (scriptless trading) mulai \\
+  & diaplikasikan di Pasar Modal Indonesia. \\
+  \hline
+  2002 & BEJ mulai mengaplikasikan sistem perdagangan jarak jauh \\
+  & (remote trading). \\
+  \hline
+  2007 & Penggabungan Bursa Efek Surabaya (BES) ke Bursa Efek Jakarta \\
+  & (BEJ) dan berubah nama menjadi Bursa Efek Indonesia (BEI). \\
+  \hline
+  2 Maret 2009 & Peluncuran Perdana Sistem Perdagangan Baru \\
+  & PT Bursa Efek Indonesia: JATS-NextG. \\
+  \hline
+  \end{tabular}
+  \end{table}
+#+END_LATEX
+
+Pasar modal memiliki peran penting bagi pembangunan ekonomi sebagai
+salah satu sumber pembiayaan eksternal bagi dunia usaha dan juga merupakan
+wahana investasi bagi masyarakat luas. Oleh karena itu peran lembaga keuangan
+yang bernaung di bawah pasar modal yang diizinkan beroperasi di Indonesia, 
+seperti perusahaan sekuritas dan reksa dana, mempunyai peranan penting dalam 
+pasar modal yang pada gilirannya diharapkan dapat meningkatkan intermediasi
+surplus dana dari masyarakat dan menyalurkannya kepada unit usaha yang 
+membutuhkan dana secara lebih efisien.[fn:10]
+
+Di mana posisi pasar modal dalam sistem ekonomi Indonesia? Pasar modal
+menjadi bagian dari sistem keuangan di Indonesia yang berada di luar
+sistem moneter. Sistem keuangan di Indonesia terdiri dari sistem
+moneter dan lembaga keuangan non-bank. Sistem moneter Indonesia
+terdiri dari otoritas moneter (/monetary authority/) dan sistem
+perbankan. Fungsi utama sistem moneter adalah:
+
+1. Menyelenggarakan mekanisme transaksi atau lalu lintas pembayaran
+   yang efisien.
+2. Merupakan lembaga perantara keuangan yang mampu menjadi penghubung
+   antara pihak yang surplus dana dan yang defisit dana.
+3. Ikut menjaga terjadinya keseimbangan internal dan eksternal.
+
+Otoritas moneter adalah dewan moneter yang terdiri atas 3 orang
+anggota, yakni menteri-menteri yang membidangi keuangan dan
+perekonomian serta Gubernur Bank Indonesia. Dewan moneter membantu
+pemerintah dalam merencanakan kebijakan moneter dengan mengajukan
+pijakan-pijakan dalam rangka menjaga kestabilan moneter, membuka
+kesempatan kerja, dan peningkatan kesejahteraan rakyat.
+
+Sistem perbankan di Indonesia, menurut UU No.7 Tahun 1992, terdiri
+dari Bank Umum, Bank Perkreditan Rakyat dan Bank Campuran. Bank Umum
+adalah bank yang dapat memberikan jasa dalam lalu lintas pembayaran.
+Bank Perkreditan Rakyat adalah bank yang menerima simpanan hanya dalam
+bentuk deposito berjangka, tabungan dan/atau bentuk lainnya yang
+serupa dengan itu. Sedangkan bank campuran adalah Bank Umum yang
+didirikan bersama oleh satu atau lebih Bank Umum yang berkedudukan di
+Indonesia dan didirikan oleh warga negara Indonesia dan/atau badan
+hukum Indonesia yang dimiliki sepenuhnya oleh warga negara Indonesia,
+dengan satu atau lebih bank yang berkedudukan di luar negeri.
+
+Lembaga keuangan bukan bank lainnya yang ada dalam sistem keuangan
+Indonesia oada saat ini terdiri dari: perusahaan pembiayaan, asuransi,
+dana pensiun, pegadaian, dan lembaga keuangan di bawah payung pasar
+modal seperti perusahaan sekuritas dan reksa dana. Lembaga-lembaga
+tersebut juga melakukan peran intermediasi dana dari masyarakat yang
+surplus kepada masyarakat yang defisit dana.
+
+Pasar Modal Indonesia diselenggarakan oleh Bursa Efek Indonesia (BEI).
+Dalam operasinya, BEI didukung oleh lembaga-lembaga lain seperti
+Lembaga Kliring dan Penjaminan, dan Lembaga Penyimpanan dan
+Penyelesaian. Peran bursa efek adalah sebagai pihak yang
+menyelenggarakan dan menyediakan sistem dan/atau sarana untuk
+mempertemukan penawaran jual dan beli efek pihak-pihak lain dengan
+tujuan memperdagangkan efek di antara mereka. Oleh karena itu, peran
+bursa efek sangat penting dalam mengembangkan pasar modal Indonesia.
+Keberhasilan bursa dalam mengelola pasar modal dengan baik akan
+mempengaruhi efisiensi dan jumlah dana yang dapat diintermediasikan
+melalui lembaga keuangan yang berada di bawah bursa efek.
+
+** Hipotesis Pasar yang Efisien
+Konsep pasar modal yang efisien (/efficient capital markets/)
+merupakan tema yang dominan pada tahun 1960-an di kalangan
+akademisi. Konsep ini, meskipun kalangan akademisi secara umum
+mempercayainya tetapi tidak semua masyarakat keuangan
+mempercayainya. Bahkan istilah pasar modal yang efisien sering
+digunakan dengan arti atau maksud yang berbeda-beda. Sebagai misal,
+pasar modal yang efisien mungkin diartikan sebagai pasar yang bisa
+menyediakan jasa-jasa keuangan yang diperlukan oleh para pemodal
+dengan biaya yang minimal. Pengertian ini banyak digunakan oleh para
+pelaku di bursa efek (seperti para pialang, pengelola bursa, dan
+sebagainya).
+
+Dalam bidang teori investasi, secara formal pasar modal yang efisien
+didefinisikan sebagai pasar yang harga sekuritasnya telah mencerminkan semua
+informasi relevan. Semakin cepat informasi baru tercermin pada harga 
+sekuritas, semakin efisien pasar modal tersebut. Dengan demikian akan 
+sangat sulit (atau bahkan hampir tidak mungkin) bagi para pemodal
+untuk memperoleh tingkat keuntungan di atas normal secara konsisten dengan
+melakukan transaksi perdagangan di bursa efek. Efisiensi dalam artian ini
+sering juga disebut efisiensi informasional.
+
+Mengapa disebut Hipotesis Pasar yang Efisien (/Efficient Market
+Hypothesis/)?  Istilah hipotesis digunakan karena pernyataan tersebut
+memang perlu diuji kebenarannya. Apakah benar pasar modal efisien
+seperti didefinisikan di atas?
+
+Seperti penemuan ide-ide besar lainnya, konsep pasar yang efisien
+merupakan produk sampingan penemuan yang kebetulan. Pada tahun 1953,
+/The Royal Statistical Society/ bertemu di London, Inggris, untuk
+membicarakan suatu makalah yang tidak lazim. Pengaranngnya adalah
+Maurice Kendall, seorang ahli statistik dengan subyek perilaku
+harga-harga komoditi dan reguler, tetapi ternyata ia tidak bisa
+menemukan siklus tersebut. Setiap seri tampaknya seperti seri yang
+``berkelana``, yang mempunyai pola tidak tentu. Dengan kata lain,
+harga-harga tampaknya mengikuti /random walk/.
+
+Kalau perubahan harga saham memang mengikuti pola /random walk/, maka
+perubahan harga di waktu lalu tidak dapat digunakan untuk
+memperkirakan perubahan harga di masa yang akan datang. Taksiran
+terbaik harga besok pagi adalah harga hari ini. Karena itulah mengapa
+di atas disebutkan bahwa meskipun konsep pasar modal yang efisien
+umumnya dipercaya oleh kalangan akademisi, tetapi tidak demikian
+halnya di kalangan keuangan. Hal ini ditunjukkan dari banyaknya
+saran-saran untuk melakukan investasi yang didasarkan pada pengamatan
+atas perilaku perubahan harga saham.
+
+Penemuan di atas sebenarnya sudah terjadi beberapa tahun sebelum para
+ahli ekonomi berpendapat bahwa memang seharusnya harga berperilaku seperti
+itu apabila suatu pasar memang /competitive/. 
+
+Ambil ilustrasi berikut, misalkan kita ingin menjual sebuah lukisan
+antik pada suatu pelelangan, tetapi kita tidak tahu berapa harga yang
+pantas untuk lukisan tersebut. Pertanyaannya adalah, apakah kita yakin
+bahwa harga yang kita terima dalam lelang merupakan harga yang wajar?
+Jawabannya adalah iya apabila lelang itu dilakukan secara
+/competitive/. Dengan kata lain, kita harus yakin bahwa lelang itu 
+diselenggarakan dengan jujur, tidak ada kerjasama antara para penawar
+dalam lelang tersebut, tidak ada biaya penawaran yang cukup berarti.
+Mereka yang hadir dalam pelelangan tersebut cukup banyak, ahli, dan
+bersedia menawar.
+
+Dengan cara yang sama, persaingan antar analis investasi akan membuat
+pasar sekuritas setiap saat menunjukkan harga yang sebenarnya. Foster
+(1986) menjelaskan bahwa jumlah analis keuangan yang banyak dan
+persaingan antar mereka akan membentuk harga sekuritas yang ``wajar``
+dan mencerminkan semua informasi yang relevan.
+
+Dan karena informasi baru kehadirannya tidak dapat diperkirakan, maka
+perubahan harga juga tidak dapat diperkirakan sebelumnya, sehingga
+teori /random walk/ berlaku.
+
+Pasar modal yang efisien didefinisikan sebagai pasar modal yang harga
+sekuritasnya mencerminkan semua informasi semua informasi yang
+relevan.  Pertanyaan selanjutnya adalah apa yang dimaksud dengan
+informasi yang relevan? Bukankah banyak sekali informasi yang dianggap
+relevan dan mungkin mempengaruhi harga sekuritas? Oleh karena itu
+informasi sendiri dibagi menjadi tiga jenis. Yang pertama adalah
+informasi dalam perubahan harga di waktu yang lalu. Kedua, informasi
+yang tersedia untuk publik (/public information/) dan yang ketiga
+informasi yang tersedia baik untuk publik maupun privat (/public and
+private information/).
+
+Ada tiga bentuk efisiensi pasar modal, pertama adalah di mana harga-harga
+mencerminkan semua informasi yang ada pada catatan harga di waktu yang lalu.
+Dalam keadaan seperti ini, pemodal tidak bisa memperoleh tingkat keuntungan
+di atas normal dengan mendasarkan pada informasi harga di waktu yang lalu.
+Keadaan ini disebut bentuk *efisiensi yang lemah* (/weak form efficiency/).
+Penelitian tentang /random walk/ menunjukkan bahwa sebagian besar pasar
+modal paling tidak berada dalam bentuk efisiensi ini.
+
+Bentuk efisiensi kedua adalah keadaan di mana harga bukan hanya
+mencerminkan harga di waktu yang lalu, tetapi juga semua informasi
+yang dipublikasikan. Keadaan ini disebut bentuk *efisiensi setengah
+kuat* (/semi strong/). Dengan kata lain, para pemodal tidak bisa
+memperoleh tingkat kembalian di atas normal dengan memanfaatkan
+/public information/.  Para peneliti telah menguji keadaan ini dengan
+melihat peristiwa-peristiwa tertentu seperti penerbitan saham baru,
+pengumuman laba dan dividen, perkiraan tentang laba perusahaan,
+perubahan praktik akuntansi, /merger/, dan pemecahan saham (/stock
+split/). Kebanyakan semua informasi ini dengan cepat dan tepat
+dicerminkan dalam harga saham.
+
+Bentuk ketiga adalah bentuk *efisiensi kuat* (/strong form/) di mana
+harga tidak hanya mencerminkan semua informasi yang dipublikasikan,
+tetapi juga informasi yang bisa diperoleh dari analisis fundamental
+tentang perusahaan dan perekonomian. Dalam keadaan semacam ini, pasar
+modal akan seperti rumah lelang yang ideal, karena harga selalu wajar
+dan tidak ada investor yang mampu memperoleh perkiraan yang lebih baik
+tentang harga saham. Berbagai studi menunjukkan bahwa setelah
+mempertimbangkan perbedaan risiko, tidak suatu lembaga pun yang mampu
+mengungguli pasar secara konsisten, dan bahkan perbedaan prestasi
+masing-masing portofolio lembaga tersebut tidak lebih besar dari apa
+yang diharapkan
+
+Teori Hipotesis Pasar yang Efisien pada akhirnya akan berhubungan
+dengan aktivitas spekulasi yang ada di pasar (/gharar/). Jika sebuah
+pasar saham dikatakan efisien, maka tidak akan ada lagi aktivitas
+spekulasi (/gharar/) karena investor tidak bisa mendapatkan /earning/
+di atas rerata pasar, dan sebaliknya, jika sebuah pasar tidak efisien,
+maka dimungkinkan adanya aktivitas spekulasi dalam pasar saham
+tersebut.
+
+Belum banyak peneliti yang mencoba meneliti hubungan antara teori
+Hipotesis Pasar yang Efisien dengan aktivitas spekulasi pada pasar
+saham. Di antara yang sedikit itu adalah Seif El-Din, Tag El-Din dan
+M. Kabir Hassan[fn:29], yang mencoba melihat pendapat beberapa
+peneliti terkait dengan dua hal ini. Beliau menunjukkan adanya
+perbedaan pendapat terkait dengan teori Hipotesis Pasar yang Efisien
+dengan spekulasi. Pendapat pertama mengatakan bahwa spekulasi harus
+dihindari karena bertentangan dengan prinsip syariah (/gharar/),
+sedangkan pendapat kedua yang diwakili oleh Tag El-Din (1996) dan Kia
+(2001) berpendapat bahwa aktivitas spekulasi dibutuhkan pada tingkat
+tertentu demi menjaga tingkat likuiditas dan efisiensi pada pasar
+modal.[fn:30]
+
+** Investasi Syariah
+Beberapa poin penting dalam konsep investasi dan prinsip-prinsip
+syariah dalam Islam:
+*** Dorongan untuk Menjadi Investor
+Islam mengijinkan aktivitas pinjam-meminjam tanpa bunga, yakni dengan
+basis bagi hasil (/profit-loss sharing/). Hal ini dapat
+diinterpretasikan bahwa Islam mendorong umatnya untuk menjadi investor
+dan bukannya kreditor.[fn:11] Investor selalu berhadapan dengan
+risiko, sejalan dengan konsep /profit-loss sharing/ yang berarti juga
+/risk sharing/.
+
+*** Riba, /Time Value of Money/, dan /Cost of Capital/
+Tema risiko tidak dapat dilepaskan dari tema riba, /time value of
+money/, dan /cost of capital/. Konsep /time value of money/ atau
+disebut juga /positive time preference/ menyebutkan bahwa nilai
+komoditi pada saat ini lebih tinggi dibanding nilainya di masa
+depan. 
+
+Konsep /time value of money/ atau sering juga disebut dengan /positive
+time preference/ pertama kali dikenalkan oleh Eugene Von Bhom-Bawerk
+pada akhir abad ke-19 dalam karyanya yang berjudul /``Positive Theory
+of Capital``/. Secara singkat, dia menyatakan bahwa nilai komoditi saat 
+ini lebih berharga daripada nilai komoditi di masa yang akan datang.[fn:74]
+
+Konsep ini secara nyata digunakan dalam evaluasi kelayakan proyek
+maupun keputusan investasi, sebut saja model /Net Present Value
+(NPV)/, /Internal Rate of Return (IRR)/, dan berbagai model-model
+lainnya.  Penggunaan nilai diskonto (/discount/) dalam model ini,
+tidak lain dan tidak bukan adalah perwujudan dari teori /time value of
+money/.
+
+Prof. Shabir Ulgener[fn:31] berpendapat bahwa konsep /interest/ dapat
+digunakan dalam evaluasi proyek maupun keputusan investasi yang
+efisien. Beliau berpendapat bahwa penggunaan /interest/ akan
+memastikan bahwa terjadinya efisiensi dalam alokasi sumberdaya. Jika
+tidak menggunakan komponen /interest/ (misal, pinjaman bebas bunga),
+maka sangat dimungkinkan terjadi penyelewengan penggunaan dana.
+
+Pendapat kedua dari Dr. Naqvi[fn:32], beliau berpendapat bahwa setiap
+individu tidak dapat mengelak dari konsep penerapan /time value of
+money/, hal ini beliau buktikan dengan kenyataan dalam perilaku
+konsumsi individu yang cenderung memilih menggunakan komoditi di masa
+sekarang, dibandingkan dengan di masa datang. Pendapat berikutnya
+datang dari Anas Zarqa, beliau menawarkan penggunaan konsep /rate of
+return/ sebagai pengganti dari konsep /rate of interest/.
+
+Semua pendapat ini dapat dikatakan mendukung penggunaan teori /time
+value of money/ dalam evaluasi proyek maupun keputusan investasi.
+Yang menarik, Akram Khan (1992)[fn:14] dalam makalahnya yang berjudul
+/Time Value of Money/ secara tegas menyanggah semua pendapat-pendapat
+di atas. Beliau berpendapat bahwa seharusnya umat Islam memiliki
+konsep sendiri tentang evaluasi proyek maupun keputusan investasi dan
+yang pasti tidak mendasarkan pada konsep /time value of money/ atau
+/positive time preference/.
+
+Terkait dengan pendapat dari Prof. Sabri, beliau mengatakan jika 
+konsep /interest/ dijadikan dasar alokasi sumberdaya yang efisien,
+yang artinya jika tidak didasarkan pada /interest/ maka sebuah proyek
+dimungkinkan tidak efisien, bagaimana dengan proyek publik? Apakah
+semua proyek-proyek publik, yang notabene tidak menghitung nilai
+kembalian dikatakan sebagai proyek yang tidak efisien?
+
+Akram juga menyanggah pendapat Naqvi, beliau mengatakan bahwa Naqvi 
+hanya melihat keterlibatan konsep /positive time preference/ hanya
+pada aktivitas konsumtif individu. Bagaimana jika melihat pada
+aktivitas yang tidak dikonsumsi (contoh ditabung)?
+
+Pendapat dari Anas Zarqa[fn:33] juga disanggah oleh Akram, yang mengatakan
+bahwa /rate of return/ itu tidak lain dan tidak bukan adalah /rate of
+interest/, sehingga pendapat Anas menurut Akram tidak masuk akal.
+
+Dalam makalah tersebut, Akram juga memberikan alternatif solusi
+bagaimana seorang muslim seharusnya melakukan penilaian terhadap
+layak atau tidaknya sebuah proyek maupun keputusan investasi. 
+Sekarang, pilihan berada di tangan kita sebagai individu, yang
+jelas kegiatan investasi tidak dapat dilepaskan dari risiko.
+
+*** Manajemen Risiko dan /Gharar/ dalam Transaksi
+Perjudian termasuk proses memperoleh harta dengan cara yang tidak
+benar, dan kenyataanya ditentang dengan sangat tegas dalam Al-Qur'an.
+
+#+BEGIN_LATEX
+  
+  \begin{arabtex}
+     يَا أَيُّهَا الَّذِينَ آمَنُوا إِنَّمَا الْخَمْرُ وَالْمَيْسِرُ وَالْأَنصَابُ وَالْأَزْلَامُ رِجْسٌ مِّنْ عَمَلِ الشَّيْطَانِ فَاجْتَنِبُوهُ لَعَلَّكُمْ تُفْلِحُونَ ٠٩ إِنَّمَا يُرِيدُ الشَّيْطَانُ أَن يُوقِعَ بَيْنَكُمُ الْعَدَاوَةَ وَالْبَغْضَاءَ فِي الْخَمْرِ وَالْمَيْسِرِ وَيَصُدَّكُمْ عَن ذِكْرِ اللَّـهِ وَعَنِ الصَّلَاةِ ۖ فَهَلْ أَنتُم مُّنتَهُونَ ١٩
+  \end{arabtex}
+  
+#+END_LATEX
+
+#+BEGIN_LATEX
+  
+  \emph{Hai orang-orang yang beriman, sesungguhnya (meminum) khamar,
+  berjudi, berkorban untuk berhala, mengundi nasib dengan panah,
+  adalah termasuk perbuatan syaitan. Maka jauhilah perbuatan-perbuatan
+  itu agar kamu mendapat keberuntungan. Sesungguhnya syaitan itu
+  bermaksud hendak menimbulkan permusuhan dan kebencian di antara kamu
+  lantaran (meminum) khamar dan berjudi itu, dan menghalangi kamu dari
+  mengingat Allah dan sembahyang; maka berhentilah kamu (dari
+  mengerjakan itu).} Q.S. Al-Ma'ida (5):90-91.
+  
+#+END_LATEX
+
+Ayat di atas memeberikan gambaran akibat jika melakukan perjudian,
+yakni akan menimbulkan permusuhan dan kebencian dalam hubungan
+sosial. Kata-kata /gharar/ sendiri tidak pernah disebutkan dalam
+Al-Qur'an, namun disebutkan dalam /sunnah/, di antaranya:
+
+#+BEGIN_LATEX
+  
+  \begin{arabtex}
+  نَهَى رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ عَنْ بَيْعِ الْحَصَاةِ وَعَنْ بَيْعِ الْغَرَرِ
+  \end{arabtex}
+  
+#+END_LATEX
+
+/Rasulullah SAW. melarang jual-beli dengan hasah dan penjualan gharar/
+(HR. Muslim)[fn:38]
+
+Dalam /hadits/ lain disebutkan:
+
+#+BEGIN_LATEX
+  
+  \begin{arabtex}
+  لا تَشْتَرُوا السَّمَكَ فِي الْمَاءِ فَإِنَّهُ غَرَرٌ
+  \end{arabtex}
+  
+#+END_LATEX
+
+/Dilarang menjual ikan dalam laut, yang seperti itu gharar/ (HR. Ibn
+Hambal)[fn:39]
+
+Meski aspek legal dalam /fiqh/ Islam terkait konsep /gharar/ sudah
+jelas, tetapi masih didapati dilema untuk mendefinisikan dan
+menjelaskannya secara tepat, sebagaimana riba yang belum dapat
+didefinisikan ruang lingkupnya secara akurat.
+
+Secara literer, /gharar/ dalam bahasa Arab memiliki terjemah risiko,
+kadang juga merujuk pada ketidakpastian (/uncertainty/). Ibn Taymiyah
+mendeskripsikan /gharar/ sebagai /``things with unknown fate.``/,
+sehingga /``selling such things is maysir or gambling``/.[fn:34]
+
+Sementara itu, Ibn Qayyim menjelaskan bahwa /gharar/ adalah
+kemungkinan ada dan tidak ada. Sebagaimana Ibn Taymiyah, beliau
+menyatakan bahwa jual-belinya dilarang karena merupakan bentuk
+/maysir/ atau perjudian.[fn:35]
+
+Bisnis adalah pengambilan risiko, karena risiko selalu terdapat dalam
+aktivitas ekonomi. Ditambah lagi adanya prinsip dasar, /no risk no
+return/. Selain karena alasan riba, prinsip ini juga yang membawa
+implikasi penolakan terhadap bunga dalam pinjaman dan juga sekuritas
+yang dianggap /risk-free/. Kalau kemudian risiko ini secara sederhana
+disamakan dengan ketidakpastian (/uncertainty/), dan ketidakpastian
+ini dianggap /gharar/ dan dilarang, maka hal ini akan menjadi rumit.
+
+Iggi (2000)[fn:15] berpendapat bahwa transaksi /gharar/ dapat timbul karena
+dua sebab utama, yang pertama adalah kurangnya informasi atau
+pengetahuan (/jahala, ignorance/) pada pihak yang melakukan kontrak.
+/Jahala/ ini menyebabkan tidak dimilikinya kontrol atau /skill/ pada
+pihak yang melakukan transaksi. Penyebab kedua adalah karena tidak
+adanya (/non-exist/) obyek, meskipun ada juga yang membolehkan
+transaksi dengan obyek yang secara aktual belum ada, dengan diiringi
+syarat bahwa pihak yang melakukan transaksi memiliki kontrol untuk
+hampir bisa memastikannya di masa depan.
+
+** Metode Analisis Pergerakan Harga Saham
+*** Analisis Fundamental
+Harianto dan Sudomo (1998)[fn:40] menmberikan gambaran bahwa analisis
+fundamental adalah sebuah analisis yang mencoba memperkirakan harga
+saham di masa yang akan datang dengan cara, pertama meramalkan nilai
+faktor-faktor fundamental yang mempengaruhi harga saham di masa yang
+akan datang, kedua dengan menerapkan hubungan variabel-variabel
+tersebut sehingga diperoleh taksiran harga saham. Model ini sering
+disebut dengan /share price forecasting model/, dan sering digunakan
+dalam berbagai pelatihan analisis sekuritas.
+
+Dalam membuat model peramalan harga saham, langkah yang penting adalah
+mengidentifikasi faktor-faktor fundamental seperti penjualan,
+pertumbuhan penjualan, biaya, kebijakan dividen, dan sebagainya) yang
+diperkirakan akan mempengaruhi harga saham. Setelah itu, bagaimana
+membuat suatu model dengan memasukkan faktor-faktor tersebut dalam
+analisis. 
+
+Dalam melakukan analisis, investor biasanya membagi saham menjadi dua
+kelompok, pertama /growth stocks/, dan yang kedua /value stocks/.
+/Growth stocks/ adalah saham-saham yang diharapkan memberikan
+pertumbuhan yang lebih tinggi dari rata-rata saham lain, dan karenanya
+memiliki /PER/ yang tinggi. Pada tahun 1997, saham-saham seperti
+Indofood dan Gudang Garam menjadi contoh /growth stocks/ karena
+saham-saham tersebut memiliki /PER/ yang lebih tinggi dibandingkan
+dengan rata-rata perusahaan makanan dan minuman, serta perusahaan
+tembakau.
+
+Pertanyaannya sekarang, apakah memilih /growth stocks/ lebih baik
+daripada memilih /value stocks/? Atau justru sebaliknya? Untuk dapat
+menjawab pertanyaan ini, investor perlu menganalisis kemampuan
+perusahaan dalam memperoleh laba. Perusahaan hanya bisa membagikan
+dividen dalam jumlah semakin besar kalau perusahaan mampu menghasilkan
+laba yang makin besar pula. 
+
+Secara teoretis, semakin besar sebuah perusahaan memperoleh laba akan
+semakin besar pula kemampuan untuk membagikan dividen. Tentu saja
+tidak ada keharusan bagi perusahaan untuk meningkatkan pembayaran
+dividen ketika laba yang diperoleh semakin besar. Bisa saja perusahaan
+lebih memilih menggunakan laba tersebut untuk kegiatan yang lebih
+menguntungkan, akibatnya pembagian dividen mungkin tetap atau bahkan
+turun meski laba yang diperoleh meningkat.
+
+Satu hal yang pasti, kalau kemampuan perusahaan untuk menghasilkan
+laba meningkat, maka harga saham juga akan meningkat. Dengan kata
+lain, profitabilitas akan mempengaruhi harga saham. Pertanyaan
+selanjutnya, faktor-faktor apa saja yang mempengaruhi kemampuan
+perusahaan menghasilkan laba? Jawabannya tentu saja banyak faktor,
+namun secara garis besar dapat dibagi menjadi 2 faktor, yakni faktor
+yang dapat dikendalikan oleh perusahaan, seperti pemilihan jenis
+mesin, jenis teknologi, pemilihan karyawan dan sebagainya. Faktor
+berikutnya adalah faktor yang tidak dapat dikendalikan perusahaan,
+seperti suku bunga, pertumbuhan suku bunga, pertumbuhan ekonomi, harga
+minyak, dan sebagainya.
+
+Karena faktor-faktor yang mempengaruhi harga saham sangatlah banyak,
+maka untuk melakukan analisis fundamental diperlukan beberapa tahapan
+analisis. Tahapan yang dilakukan diawali dengan analisis dari:
+1. Analisis kondisi makro ekonomi atau kondisi pasar
+2. Analisis industri 
+3. Analisis kondisi spesifik perusahaan.
+
+Dalam melakukan analisis fundamental, penilaian terhadap kondisi dan
+keadaan berbagai variabel utama seperti laba yang diperoleh
+perusahaan-perusahaan dan tingkat bunga mutlak diperlukan. Variabel
+tersebut sangat mempengaruhi keputusan investasi yang akan diambil
+oleh para pemodal. Apabila resesi diperkirakan akan terjadi, atau
+perekonomian sedang menuju ke situasi resesi, harga saham akan
+terpengaruh. Contoh yang paling dekat adalah terjadinya gejolak
+moneter pada semester II tahun 1997.
+
+Indeks pasar yang diwakili oleh indeks LQ45 menurun dari 142,050 pada
+akhir Juli 1997, menjadi 106,194 pada akhir Oktober 1997, atau turun
+sebesar 25,24% dan pada periode yang sama, suku bungan meningkat dari
+15% menjadi 30% per tahun. Hal tersebut menunjukkan bahwa secara
+keseluruhan terjadi penurunan harga saham pada waktu terjadi peningkatan
+suku bungan dan kekhawatiran terjadi resesi. Keadaan ekonomi sebaliknya
+akan terjadi apabila diharapkan kondisi ekonomi membaik. Karena itulah
+para investor harus melakukan penilaian terhadap kondisi ekonomi dan 
+implikasi terhadap pasar modal.
+
+Untuk mengetahui kondisi pasar, digunakan indeks pasar sebagai
+indikator, dalam hal ini kondisi pasar Indonesia diwakili oleh IHSG
+(Indeks Harga Saham Gabungan) atau Indeks LQ45. 
+
+Selain terhadap tingkat keuntungan yang akan diperoleh investor,
+kondisi ekonomi juga mempengaruhi kemampuan perusahaan dalam
+menghasilkan laba.  Selain berpengaruh terhadap kondisi perusahaan,
+situasi ekonomi juga berpengaruh terhadap kondisi industri. Sebagai
+contoh, dari akhir Juli sampai dengan akhir Oktober 1997, industri
+perbankan dan properti terkena dampak yang lebih besar, dengan
+mengalami penurunan indeks lebih dari 50%, sementara indeks secara
+umum, cuma turun 25%.
+
+Para pemodal yang percaya bahwa kondisi ekonomi dan pasar cukup baik
+untuk melakukan investasi, selanjutnya perlu menganalisis industri apa
+saja yang diharapkan dapat memberikan hasil yang paling optimal.
+Industri dianalisis melalui penelaahan berbagai data yang menyangkut
+penjualan, laba, dividen, struktur modal, jenis produk yang
+dihasilkan, regulasi, inovasi dan berbagai faktor lain. 
+
+Untuk melakukan analisis industri, langkah pertama yang dapat
+dilakukan adalah dengan mengidentifikasi tahap kehidupan
+produknya. Tahap ini bermaksud untuk mengenali apakah industri yang
+masih akan berkembang cepat, sudah stabil ataukah sudah
+menurun. Langkah berikutnya adalah menganalisis industri dalam
+kaitannya dengan kondisi ekonomi. Dan langkah ketiga adalah analisis
+kualitatif terhadap industri tersebut, yang dimaksudkan untuk membantu
+pemodal menilai prospek industri di masa yang akan datang.
+
+Analisis perusahaan memerlukan pemahaman terhadap variabel-variabel
+yang mempengaruhi nilai intrinsik saham. Untuk menaksir nilai
+intrinsik saham, dua metode yang dapat digunakan, antara lain,
+menggunakan /dividend discount model/ dan /multiplier/ laba. Apabila
+harga di bursa lebih rendah dari nilai intrinsik, maka saham tersebut
+dapat dikatakan layak beli, begitu pula sebaliknya.
+
+Berbagai metode analisis perusahaan:
+1. ROA
+2. ROE
+3. PER
+4. dst
+
+*** Analisis Teknikal
+Mengingat analisis ini akan digunakan dalam penelitian, maka bagian 
+ini akan dibahas dalam subbab tersendiri.
+
+** Analisis Teknikal
+Harianto dan Sudomo (1998)[fn:41] menggambarkan analisis teknikal
+sebagai sebuah proses memperkirakan harga saham dengan mengamati
+perubahan harganya di waktu yang lalu. Alwiyah dan Liyanto
+(2012)[fn:42] mendefinisikan analisis teknikal sebagai sebuah teknik
+analisis grafik harga di masa lalu dengan indikator-indikator tertentu
+dengan tujuan untuk meramalkan pergerakan harga di masa yang akan
+datang. Sedangkan Tandelilin (2001)[fn:47] mendefinisikan analisis
+teknikal sebagai teknik untuk memprediksi arah pergerakan harga saham
+dan indikator pasar saham lainnya berdasarkan pada data pasar historis
+seperti informasi harga dan volume. Sedangkan menurut Jones (2001)[fn:48],
+analisis teknikal adalah penggunaan data pasar yang spesifik untuk
+tujuan analisis, baik itu harga saham secara keseluruhan (dengan
+menggunakan data indeks pasar atau indeks industri), maupun harga
+saham masing-masing (individual).
+
+Berlainan dengan pendekatan fundamental, analisis teknikal
+menghiraukan faktor fundamental seperti yang sudah dijelaskan secara
+di bagian sebelumnya. Asumsi yang dipakai dalam pendekatan ini adalah
+bahwa:
+1. Harga saham mencerminkan informasi yang relevan (/Market price
+   discounts everything/).
+2. Informasi tersebut ditunjukkan oleh kecenderungan (tren) perubahan
+   harga di waktu yang lalu (/Price moves in trend/).
+3. Sehingga harga saham akan mengikuti pola tertentu yang sifatnya
+   berulang (/History repeats itself/).
+
+Analisis teknikal dalam praktiknya sering disebut juga dengan analisis
+pasar atau analisis internal, hal ini disebabkan penggunaan data pasar
+untuk mengukur permintaan, penawaran sejumlah saham atau secara
+keseluruhan. Penganut analisis teknikal menggunakan data pasar sebagai
+sumber daya valid, terbaik dan terpercaya, seperti dalam ungkapan
+berikut: ``biarkan pasar mengulas ceritanya sendiri''. Teori utama
+yang mendasari analisis teknikal adalah bahwa pergerakan harga
+sekuritas sudah mencerminkan semua informasi terkait dengan saham yang
+diamati.
+
+Ahli ekonomi mengatakan bahwa harga diturunkan dari interaksi antara
+permintaan dengan penawaran. /Chartist/ (praktisi analisis teknikal)
+bukannya tidak menyetujui, melainkan beralasan bahwa sangat sulit
+untuk mengukur semua faktor yang mempengaruhi permintaan dan
+penawaran. Analisis teknikal didasarkan pada data pasar, berlawanan
+dengan analisis fundamental yang menggunakan data seperti /earnings,
+sales, growth rates, corporate actions/ dan mungkin juga regulasi
+pemerintah yang dapat berdampak pada kinerja emiten saham. Di sisi
+lain, data pasar yang digunakan dalam analisis teknikal meliputi harga
+saham, indeks pasar, volume perdagangan dan sejumlah indikator
+teknikal lain.
+
+Jika dibandingkan dengan analisis fundamental, seperti misalnya
+/Dividend Discount Model/ dan /Model Multiplier/ yang menghasilkan
+prediksi tentang nilai intrinsik suatu saham, yang kemudian
+dibandingkan dengan harga pasar. Praktisi analisis fundamental percaya
+bahwa data yang mereka pakai sudah tervaluasi dan mengindikasikan
+nilai intrinsik dari suatu saham. Di sisi lain, praktisi analisis
+teknikal percaya bahwa sangat sulit melakukan perkiraan nilai
+intrinsik dan hampir mustahil mendapatkan dan melakukan analisis
+terhadap semua informasi secara konsisten dan berkelanjutan.
+
+Berikut ini ilustrasi tentang proses analisis teknikal dalam memilih
+saham menurut Jones (2001)[fn:43]:
+
+#+CAPTION: Ilustrasi Proses Analisis Teknikal
+#+ATTR_LaTeX: placement=[H]
+[[./images/analisis_teknikal.png]]
+
+Seperti yang disebutkan di atas, analisis teknikal dapat diterapkan
+baik itu untuk harga saham secara agregat (keseluruhan) maupun secara
+individu. Harga dan volume merupakan bahan utama bagi analisis
+teknikal murni dan grafik merupakan mekanisme untuk menampilkan dua
+hal tersebut. Analis teknikal percaya bahwa kekuatan permintaan dan
+penawaran membentuk pola tertentu dalam bentuk grafik, yang kemudian
+membentuk tren atau arah pergerakan harga saham tersebut. Grafik tren
+atau kecenderungan ini nantinya menghasilkan indikasi (sinyal) untuk
+melakukan keputusan jual atau beli sebuah saham.
+
+Data volume juga dapat digunakan untuk melihat keadaan pasar secara
+umum dan membantu mengukur tren. Berdasarkan data yang lalu, analis
+teknikal mengetahui kenaikan atau penurunan harga saham biasanya
+diikuti dengan kenaikan atau penurunan volume transaksi. Jika harga
+saham naik, sementara volume tetap tidak bergerak, analis menjadi ragu
+akan keakuratan tren tersebut.
+
+Secara umum, analisis teknikal dapat digolongkan menjadi dua, yakni
+analisis teknikal klasik dan analisis teknikal modern.[fn:49]
+*** Analisis Teknikal Klasik
+Pengguna analisis ini biasa disebut sebagai /chartist/, karena memang
+dalam analisisnya menitikberatkan pada ``pembacaan`` grafik. Pengguna
+analisis ini percaya bahwa tren dan sinyal aksi pasar suatu saham 
+dapat diperoleh berdasarkan bentuk dan pola tertentu dari grafik harga
+saham. Analis biasanya menggambar garis atau menandai pola-pola tertentu
+pada grafik saham yang sedang dianalisis, untuk itu keputusan investasi
+biasanya juga ditentukan oleh /judgement/ dan interpretasi penggunannya
+terhadap suatu grafik. Mengingat sifatnya yang sangat subyektif, maka
+analisis ini lebih banyak mengandung seni dari pada unsur ilmiahnya.
+*** Analisis Teknikal Modern
+Pengguna analisis ini biasa juga disebut dengan
+/technician/. Penggunanya percaya bahwa tren dan sinyal aksi pasar saham
+dapat diperoleh berdasarkan pola grafik yang ditentukan atau diindikasikan
+dari perhitungan kuantitatif, bukan interpretasi subyektif terhadap suatu
+grafik. Mengingat sifatnya yang kuantitatif, maka metode ini secara ilmiah
+bisa diuji kemampuan dan kinerjanya dalam menghasilkan keuntungan bagi
+investor. Kelebihan dari analisis teknikal modern adalah indikatornya
+dapat diprogram secara otomatis melalui komputer.
+*** Asumsi Dasar Analisis Teknikal
+
+Keputusan investasi dalam analisis teknikal mendasarkan diri pada
+data-data pasar di masa lalu, seperti data harga saham dan volume
+penjualan saham, sebagai dasar untuk melakukan peramalan harga saham
+di masa yang akan datang. Dengan kata lain, analisis teknikal tidak
+perlu lagi melakukan analisis tehadap variabel ekonomi dan variabel
+perusahaan untuk mengestimasi nilai saham karena informasi harga saham
+di masa lalu sudah bisa dipakai untuk melakukan perkiraan tren harga
+saham di masa yang akan datang.
+
+Asumsi dalam pendekatan teknikal digambarkan oleh Harianto dan Sudomo
+(1998)[fn:45] sebagai berikut :
+
+#+BEGIN_LATEX
+  
+  \begin{enumerate}
+  \item Harga saham mencerminkan informasi yang relevan (\emph{Market
+    price discounts everything}).
+  \item Informasi tersebut ditunjukkan oleh kecenderungan (tren)
+    perubahan harga di waktu yang lalu (\emph{Price moves in trend}).
+  \item Sehingga harga saham akan mengikuti pola tertentu yang sifatnya
+    berulang (\emph{History repeats itself}).
+  \end{enumerate}
+  
+#+END_LATEX
+
+Levy (1966)[fn:44] juga mengemukakan beberapa asumsi yang digunakan dalam
+analisis teknikal:
+
+\begin{enumerate}
+\item Nilai pasar barang dan jasa ditentukan oleh interaksi antara
+  permintaan dan penawaran dari barang dan jasa bersangkutan.
+\item Interaksi permintaan dan penawaran ditentukan berbagai faktor
+  rasional dan faktor irrasional. Diantara faktor-faktor tersebut
+  antara lain, berbagai variabel ekonomi dan fundamental, faktor opini
+  yang beredar di pasar, \emph{mood} investor, dan ramalan-ramalan
+  yang dikemukakan oleh investor (analis) lain.
+\item Harga-harga sekuritas secara invidual dan secara keseluruhan
+  bergerak mengikuti tren selama jangka waktu yang relatif panjang.
+\item Tren perubahan harga dan nilai pasar dapat berubah mengikuti
+  perubahan besaran permintaan dan penawaran. Hubungan tersebut dapat
+  diketahui dengan melihat reaksi yang terjadi di pasar.
+\end{enumerate}
+
+Dari keempat asumsi yang dikemukakan oleh Levy tersebut, asumsi yang
+paling bisa diterima baik oleh analis teknikal maupun analis
+fundamental adalah asumsi pertama dan kedua. Hampir semua pihak dapat
+menerima asumsi bahwa nilai (harga) produk ditentukan oleh kekuatan
+tarik-menarik antara permintaan dan penawaran yang terjadi di pasar. 
+
+Asumsi ketiga berkaitan dengan kecepatan penyesuaian harga saham
+(\emph{speed of adjustment}) dari harga keseimbangan yang lalu menuju
+harga keseimbangan yang baru. Para analis teknikal beranggapan bahwa
+proses penyesuaian tersebut membutuhkan waktu yang cukup panjang
+karena informasi yang menjadi sebab perubahan harga memerlukan
+beberapa waktu sebelum informasi tersebut diserap secara penuh oleh
+pasar.
+
+Pola penyerapan informasi seperti ini disebabkan karena adanya
+informasi yang tidak simetris, di mana awalnya hanya beberapa investor
+saja yang memiliki akses informasi yang kemudian melakukan tindakan
+menjual atau membeli saham, yang pada akhirnya diikuti oleh investor
+lain sehingga harga bergerak menuju pada keseimbangan harga yang baru.
+
+Proses pergerakan harga menuju pada keseimbangan baru membutuhkan
+waktu yang kemudian disebut sebagai tren perubahan harga. Ketika tren
+sudah terbentuk, analis kemudian memanfaatkan tren tersebut untuk
+mengeruk keuntungan.
+
+*** /Trading Rules/
+Salah satu teori tentang analisis teknikal yang tertua dan paling
+terkenal adalah /The Dow Theory/[fn:46], pertama kali dikembangkan oleh
+seorang penyunting media cetak The Wall Street Journal, Charles
+H. Dow, pada akhir tahun 1800-an, yang kemudian dikenal sebagai bapak
+penemu analisis teknikal. Meskipun Dow meletakkan pondasi untuk
+menjelaskan pergerakan harga di masa lalu, William Hamilton lah orang
+yang pertama menggunakan teori tersebut untuk memprediksi pergerakan
+harga di pasar. Teori ini populer di tahun 1920-an dan 1930-an, dan
+artikel pendukung tentang itu masih sering bermunculan dalam
+literatur. Beberapa perusahaan investasi masih menggunakan teori
+tersebut sampai sekarang.
+
+#+CAPTION: Teori Dow
+#+ATTR_LaTeX: placement=[H]
+[[./images/dow.png]]
+
+Teori ini didasarkan pada 3 jenis pergerakan harga:
+
+#+BEGIN_LATEX
+\begin{enumerate}
+\item Pergerakan primer, pergerakan pasar dalam rentang waktu yang
+  panjang (beberapa tahun terakhir).
+\item Pergerakan sekunder (\emph{intermediate}), terjadi di antara
+  pergerakan primer, yang mencerminkan pergerakan harga dalam kurun
+  waktu beberapa minggu atau bulan.
+\item Pergerakan hari-ke-hari, terjadi secara acak di sekitar
+  pergerakan primer dan sekunder.
+\end{enumerate}
+#+END_LATEX
+
+Teori ini memunculkan dua istilah, yakni /bullish/ dan
+/bearish/. Pasar dalam keadaan /bullish/ jika tren harga saham
+meningkat (naik), dan sebaliknya pasar disebut sedang /bearish/ ketika
+tren harga saham menurun.
+
+Pergerakan sekunder (/intermediate/) disebut juga dengan korelasi
+teknikal. Koreksi ini terjadi sebagai akibat dari pergerakan utama
+(primer) yang terjadi. Pergerakan ini penting ketika membicarakan
+teori Dow karena pada kenyataannya, analis teknikal cenderung
+mempertimbangkan pergerakan primer ini dibanding pergerakan harian.
+
+Hendarto (2005)[fn:50] mendefinisikan indikator sebagai nilai tunggal
+estimator atas sekumpulan data (/time series/) data suatu sekuritas
+yang dihasilkan dari penggunaan sebuah formula terhadap data harga
+sekuritas tersebut. Indikator biasanya akan memberikan sinyal kepada
+penggunannya terkait dengan keputusan jual atau beli saham.
+
+Menurut Hendarto (2005)[fn:51], secara umum, indikator dapat
+digolongkan menjadi dua kelompok, yakni indikator trend (/lagging/)
+dan indikator momentum (/leading/). Indikator tren memberikan
+informasi harga sekarang, atau harga di masa lalu, sehingga indikator
+ini sangat berguna ketika harga bergerak dan menunjukkan tren atau
+bergerak dalam tren. Contoh dari indikator ini adalah /Moving
+Average/. Di sisi lain, indikator momentum didesain untuk
+mengantisipasi pergerakan harga di masa yang akan datang. Contoh dari
+indikator momentum adalah RSI (/Relative Strength Index/).
+
+Indikator berfungsi sebagai sebuah /alarm/ atas pergerakan harga
+sehingga investor dapat mengambil langkah-langkah dini untuk menyikapi
+perubahan yang terjadi. Misalnya, jika pergerakan harga melemah dan
+mulai mendekati titik terbawah dari harga terendah dalam periode
+tertentu maka bisa dikatakan sebagai peringatan terhadap tren harga
+yang bergerak turun dan atau sebaliknya. Indikator juga dapat
+berfungsi sebagai konfirmasi atas analisis teknikal yang
+dilakukan. Misalnya, pergerakan harga yang drastis hingga memotong
+/bar/ dalam /chart/, baik itu ke atas maupun ke bawah, bisa diartikan
+sebagai suatu konfirmasi untuk segera melakukan tindakan koreksi atas
+tren harga. Fungsi lain dari indikator adalah sebagai alat prediksi
+dari pergerakan harga yang akan terjadi di masa yang akan datang.
+     
+Analisis teknikal dinilai sebagai salah satu alat yang penting dalam
+kaitannya dengan analisis investasi, dan sudah menjadi bagian dari
+praktik keuangan semenjak tahun 1800-an. Beberapa penelitian
+sebelumnya seperti Chopra, Lakonishok, dan Ritter (1992)[fn:52], dan
+Fama dan French (1986)[fn:53] mendapatkan korelasi negatif dari return,
+sementara penelitian yang lain mendapatkan korelasi negatif pada first
+lag dan korelasi yang negatif pada lags yang lebih panjang seperti
+Jegadeesh (1990)[fn:54].
+
+Sejauh mana tingkat return saham dapat diprediksi, dalam bentuk
+berbagai macam anomali pasar (seperti size effect, the
+turn-of-the-year effect, theweek end effect, earning/price (E/P)
+effect, dan momentum effect), oleh berbagai literatur pada awalnya
+dilihat sebagai inefisiensi pasar modal. Sekarang, konsep inefisiensi
+pasar masih terus disempurnakan, dengan penjelasan-penjelasan yang
+baru (seperti, time varying equilibrium returns, non linear generating
+process) (lihat Neftci (1991)[fn:55], Hsieh (1991)[fn:57], dan Hsieh
+(1995)[fn:56].
+
+Bagaimana pun juga beberapa penelitian menunjukkan bahwa analisis
+teknikal dapat digunakan untuk memprediksi pergerakan harga saham di
+masa depan terbukti dengan dihasilkannya return yang lebih besar
+dibanding jika menggunakan strategi /buy and hold/.
+
+Sweeney (1988)[fn:58], menggunakan sampel yang sama dengan penelitian
+yang dilakukan Fama dan Blume (1966)[fn:59] tetapi periode penelitian
+yang diambil lebih baru, menemukan bahwa pendekatan teknikal mampu
+menghasilkan keuntungan yang signifikan. Penelitian sekarang
+menyimpulkan bahwa analisis teknikal dapat digunakan sebagai salah
+satu alat yang efektif untuk memprediksi pergerakan pasar, sebagai
+contoh Neftci (1991)[fn:60], Brock Lakonishok dan LeBaron
+(1992)[fn:61], Neely, Weller, dan Dittmar (1997)[fn:62], Neely dan
+Weller (1999)[fn:63], dan Osler dan Chang (1995)[fn:64].
+
+Ratner dan Leal (1999)[fn:65] meneliti keuntungan potensial dari analisis
+teknikal pada 10 pasar modal yang sedang berkembang di Amerika Latin
+dan Asia, hasilnya pendekatan teknikal terbukti dapat memberikan
+keuntungan pada sebagian pasar modal, sebagian lain tidak
+menguntungkan. 
+
+Dari kajian di atas, dapat disusun hipotesis sebagai berikut:
+
+#+BEGIN_LATEX    
+  \begin{table}[H]
+  \centering
+  \footnotesize
+  \begin{tabular}{c|l}
+   H0  &  Korelasi antar return harga saham tinggi sehingga harga       \\
+       &  saham yang akan datang dapat atau tidak dapat diramalkan \\
+       &  dengan menggunakan return harga di masa lalu                          \\
+  \end{tabular}
+  \end{table}
+#+END_LATEX
+
+* Metodologi Penelitian
+** Pendahuluan
+Penelitian ini merupakan penelitian kuantitatif yang secara deskriptif
+menganalisis tingkat kebergantungan (korelasi) antara harga saat ini
+dengan harga di masa lalu dari saham yang terdaftar dalam /Jakarta
+Islamic Index (JII)/. Hal ini penting untuk menguji apakah analisis
+teknikal secara rasional dapat dipertanggungjawabkan atau hanya
+sekedar permainan tebak-tebakan yang cenderung mengarah ke perjudian.
+
+Metode yang digunakan dalam penelitian ini adalah menghitung nilai
+korelasi saham dengan metode pengujian koefisien korelasi perubahan
+harga di antara /time lag/. Penelitian lain yang sejenis di antaranya
+dibuat oleh Ayub Laksono (2006), di mana /time lag/ yang digunakan
+adalah 1 hari, 2 hari, 3 hari, 4 hari, 7 hari, 15 hari dan 30
+hari. Untuk itu, penelitian juga akan mengadopsi /time lag/ yang sama.
+
+** Data Penelitian
+Penulis menggunakan data sekunder berupa data harian saham dari
+Januari 2004 hingga Desember 2013 yang bisa diunduh dari web /Yahoo
+Finance/ [fn:19], dengan kriteria sebagai berikut:
+1. Emiten secara konsisten terdaftar dalam JII selama periode pengamatan.
+2. Emiten memiliki data selama periode penelitian.
+
+** Analisis Data
+*** Uji Korelasi
+Korelasi merupakan teknik analisis yang termasuk dalam salah satu
+teknik pengukuran asosiasi / hubungan (/measures of
+association/)[fn:22]. Pengukuran asosiasi merupakan istilah umum yang
+mengacu pada sekelompok teknik dalam statistik bivariat yang digunakan
+untuk mengukur kekuatan hubungan antara dua variabel.
+
+Diantara sekian banyak teknik pengukuran asosiasi, terdapat dua teknik
+korelasi yang populer, yakni Korelasi Pearson Product Moment dan
+Korelasi Rank Spearman. Pengukuran asosiasi mengenakan nilai numerik
+untuk mengetahui tingkatan asosiasi atau kekuatan hubungan antara
+variabel.  Dua variabel dikatakan berasosiasi jika perilaku variabel
+yang saru mempengaruhi variabel yang lain. Jika tidak terjadi
+pengaruh, maka kedua variabel tersebut dikatakan independen.
+
+Korelasi bermanfaat untuk mengukur kekuatan hubungan antara dua atau
+lebih variabel dengan skala-skala tertentu, misalnya /Pearson/ data
+harus berskala interval atau rasio; /Spearman/ dan /Kendall/
+menggunakan skala ordinal. Kuat atau lemah hubungan diukur menggunakan
+jarak (/range/) antara =0= sampai dengan =1=. Korelasi mempunyai 
+kemungkinan pengujian hipotesis dua arah (/two tailed/). Korelasi searah
+jika nilai koefisien korelasi yang didapat positif, dan sebaliknya jika
+nilai koefisien korelasi negatif, korelasi dikatakan tidak searah.
+
+Yang dimaksud dengan koefisien korelasi adalah suati pengukuran
+statistik kovariasi atau asosiasi antara dua variabel. Jika koefisien
+korelasi tidak sama dengan =0=, maka terdapat hubungan antara dua
+variabel tersebut.  Jika koefisien korelasi =+1=, maka hubungan
+tersebut dinamakan korelasi sempurna atau hubungan linear sempurna
+dengan kemiringan (/slope/) positif. Sebaliknya jika koefisien
+korelasi bernilai =-1=, maka hubungan tersebut dinamakan sebagai
+korelasi sempurna atau hubungan linear sempurna dengan kemiringan
+(/slope/) negatif. Dalam korelasi sempurna tidak diperlukan lagi
+pengujian hipotesis mengenai signifikansi antar variabel yang
+dikorelasikan, karena kedua variabel mempunyai hubungan linear yang
+sempurna. Artinya variabel =X= mempunyai hubungan yang sangat kuat
+dengan variabel =Y=. Jika korelasi sama dengan =0=, maka dapat
+dikatakan tidak terdapat hubungan antara kedua variabel tersebut.
+
+Pengukuran asosiasi berguna untuk mengukur kekuatan (strength) dan
+arah hubungan hubungan antar dua variabel atau lebih, contohnya
+seseorang ingin mengukur hubungan antara variabel-variabel berikut: 
+1) Motivasi kerja dengan produktivitas 
+2) Kualitas layanan dengan kepuasan pelanggan
+3) Tingkat inflasi dengan IHSG
+
+Pengukuran ini hubungan antara dua variabel untuk masing-masing kasus
+akan menghasilkan keputusan, diantaranya: 
+1) Hubungan kedua variabel tidak ada 
+2) Hubungan kedua variabel lemah 
+3) Hubungan kedua variabel cukup kuat 
+4) Hubungan kedua variabel kuat 
+5) Hubungan kedua variabel sangat kuat.
+
+Penentuan tersebut didasarkan pada kriteria yang menyebutkan jika
+hubungan mendekati =1=, maka hubungan semakin kuat; sebaliknya jika
+hubungan mendekati =0=, maka hubungan semakin lemah
+
+Asumsi--asumsi dasar korelasi diantaranya ialah: Kedua variabel
+bersifat independen satu dengan lainnya, artinya masing-masing
+variabel berdiri sendiri dan tidak tergantung satu dengan
+lainnya. Tidak ada istilah variabel bebas dan variabel
+tergantung. Data untuk kedua variabel berdistribusi normal. Data yang
+mempunyai distribusi normal artinya data yang distribusinya simetris
+sempurna. Jika digunakan bahasa umum disebut berbentuk kurva bel.
+
+Koefesien korelasi ialah pengukuran statistik kovarian atau asosiasi
+antara dua variabel. Besarnya koefesien korelasi berkisar antara +1
+s/d -1. Koefesien korelasi menunjukkan kekuatan (strength) hubungan
+linear dan arah hubungan dua variabel acak. Jika koefesien korelasi
+positif, maka kedua variabel mempunyai hubungan searah. Artinya jika
+nilai variabel X tinggi, maka nilai variabel Y akan tinggi
+pula. Sebaliknya, jika koefesien korelasi negatif, maka kedua variabel
+mempunyai hubungan terbalik. Artinya jika nilai variabel X tinggi,
+maka nilai variabel Y akan menjadi rendah dan berlaku
+sebaliknya. Untuk memudahkan melakukan interpretasi mengenai kekuatan
+hubungan antara dua variabel penulis memberikan kriteria sebagai
+berikut[fn:66]:
+
+#+BEGIN_LATEX
+  
+  \begin{table}[H]
+  \centering
+  \footnotesize
+  \begin{tabular}{|r|l|}
+  \hline
+  0 & Tidak ada korelasi antara dua variabel \\
+  \hline
+  0-0,25 & Korelasi sangat lemah \\
+  \hline
+  0,25-0,5 & Korelasi sedang \\
+  \hline
+  0,5-0,75 & Korelasi kuat \\
+  \hline
+  0,75-0,99 & Korelasi sangat kuat \\
+  \hline
+  1 & Korelasi sempurna \\
+  \hline
+  \end{tabular}
+  \caption{Interpretasi Koefisien Korelasi}
+  \label{tab:koefkor}
+  \end{table}
+  
+#+END_LATEX
+
+Apa sebenarnya signifikansi itu? Dalam bahasa Inggris umum, kata,
+"significant" mempunyai makna ``penting``; sedang dalam pengertian
+statistik kata tersebut mempunyai makna ``benar`` tidak didasarkan
+secara kebetulan. Hasil riset dapat benar tapi tidak
+penting. Signifikansi /probabilitas/ ~alpha~ memberikan gambaran
+mengenai bagaimana hasil riset itu mempunyai kesempatan untuk
+benar. Jika kita memilih signifikansi sebesar =0,01=, maka artinya
+kita menentukan hasil riset nanti mempunyai kesempatan untuk benar
+sebesar =99%= dan untuk salah sebesar =1%=. =99%= itu disebut tingkat
+kepentingan (/confidence interval/), sedang =1%= disebut toleransi
+kesalahan.
+
+Secara umum kita menggunakan angka signifikansi sebesar =0,01=; =0,05=
+dan =0,1=. Pertimbangan penggunaan angka tersebut didasarkan pada
+tingkat kepercayaan (/confidence interval/) yang diinginkan oleh
+peneliti. Angka signifikansi sebesar =0,01= mempunyai pengertian bahwa
+tingkat kepercayaan atau bahasa umumnya keinginan kita untuk
+memperoleh kebenaran dalam riset kita adalah sebesar =99%=. Jika angka
+signifikansi sebesar =0,05=, maka tingkat kepercayaan adalah sebesar
+=95%=. Jika angka signifikansi sebesar =0,1=, maka tingkat kepercayaan
+adalah sebesar =90%=.
+
+Pertimbangan lain ialah menyangkut jumlah data (/sample/) yang akan
+digunakan dalam riset. Semakin kecil angka signifikansi, maka ukuran
+sample akan semakin besar. Sebaliknya semakin besar angka
+signifikansi, maka ukuran sample akan semakin kecil. Unutuk memperoleh
+angka signifikansi yang baik, biasanya diperlukan ukuran sample yang
+besar. Untuk pengujian digunakan kriteria sebagai berikut:
+
+Jika angka signifikansi hasil riset =< 0,05=, maka hubungan kedua
+variabel signifikan. Dan jika angka signifikansi hasil riset => 0,05=,
+maka hubungan kedua variabel tidak signifikan.
+
+Ada tiga penafsiran hasil analisis korelasi, meliputi: pertama,
+melihat kekuatan hubungan dua variabel; kedua, melihat signifikansi
+hubungan; dan ketiga, melihat arah hubungan.
+
+Untuk melakukan interpretasi kekuatan hubungan antara dua variabel
+dilakukan dengan melihat angka koefesien korelasi hasil perhitungan
+dengan menggunakan kriteria sebagai berikut: 
+1) Jika angka koefesien korelasi menunjukkan =0=, maka kedua variabel
+   tidak mempunyai hubungan.
+2) Jika angka koefesien korelasi mendekati =1=, maka kedua variabel
+   mempunyai hubungan semakin kuat.
+3) Jika angka koefesien korelasi mendekati =0=, maka kedua variabel
+   mempunyai hubungan semakin lemah.
+4) Jika angka koefesien korelasi sama dengan =1=, maka kedua variabel
+   mempunyai hubungan linier sempurna positif.
+5) Jika angka koefesien korelasi sama dengan =-1=, maka kedua variabel
+   mempunyai hubungan linier sempurna negatif.
+
+Interpretasi berikutnya melihat signifikansi hubungan dua variabel
+dengan didasarkan pada angka signifikansi yang dihasilkan dari
+penghitungan dengan ketentuan sebagaimana sudah dibahas di
+atas. Interpretasi ini akan membuktikan apakah hubungan kedua variabel
+tersebut signifikan atau tidak.
+
+Interpretasi ketiga melihat arah korelasi. Dalam korelasi ada dua arah
+korelasi, yaitu searah dan tidak searah. Arah korelasi dilihat dari angka
+koefesien korelasi. Jika koefesien korelasi positif, maka hubungan
+kedua variabel searah. Searah artinya jika variabel =X= nilainya tinggi,
+maka variabel =Y= juga tinggi. Jika koefesien korelasi negatif, maka
+hubungan kedua variabel tidak searah. Tidak searah artinya jika
+variabel =X= nilainya tinggi, maka variabel =Y= akan rendah.
+
+Dalam kasus, misalnya hubungan antara kepuasan pelanggan dan loyalitas
+sebesar =0,86= dengan angka signifikansi sebesar =0= akan mempunyai makna
+bahwa hubungan antara variabel kepuasan pelanggan dan loyalitas sangat
+kuat, signifikan dan searah. Sebaliknya dalam kasus hubungan antara
+variabel harga dengan minat beli sebesar =-0,86=, dengan angka
+signifikansi sebesar =0=; maka hubungan kedua variabel sangat kuat,
+signifikan dan tidak searah.
+
+** Alat Bantu
+Penelitian ini menggunakan dua alat utama, yakni =Python= sebagai
+bahasa pemrograman, dan =Pandas= sebagai pustaka untuk manipulasi data
+untuk =python=.
+*** Python
+=Python= merupakan salah satu dari sekian banyak bahasa pemrograman
+komputer, bahasa ini dibuat oleh /Guido van Rossum/ (seorang
+/programmer/ sekaligus ilmuwan berkewarganegaraan Belanda) pada akhir
+dekade 1980-an. =Python= dipilih karena memiliki beberapa kelebihan
+dibanding bahasa pemrograman komputer lain, diantara kelebihan
+tersebut:[fn:5]
+
+#+BEGIN_LATEX
+  \begin{enumerate}
+  \item Relatif mudah dipelajari karena /syntax/ yang sederhana.
+  \item Mudah dibaca, sehingga memudahkan ketika bekerja dalam /team work/.
+  \item Efisien, karena kode yang dihasilkan tidak terlalu panjang.
+  \item Filosofi /``batteries included``/, artinya banyak sekali
+    dukungan pustaka yang tersedia di Python.
+  \item Cocok digunakan untuk dunia akademisi, hal ini karena di
+    negara-negara maju, para akademisi cenderung menggunakan Python
+    sebagai alat bantu mereka dalam analisis komputasional. Selain itu,
+    banyak pustaka di Python yang lahir dari akademisi barat, sebut saja
+    pustaka =pandas= untuk analisis data numerik (yang akan penulis
+    gunakan), pustaka =matplotlib= untuk membuat visualisasi grafis,
+    =numpy= untuk analisis data numerik tingkat lanjut, dan masih banyak
+    lagi.[fn:7]
+  \item Python bersifat /open source/, artinya siapa saja bebas untuk
+    menggunakan sekaligus mengembangkan bahasa ini untuk tujuan apa
+    pun. Tidak perlu lagi membajak /software/.
+  \end{enumerate}
+#+END_LATEX
+
+*** Pandas
+Seperti disebutkan di atas, =pandas= adalah salah satu pustaka hebat yang
+dimiliki oleh Python. Dengan menggunakan =pandas= pekerjaan analisis data
+menjadi lebih mudah dan cepat. Beberapa fitur pustaka =pandas=:
+
+#+BEGIN_LATEX
+  \begin{enumerate}
+  \item Obyek =DataFrame= yang cepat dan efisien untuk kebutuhan
+    manipulasi data dengan dukungan /indexing/ yang terintegrasi.
+  \item Memiliki alat untuk membaca dan menulis data dalam berbagai
+    format, seperti =CSV=, berkas teks, =Microsoft Excel=, basisdata
+    =SQL= dan juga dukungan terhadap format =HDF5=.
+  \item Manajemen /missing data/ yang bagus dan terintegrasi, sangat
+    memudahkan dalam mengolah data yang tidak rapi (/messy/).
+  \item Kinerja tinggi untuk /merging/ dan /joining/ data.
+  \item Mudah dalam bekerja dengan data /time-series/, karena memiliki
+    dukungan terhadap pembuatan kisaran data /date range generation/,
+  \item Optimasi untuk pengolahan data dalam jumlah besar, karena
+    sebagian fungsi ditulis menggunakan =Cython= atau =C=.
+  \item =Python= dan =pandas= banyak digunakan untuk kebutuhan akademik
+    dan juga komersial dalam berbagai bidang, meliputi keuangan,
+    /neuroscience/, ekonomi, statistic dan masih banyak lagi.
+  \end{enumerate}
+#+END_LATEX
+
+Terkait dengan kebutuhan data, =Python= dan =pandas= memiliki kelebihan
+dalam mendapatkan data dari /Yahoo Finance/ secara mudah, berikut contoh
+kode yang penulis gunakan:
+
+#+BEGIN_SRC python
+  # memanggil pustaka yang dibutuhkan
+  import pandas as pd
+  import pandas.io.data as web
+  import datetime
+  
+  # menetapkan periode data yang ingin diambil
+  start = datetime.datetime(2008, 1, 1)
+  end = datetime.datetime(2012, 12, 31)
+  
+  # mengunduh data telkom (TLKM) dari Yahoo
+  tlkm_data = web.DataReader("TLKM.JK", "yahoo", start, end)
+  
+  # tampilkan 10 data terakhir
+  tlkm_data.tail()
+#+END_SRC
+
+Hasil keluaran dari kode di atas:
+#+BEGIN_SRC text
+  
+              Open  High   Low  Close     Volume  Adj Close
+  Date                                                     
+  2012-12-25  1830  1830  1830   1830          0     301.92
+  2012-12-26  1820  1820  1810   1820   28355000     300.27
+  2012-12-27  1790  1810  1770   1790   67850000     295.32
+  2012-12-28  1810  1820  1780   1810  109440000     298.62
+  2012-12-31  1790  1790  1790   1790          0     295.32
+  
+#+END_SRC
+
+* Analisis Data dan Pembahasan
+** Pengumpulan Data
+Data yang digunakan dalam penelitian ini adalah semua emiten saham
+yang terdaftar dalam JII (Jakarta Islamic Index) selama periode
+penelitian, yakni dari tahun 1 Januari 2004 sampai 31 Desember 2013
+(10 tahun). Dari sekian banyak emiten, dilakukan proses penyaringan
+lagi sehingga didapatkan emiten saham yang secara konsisten terdaftar
+dalam JII selama kurun waktu pengamatan.
+
+Sebelum dilakukan uji korelasi, penulis terlebih dahulu mengumpulkan
+data emiten JII selama periode pengamatan[fn:23]. Data yang tersedia
+dari situs IDX berupa berkas =PDF=, sehingga perlu dilakukan penulisan
+ulang secara manual, kemudian dimasukkan kedalam obyek =Python= berupa
+/dictionary/[fn:24].
+
+#+BEGIN_SRC python
+  
+  emitens = {
+      "jan_jun_04": [
+          "ANTM", "AALI", "ASGR", "AUTO", "BRPT", "BLTA", "BUMI", "CTRA",
+          "DNKS", "DYNA", "EPMT", "GJTL", "INTP", "INAF", "INDF", "ISAT",
+          "INCO", "KLBF", "KAEF", "LMAS", "MEDC", "SMCB", "SMGR", "SMRA",
+          "PTBA", "TLKM", "TSPC", "TINS", "UNVR", "UNTR"],
+  
+      "jul_des_04": [
+          "ANTM", "AALI", "ASGR", "BNBR", "BRPT", "BUMI", "CTRA", "DNKS",
+          "EPMT", "GJTL", "INTP", "INDF", "ISAT", "INCO", "KLBF", "KIJA",
+          "LMAS", "MLPL", "PGAS", "LSIP", "SMCB", "SMGR", "SMRA", "PTBA",
+          "TLKM", "TSPC", "TINS", "TRST", "UNVR", "UNTR"],
+  
+      "jan_jul_05": [
+          "AALI", "ADHI", "ANTM", "BNBR", "BRPT", "BUMI", "CTRS", "ENRG",
+          "GJTL", "INCO", "INDF", "INKP", "INTP", "ISAT", "KIJA", "KLBF",
+          "LMAS", "LSIP", "MEDC", "MLPL", "PGAS", "PTBA", "SMCB", "SMGR",
+          "TINS", "TKIM", "TLKM", "TSPC", "UNTR", "UNVR"],
+  
+      "jul_des_05": [
+          "AALI", "ADHI", "ANTM", "ASII", "BLTA", "BNBR", "BRPT", "BUMI",
+          "CMNP", "CTRS", "ENRG", "GJTL", "INCO", "INDF", "INKP", "INTP",
+          "ISAT", "KIJA", "KLBF", "LSIP", "MEDC", "PGAS", "PTBA", "SMCB",
+          "SMRA", "TINS", "TKIM", "TLKM", "UNTR", "UNVR"],
+  
+      "jan_jun_06": [
+          "AALI", "ADHI", "ANTM", "ASII", "BLTA", "BNBR", "BUMI", "CMNP",
+          "DOID", "ENRG", "GJTL", "INCO", "INDF", "INKP", "INTP", "ISAT",
+          "KIJA", "KLBF", "LSIP", "MEDC", "PGAS", "PLAS", "PTBA", "SMCB",
+          "SMRA", "TKIM", "TLKM", "UNSP", "UNTR", "UNVR"],
+  
+      "jul_des_06": [
+          "ADHI", "ANTM", "ASII", "BLTA", "BNBR", "BTEL", "BUMI", "CTRA",
+          "CTRS", "ENRG", "GJTL", "INCO", "INDF", "INKP", "INTP", "ISAT",
+          "KIJA", "KLBF", "LPKR", "LSIP", "MEDC", "PGAS", "PLAS", "PTBA",
+          "SMCB", "TKIM", "TLKM", "UNSP", "UNTR", "UNVR"],
+  
+      "jan_jun_07": [
+          "AALI", "ADHI", "ANTM", "ASII", "BLTA", "BNBR", "BTEL", "BUMI",
+          "CMNP", "CTRA", "CTRS", "GJTL", "INCO", "INDF", "INKP", "INTP",
+          "ISAT", "KLBF", "LPKR", "LSIP", "MEDC", "PGAS", "PTBA", "SMCB",
+          "SULI", "TLKM", "TOTL", "UNSP", "UNTR", "UNVR"],
+  
+      "jan_jun_08": [
+          "AALI", "ANTM", "APEX", "BMTR", "BNBR", "BTEL", "BUMI", "CMNP",
+          "CTRA", "ELTY", "FREN", "HITS", "INCO", "INTP", "JRPT", "KIJA",
+          "KLBF", "MPPA", "PLIN", "PTBA", "RALS", "SMAR", "SMGR", "SMRA",
+          "TINS", "TLKM", "TRUB", "TSPC", "UNTR", "UNVR"],
+      "jun_des_08": [
+          "BUMI", "ANTM", "TLKM", "PTBA", "ELTY", "UNSP", "INCO", "TINS",
+          "ITMG", "UNTR", "AALI", "SGRO", "LSIP", "TRUB", "ELSA", "KIJA",
+          "SMGR", "LPKR", "CTRA", "MNCN", "KLBF", "CTRP", "WIKA", "UNVR",
+          "BISI", "BKSL", "INTP", "ASRI", "BMTR", "TOTL"],
+      "des08_mei09": [
+          "AALI", "ACES", "ANTM", "APEX", "ASII", "BISI", "BMTR", "BRPT",
+          "BUMI", "CTRP", "ELSA", "IIKP", "INCO", "INDY", "INTP", "ITMG",
+          "KLBF", "LSIP", "MIRA", "MNCN", "MPPA", "PTBA", "SGRO", "SMGR",
+          "TBLA", "TINS", "TLKM", "UNSP", "UNVR", "WIKA"],
+      "jun09_nov09": [
+          "AALI", "ADRO", "ANTM", "ASII", "BISI", "BMTR", "BTEL", "BUMI",
+          "CTRA", "DEWA", "ELSA", "ELTY", "HEXA", "INCO", "INDY", "INTP",
+          "ITMG", "KIJA", "KLBF", "LPKR", "LSIP", "PTBA", "SGRO", "SMGR",
+          "TINS", "TLKM", "UNSP", "UNTR", "UNVR", "WIKA"],
+      "des09_mei10": [
+          "BUMI", "TLKM", "ANTM", "ASII", "ADRO", "TINS", "PTBA", "UNSP",
+          "INCO", "DEWA", "UNTR", "TRUB", "BTEL", "LPKR", "ITMG", "AALI",
+          "LSIP", "BRPT", "SMGR", "INTP", "INDY", "UNVR", "KLBF", "BMTR",
+          "SGRO", "ELSA", "BISI", "BSDE", "CTRA", "WIKA"],
+      "jun_nov_10": [
+          "AALI", "ANTM", "ASII", "ASRI", "BKSL", "BMTR", "BRPT", "BSDE",
+          "BWPT", "CTRA", "DEWA", "ELSA", "ELTY", "INCO", "INTP", "ITMG",
+          "KLBF", "LPKR", "LSIP", "MNCN", "PTBA", "SGRO", "SMVB", "SMGR",
+          "TINS", "TLKM", "TURI", "UNSP", "UNTR", "UNVR"],
+      "des10_mei11": [
+          "AALI", "ANTM", "ASII", "ASRI", "BKSL", "BMTR", "BRPT", "BSDE",
+          "BWPT", "CPIN", "DEWA", "ELSA", "ENRG", "INCO", "INTP", "ITMG",
+          "KLBF", "LPKR", "LSIP", "MNCN", "PTBA", "SGRO", "SMCB", "SMGR",
+          "TINS", "TLKM", "TRAM", "UNTR", "UNVR", "WIKA"],
+      "jun_nov_11": [
+          "AALI", "ADRO", "AKRA", "ANTM", "ASII", "ASRI", "BORN", "BSDE",
+          "BTEL", "CPIN", "ELTY", "ENRG", "HRUM", "ICBP", "INCO", "INTP",
+          "ITMG", "JPFA", "KLBF", "KRAS", "LPKR", "LSIP", "PTBA", "SMCB",
+          "SMGR", "TINS", "TLKM", "TRAM", "UNTR", "UNVR"],
+      "des11_may12": [
+          "AALI", "ADRO", "AKRA", "ANTM", "ASII", "ASRI", "BORN", "CPIN",
+          "ELTY", "ENRG", "HRUM", "ICBP", "INCO", "INDF", "INTP", "ITMG",
+          "KLBF", "KRAS", "LPKR", "LSIP", "PGAS", "PTBA", "SIMP", "SMCB",
+          "SMGR", "TINS", "TLKM", "TRAM", "UNTR", "UNVR"],
+      "jun_nov_12": [
+          "AALI", "ADRO", "AKRA", "ANTM", "ASII", "ASRI", "BKSL", "BORN",
+          "CPIN", "ENRG", "EXCL", "HRUM", "ICBP", "INCO", "INDF", "INTP",
+          "ITMG", "JSMR", "KLBF", "LPKR", "LSIP", "PGAS", "PTBA", "SIMP",
+          "SMGR", "TINS", "TLKM", "TRAM", "UNTR", "UNVR"],
+      "des12_may13": [
+          "AALI", "ADRO", "AKRA", "ANTM", "ASII", "ASRI", "BKSL", "BSDE",
+          "SPIN", "ENRG", "EXCL", "HRUM", "ICBP", "INCO", "INDF", "INDY",
+          "INTP", "ITMG", "JSMR", "KLBF", "LPKR", "LSIP", "MAPI", "MNCN",
+          "PGAS", "PTBA", "SMGR", "TLKM", "UNTR", "UNVR"]
+      }
+  
+#+END_SRC
+
+Tahap kedua adalah penyaringan emiten, sehingga dihasilkan emiten-emiten
+yang konsisten berada dalam JII selama periode pengamatan. Kode =Python=
+yang dibutuhkan untuk penyaringan tersebut sebagai berikut:
+
+#+BEGIN_SRC python
+  
+  cont = []
+  for emiten in emitens:
+      for emit in emitens[emiten]:
+          cont.append(emit)
+  
+  d = {}
+  for c in cont:
+      if c not in d:
+          d[c] = 1
+      else:
+          d[c] += 1
+  
+  for i in d:
+      if d[i] == len(emitens):
+          print i
+  
+#+END_SRC
+
+Dari kode di atas, didapatkan 7 emiten yang secara konsisten berada di
+JII selama periode pengamatan, emiten tersebut adalah: TLKM, KLBF,
+UNVR, INCO, PTBA, ANTM, INTP. Dari ke-7 emiten tersebut, hanya 5 lima
+yang memiliki data mulai dari Januari 2004 sampai Desember 2013,
+yakni *TLKM*, *KLBF*, *UNVR*, *PTBA* dan *INTP*. Setelah data emiten
+didapat, langkah berikutnya adalah mengunduh dan menganalisis uji
+korelasi pada masing-masing emiten. Sebelumnya, penulis tampilkan
+grafik plot harga saham penutupan masing-masing emiten selama periode
+pengamatan.
+
+#+BEGIN_SRC python
+  
+  import pandas as pd
+  import pandas.io.data as web
+  import datetime
+  
+  start = datetime.datetime(2004, 1, 1)
+  end = datetime.datetime(2013, 12, 31)
+  
+  # unduh data emiten dengan kode TLKM.JK
+  tlkm = web.DataReader("TLKM.JK", "yahoo", start, end)
+  
+  # ambil data harga penutupan
+  close_px = tlkm["Close"]
+  
+  # buat plot TLKM.JK
+  close_px.plot(label="TLKM.JK")
+  plt.legend()
+  
+#+END_SRC
+
+Berikut contoh tampilan dari plot grafik =TLKM=
+
+#+CAPTION: Plot Harga Penutupan Saham TLKM.JK
+#+ATTR_LaTeX: placement=[H]
+[[./images/tlkm.png]]
+
+Dengan cara yang sama, kita dapat menghasilkan tampilan grafik emiten
+lain, namun untuk emiten lain akan kami tampilkan nanti di bagian
+analisis data.
+
+** Analisis Deskriptif dan Plot Grafik
+Berikut ini tabel statistik deskriptif data saham =TLKM.JK=:
+#+BEGIN_LATEX
+  \begin{table}[H]
+  \centering
+  \footnotesize
+  \begin{tabular}{|r|r|r|r|r|r|r|r|}
+  \hline
+  {} &         Open &         High &          Low &        Close &        Volume &    Adj Close \\
+  \hline
+  count &  1605.000000 &  1605.000000 &  1605.000000 &  1605.000000 &  1.605000e+03 &  1605.000000 \\
+  mean  &  1997.383178 &  2033.492212 &  1958.514019 &  1995.741433 &  3.755956e+07 &  1803.286449 \\
+  std   &   781.958408 &   797.751751 &   761.465655 &   780.474038 &  6.397263e+07 &   659.594369 \\
+  min   &   770.000000 &   900.000000 &   770.000000 &   850.000000 &  0.000000e+00 &   748.990000 \\
+  25\%   &  1350.000000 &  1370.000000 &  1330.000000 &  1350.000000 &  1.018100e+07 &  1299.060000 \\
+  50\%   &  1920.000000 &  1950.000000 &  1900.000000 &  1920.000000 &  1.921600e+07 &  1731.750000 \\
+  75\%   &  2350.000000 &  2375.000000 &  2300.000000 &  2325.000000 &  4.511600e+07 &  2070.740000 \\
+  max   &  5250.000000 &  5300.000000 &  4900.000000 &  5050.000000 &  5.917230e+08 &  4449.890000 \\
+  \hline
+  \end{tabular}
+  \caption{Statistik Deskriptif Saham TLKM}
+  \label{tab:desk:tlkm}
+  \end{table}
+#+END_LATEX
+
+Tabel di atas menunjukkan bahwa selama periode pengamatan terhadap
+saham =TLKM.JK=, terdapat 1605 data dengan rata-rata harga
+penutupan harian sebesar =1995,74=, standar deviasi harga
+penutupan sebesar =780,47=, harga penutupan terendah selama
+periode pengamatan sebesar =850,00= dan harga penutupan
+tertinggi sebesar =5050,00=.
+
+Berikut tampilan plot harga penutupan saham =TLKM.JK=:
+#+CAPTION: Plot Harga Penutupan Saham TLKM.JK
+#+NAME: fig:tlkm
+#+ATTR_LaTeX: placement=[H]
+[[./images/tlkm.png]]
+
+Berikut ini tabel statistik deskriptif data saham =KLBF.JK=
+#+BEGIN_LATEX
+  \begin{table}[H]
+  \centering
+  \footnotesize
+  \begin{tabular}{|l|r|r|r|r|r|r|r|}
+  \hline
+  {} &         Open &         High &          Low &        Close &        Volume &    Adj Close \\
+  \hline
+  count &  2461.000000 &  2461.000000 &  2461.000000 &  2461.000000 &  2.461000e+03 &  2461.000000 \\
+  mean  &   441.655831 &   447.731410 &   434.820398 &   441.503454 &  7.508099e+07 &   206.524640 \\
+  std   &   379.316802 &   384.461624 &   373.056263 &   378.729637 &  3.980368e+07 &   402.455123 \\
+  min   &    70.000000 &    71.000000 &    70.000000 &    70.000000 &  0.000000e+00 &    10.740000 \\
+  25\%   &   148.000000 &   150.000000 &   146.000000 &   148.000000 &  2.221500e+07 &    22.710000 \\
+  50\%   &   264.000000 &   266.000000 &   260.000000 &   264.000000 &  5.306500e+07 &    40.500000 \\
+  75\%   &   690.000000 &   695.000000 &   680.000000 &   690.000000 &  9.476500e+07 &   119.900000 \\
+  max   &  1540.000000 &  1560.000000 &  1530.000000 &  1540.000000 &  1.197858e+09 &  1520.720000 \\
+  \hline
+  \end{tabular}
+  \caption{Statistik Deskriptif Saham KLBF}
+  \label{tab:klbf:des}
+  \end{table}
+  
+#+END_LATEX
+
+#+CAPTION: Plot Harga Penutupan Saham KLBF.JK
+#+NAME: fig:klbf
+#+ATTR_LaTeX: placement=[H]
+[[./images/klbf.png]]
+
+Tabel di atas menunjukkan bahwa selama periode pengamatan terhadap
+saham =KLBF.JK=, terdapat =2461= data dengan rata-rata harga penutupan
+harian sebesar =441,50=, standar deviasi harga penutupan sebesar
+=378,73=, harga penutupan terendah selama periode pengamatan sebesar
+=70,00= dan harga penutupan tertinggi sebesar =1540,00=.
+
+Berikut ini tabel statistik deskriptif data saham =PTBA.JK=:
+#+BEGIN_LATEX
+  
+  \begin{table}[H]
+  \centering
+  \footnotesize
+  \begin{tabular}{|l|r|r|r|r|r|r|r|}
+  \hline
+  {} &          Open &          High &           Low &         Close &        Volume &     Adj Close \\
+  \hline
+  count &   2589.000000 &   2589.000000 &   2589.000000 &   2589.000000 &  2.589000e+03 &   2589.000000 \\
+  mean  &  10124.424488 &  10276.633835 &   9971.631904 &  10125.309000 &  7.360697e+06 &   9247.492762 \\
+  std   &   6944.601176 &   7022.229577 &   6861.010806 &   6943.045098 &  1.267852e+07 &   6405.984245 \\
+  min   &    650.000000 &    650.000000 &    625.000000 &    650.000000 &  0.000000e+00 &    572.460000 \\
+  25\%   &   3150.000000 &   3175.000000 &   3075.000000 &   3125.000000 &  1.799500e+06 &   2752.220000 \\
+  50\%   &  11200.000000 &  11400.000000 &  10900.000000 &  11200.000000 &  3.797500e+06 &  10040.090000 \\
+  75\%   &  16150.000000 &  16300.000000 &  15950.000000 &  16150.000000 &  8.655000e+06 &  14926.070000 \\
+  max   &  24900.000000 &  26000.000000 &  24000.000000 &  24900.000000 &  1.359055e+08 &  22516.730000 \\
+  \hline
+  \end{tabular}
+  \caption{Statistik Deskriptif Saham PTBA}
+  \label{tab:koef:ptba:all}
+  \end{table}
+  
+#+END_LATEX
+
+Tabel di atas menunjukkan bahwa selama periode pengamatan terhadap
+saham \texttt{PTBA.JK}, terdapat 2589 data dengan rata-rata harga
+penutupan harian sebesar \texttt{10.125,31}, standar deviasi harga
+penutupan sebesar \texttt{6.943,04}, harga penutupan terendah selama
+periode pengamatan sebesar \texttt{650,00} dan harga penutupan
+tertinggi sebesar \texttt{24.900,00}.
+
+Berikut tampilan plot harga penutupan saham =PTBA.JK=:
+#+CAPTION: Plot Harga Penutupan Saham PTBA.JK
+#+NAME: fig:ptba
+#+ATTR_LaTeX: placement=[H]
+[[./images/ptba.png]]
+
+Berikut ini tabel statistik deskriptif data saham =INTP.JK=:
+#+BEGIN_LATEX
+  
+  \begin{table}[H]
+  \centering
+  \footnotesize
+  \begin{tabular}{|l|r|r|r|r|r|r|r|}
+  \hline
+  {} &          Open &          High &           Low &         Close &           Volume &     Adj Close \\
+  \hline
+  count &   2590.000000 &   2590.000000 &   2590.000000 &   2590.000000 &      2590.000000 &   2590.000000 \\
+  mean  &  10175.671429 &  10317.534363 &  10021.901544 &  10182.331660 &   3039036.293436 &   9822.211328 \\
+  std   &   6993.675146 &   7071.591770 &   6895.548039 &   6990.891445 &   4224177.550254 &   6889.818604 \\
+  min   &   1300.000000 &   1350.000000 &   1225.000000 &   1275.000000 &         0.000000 &   1204.930000 \\
+  25\%   &   4175.000000 &   4225.000000 &   4100.000000 &   4181.250000 &   1130625.000000 &   3951.477500 \\
+  50\%   &   6775.000000 &   6900.000000 &   6625.000000 &   6775.000000 &   2310500.000000 &   6402.690000 \\
+  75\%   &  16750.000000 &  16950.000000 &  16500.000000 &  16750.000000 &   3967875.000000 &  16077.985000 \\
+  max   &  26950.000000 &  27400.000000 &  26350.000000 &  26950.000000 &  37726000.000000 &  26494.880000 \\
+  \hline
+  \end{tabular}
+  \caption{Statistik Deskriptif Saham INTP}
+  \label{tab:stat:intp}
+  \end{table}
+  
+#+END_LATEX
+
+Tabel di atas menunjukkan bahwa selama periode pengamatan terhadap
+saham \texttt{INTP.JK}, terdapat 2590 data dengan rata-rata harga
+penutupan harian sebesar \texttt{10.182,33}, standar deviasi harga
+penutupan sebesar \texttt{6.990,89}, harga penutupan terendah selama
+periode pengamatan sebesar \texttt{1.275,00} dan harga penutupan
+tertinggi sebesar \texttt{26.950,00}.
+
+Berikut tampilan plot harga penutupan saham =INTP.JK=:
+#+CAPTION: Plot Harga Penutupan Saham INTP.JK
+#+NAME: fig:intp
+#+ATTR_LaTeX: placement=[H]
+[[./images/intp.png]]
+
+Berikut ini tabel statistik deskriptif data saham =UNVR.JK=:
+#+BEGIN_LATEX
+  
+  \begin{table}[H]
+  \centering
+  \footnotesize
+  \begin{tabular}{|l|r|r|r|r|r|r|r|}
+  \hline
+  {} &          Open &          High &           Low &         Close &           Volume &     Adj Close \\
+  \hline
+  count &   2463.000000 &   2463.000000 &   2463.000000 &   2463.000000 &      2463.000000 &   2463.000000 \\
+  mean  &  11796.172148 &  11955.297199 &  11632.876573 &  11797.308973 &   1980704.425497 &  11113.658928 \\
+  std   &   8224.007666 &   8350.101427 &   8089.506765 &   8219.393446 &   2870729.793130 &   8176.870145 \\
+  min   &   3125.000000 &   3125.000000 &   3050.000000 &   3125.000000 &         0.000000 &   2794.390000 \\
+  25\%   &   4425.000000 &   4500.000000 &   4375.000000 &   4450.000000 &    830000.000000 &   3979.210000 \\
+  50\%   &   7900.000000 &   8000.000000 &   7800.000000 &   7900.000000 &   1413500.000000 &   7064.210000 \\
+  75\%   &  16850.000000 &  17075.000000 &  16600.000000 &  16850.000000 &   2370250.000000 &  15699.890000 \\
+  max   &  34200.000000 &  37350.000000 &  33700.000000 &  34600.000000 &  38786500.000000 &  34241.210000 \\
+  \hline
+  \end{tabular}
+  \caption{Statistik Deskriptif Saham UNVR}
+  \label{tab:stat:unvr}
+  \end{table}
+  
+#+END_LATEX
+
+Tabel di atas menunjukkan bahwa selama periode pengamatan terhadap
+saham \texttt{UNVR.JK}, terdapat 2463 data dengan rata-rata harga
+penutupan harian sebesar \texttt{11.797,31}, standar deviasi harga
+penutupan sebesar \texttt{8.219,39}, harga penutupan terendah selama
+periode pengamatan sebesar \texttt{3.125,00} dan harga penutupan
+tertinggi sebesar \texttt{34.600,00}.  
+
+Berikut tampilan plot harga penutupan sahan =UNVR.JK=:
+#+CAPTION: Plot Harga Penutupan Saham UNVR.JK
+#+NAME: fig:unvr
+#+ATTR_LaTeX: placement=[H]
+[[./images/unvr.png]]
+
+** Uji Korelasi
+Setelah data emiten didapatkan, langkah selanjutnya adalah melakukan uji
+korelasi. Uji korelasi di =pandas= sangat simpel, caranya:
+1. Mencari perbedaan harga hari ini dengan harga kemarin (=h-1=)
+2. Mencari perbedaan harga hari ini dengan harga =time lag= sebelumnya
+3. Melakukan /reindex/ data nomor =2= terhadap data nomor =1=, fungsi
+   ini bertujuan untuk ``menggeser`` data ke atas.
+
+Agar lebih mudah, penulis membuat sebuah fungsi seperti berikut:
+#+BEGIN_SRC python
+  
+  def get_corr(close_price, lag):
+      """
+      mencari koefisien korelasi antara delta harga hari ini dengan
+      delta harga time-lag
+      """
+      delta_price1 = close_price - close_price.shift(1)
+      delta_price2 = close_price - close_price.shift(-lag)
+      # reindex delta_price2
+      delta_price3 = delta_price2.reindex(
+          delta_price1.shift(-lag).index, method="pad")
+      return "%.5f" % delta_price1.corr(delta_price3) # pembulatan 5 digit
+  
+#+END_SRC
+
+Contoh penggunaan untuk emiten =TLKM.JK=:
+
+#+BEGIN_SRC python
+  
+  data = web.DataReader("TLKM.JK", "yahoo", start end)
+  print get_corr(data["Close"], 1) # time lag 1
+  
+#+END_SRC
+
+Jika perintah di atas dijalankan, maka akan didapat hasil =0.01159=.
+Selanjutnya, kode di atas diterapkan pada emiten lainnya untuk mencari
+koefisien korelasi masing-masing emiten. Dan berikut hasil analisis
+data yang dilakukan terhadap kelima emiten:
+
+#+BEGIN_LATEX
+  
+  \begin{table}[H]
+  \centering
+  \footnotesize
+  \begin{tabular}{|r|r|r|r|r|r|}
+  \hline
+   & TLKM.JK & KLBF.JK & UNVR.JK & PTBA.JK & INTP.JK \\
+  \hline
+  t-1 & 0.01159 & 0.04689 & 0.21234 & -0.08668 & 0.21349 \\
+  \hline
+  t-2 & 0.07196 & 0.04934 & 0.21318 & -0.05359 & 0.20108 \\
+  \hline
+  t-3 & 0.09047 & 0.07039 & 0.18723 & -0.01812 & 0.23718 \\
+  \hline
+  t-4 & 0.09989 & 0.10465 & 0.16013 & 0.00373 & 0.21857 \\
+  \hline
+  t-7 & 0.09496 & 0.06105 & 0.13060 & 0.02335 & 0.18371 \\
+  \hline
+  t-15 & 0.07843 & 0.07074 & 0.09996 & 0.01315 & 0.14631 \\
+  \hline
+  t-30 & 0.05724 & 0.05337 & 0.11591 & -0.01197 & 0.09770 \\
+  \hline
+  \end{tabular}
+  \caption{Hasil Analisis Koefisien Korelasi terhadap ke-5 Emiten}
+  \label{tab:rekap}
+  \end{table}
+  
+#+END_LATEX
+
+*** TLKM
+Berikut hasil uji korelasi terhadap saham =TLKM.JK= pada tiap-tiap
+/time lag/:
+#+BEGIN_LATEX
+  
+  \begin{table}[H]
+  \centering
+  \footnotesize
+  \begin{tabular}{|l|r|r|}
+  \hline
+  {} &     Corr \\
+  \hline
+  t-1  &  0.21349 \\
+  t-2  &  0.20108 \\
+  t-3  &  0.23718 \\
+  t-4  &  0.21857 \\
+  t-7  &  0.18371 \\
+  t-15 &  0.14631 \\
+  t-30 &  0.09770 \\
+  \hline
+  \end{tabular}
+  \caption{Koefisien Korelasi Tiap Time Lag}
+  \label{tab:koef:tlkm:all}
+  \end{table}
+  
+#+END_LATEX
+
+Dengan menggunakan acuan pada =Tabel 1=, uji korelasi antara harga
+saham =TLKM= dengan periode =t-1= dengan harga saham sekarang =t=
+menunjukkan nilai =0.21=. Nilai ini lebih kecil dibandingkan angka
+=0.25=. Hal ini berarti tidak ada korelasi yang signifikan antara
+harga saham dengan periode satu hari sebelumnya dengan harga saham
+saat sekarang, atau dengan kata lain harga saham satu hari yang lalu
+tidak dapat dapat digunakan untuk melakukan peramalan terhadap harga
+saham saat ini.
+
+Hasil uji korelasi antara harga saham =TLKM= dengan periode =t-2=
+dengan harga saat sekarang =t= menunjukkan angka =0.20=. Nilai ini
+lebih kecil dibandingkan angka =0.25=. Hal ini berarti tidak ada
+korelasi yang signifikan antara harga saham dengan periode dua hari
+sebelumnya dengan harga saham saat sekarang, atau dengan kata lain
+harga saham dua hari yang lalu tidak dapat dapat digunakan untuk
+melakukan peramalan terhadap harga saham saat ini.
+
+Hasil uji korelasi antara harga saham =TLKM= dengan periode =t-3=
+dengan harga saat sekarang =t= menunjukkan angka =0.24=. Nilai ini
+lebih kecil dibandingkan angka =0.25=. Hal ini berarti tidak ada
+korelasi yang signifikan antara harga saham dengan periode tiga hari
+sebelumnya dengan harga saham saat sekarang, atau dengan kata lain
+harga saham tiga hari yang lalu tidak dapat dapat digunakan untuk
+melakukan peramalan terhadap harga saham saat ini.
+
+Hasil uji korelasi antara harga saham =TLKM= dengan periode =t-4=
+dengan harga saat sekarang =t= menunjukkan angka =0.22=. Nilai ini
+lebih kecil dibandingkan angka =0.25=. Hal ini berarti tidak ada
+korelasi yang signifikan antara harga saham dengan periode empat hari
+sebelumnya dengan harga saham saat sekarang, atau dengan kata lain
+harga saham empat hari yang lalu tidak dapat dapat digunakan untuk
+melakukan peramalan terhadap harga saham saat ini.
+
+Hasil uji korelasi antara harga saham =TLKM= dengan periode =t-7=
+dengan harga saat sekarang =t= menunjukkan angka =0.18=. Nilai ini
+lebih kecil dibandingkan angka =0.25=. Hal ini berarti tidak ada
+korelasi yang signifikan antara harga saham dengan periode tujuh hari
+(seminggu) sebelumnya dengan harga saham saat sekarang, atau dengan
+kata lain harga saham tujuh hari (seminggu) yang lalu tidak dapat
+dapat digunakan untuk melakukan peramalan terhadap harga saham saat
+ini.
+
+Hasil uji korelasi antara harga saham =TLKM= dengan periode =t-15=
+dengan harga saat sekarang =t= menunjukkan angka =0.15=. Nilai ini
+lebih kecil dibandingkan angka =0.25=. Hal ini berarti tidak ada
+korelasi yang signifikan antara harga saham dengan periode lima belas
+hari (dua minggu) sebelumnya dengan harga saham saat sekarang, atau
+dengan kata lain harga saham lima belas hari (dua minggu) yang lalu
+tidak dapat dapat digunakan untuk melakukan peramalan terhadap harga
+saham saat ini.
+
+Hasil uji korelasi antara harga saham =TLKM= dengan periode =t-30=
+dengan harga saat sekarang =t= menunjukkan angka =0.09=. Nilai ini
+lebih kecil dibandingkan angka =0.25. Hal ini berarti tidak ada
+korelasi yang signifikan antara harga saham dengan periode tiga puluh
+hari (sebulan) sebelumnya dengan harga saham saat sekarang, atau
+dengan kata lain harga saham tiga puluh hari (sebulan) yang lalu tidak
+dapat dapat digunakan untuk melakukan peramalan terhadap harga saham
+saat ini.
+
+Secara umum, dengan mengacu pada =Tabel 1=, uji korelasi pada saham
+=TLKM= pada berbagai /time lag' menunjukkan angka di bawah =0.25= atau
+dapat dikatakan *korelasi di antara keduanya sangat lemah*. Dengan
+demikian dapat disimpulkan bahwa analisis teknikal tidak dapat
+dilakukan untuk meramalkan harga saham di masa yang akan datang.
+
+*** KLBF
+Berikut hasil uji korelasi terhadap saham =KLBF.JK= pada tiap /time lag/:
+#+BEGIN_LATEX
+  
+  \begin{table}[H]
+  \centering
+  \footnotesize
+  \begin{tabular}{|l|r|r|}
+  \hline
+  {} &     Corr \\
+  \hline
+  t-1  &  0.04689 \\
+  t-2  &  0.04934 \\
+  t-3  &  0.07039 \\
+  t-4  &  0.10465 \\
+  t-7  &  0.06105 \\
+  t-15 &  0.07074 \\
+  t-30 &  0.05337 \\
+  \hline
+  \end{tabular}
+  \caption{Koefisien Korelasi Tiap Time Lag}
+  \label{tab:koef:klbf:all}
+  \end{table}
+  
+#+END_LATEX
+
+Dengan menggunakan acuan pada \texttt{Tabel 1}, uji korelasi antara
+harga saham \texttt{KLBF} dengan periode \texttt{t-1} dengan harga
+saham sekarang \texttt{t} menunjukkan nilai \texttt{0.05}. Nilai ini
+lebih kecil dibandingkan angka \texttt{0.25}. Hal ini berarti tidak
+ada korelasi yang signifikan antara harga saham dengan periode satu
+hari sebelumnya dengan harga saham saat sekarang, atau dengan kata
+lain harga saham satu hari yang lalu tidak dapat dapat digunakan untuk
+melakukan peramalan terhadap harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{KLBF} dengan periode
+\texttt{t-2} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.05}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode dua hari sebelumnya dengan harga
+saham saat sekarang, atau dengan kata lain harga saham dua hari yang
+lalu tidak dapat dapat digunakan untuk melakukan peramalan terhadap
+harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{KLBF} dengan periode
+\texttt{t-3} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.07}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode tiga hari sebelumnya dengan harga
+saham saat sekarang, atau dengan kata lain harga saham tiga hari yang
+lalu tidak dapat dapat digunakan untuk melakukan peramalan terhadap
+harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{KLBF} dengan periode
+\texttt{t-4} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.10}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode empat hari sebelumnya dengan harga
+saham saat sekarang, atau dengan kata lain harga saham empat hari yang
+lalu tidak dapat dapat digunakan untuk melakukan peramalan terhadap
+harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{KLBF} dengan periode
+\texttt{t-7} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.06}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode tujuh hari (seminggu) sebelumnya
+dengan harga saham saat sekarang, atau dengan kata lain harga saham
+tujuh hari (seminggu) yang lalu tidak dapat dapat digunakan untuk
+melakukan peramalan terhadap harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{KLBF} dengan periode
+\texttt{t-15} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.07}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode lima belas hari (dua minggu)
+sebelumnya dengan harga saham saat sekarang, atau dengan kata lain
+harga saham lima belas hari (dua minggu) yang lalu tidak dapat dapat
+digunakan untuk melakukan peramalan terhadap harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{KLBF} dengan periode
+\texttt{t-30} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.05}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode tiga puluh hari (sebulan) sebelumnya
+dengan harga saham saat sekarang, atau dengan kata lain harga saham
+tiga puluh hari (sebulan) yang lalu tidak dapat dapat digunakan untuk
+melakukan peramalan terhadap harga saham saat ini.
+
+Secara umum, dengan mengacu pada \texttt{Tabel 1}, uji korelasi pada
+saham \texttt{KLBF} pada berbagai \emph{time lag} menunjukkan angka di
+bawah \texttt{0.25} atau dapat dikatakan \textbf{korelasi di antara
+  keduanya sangat lemah}. Dengan demikian dapat disimpulkan bahwa
+analisis teknikal tidak dapat dilakukan untuk meramalkan harga saham
+di masa yang akan datang.
+
+*** PTBA
+Berikut hasil uji korelasi terhadap saham =PTBA.JK=:
+#+BEGIN_LATEX
+  
+  \begin{table}[H]
+  \centering
+  \footnotesize
+  \begin{tabular}{|l|r|r|}
+  \hline
+  {} &      Corr \\
+  \hline
+  t-1  &  -0.08668 \\
+  t-2  &  -0.05359 \\
+  t-3  &  -0.01812 \\
+  t-4  &   0.00373 \\
+  t-7  &   0.02335 \\
+  t-15 &   0.01315 \\
+  t-30 &  -0.01197 \\
+  \hline
+  \end{tabular}
+  \caption{Koefisien Korelasi Tiap Time Lag}
+  \label{tab:koef:ptba:all}
+  \end{table}
+  
+#+END_LATEX
+
+Dengan menggunakan acuan pada \texttt{Tabel 1}, uji korelasi antara
+harga saham \texttt{PTBA} dengan periode \texttt{t-1} dengan harga
+saham sekarang \texttt{t} menunjukkan nilai \texttt{-0.09}. Nilai ini
+lebih kecil dibandingkan angka \texttt{0.25}. Hal ini berarti tidak
+ada korelasi yang signifikan antara harga saham dengan periode satu
+hari sebelumnya dengan harga saham saat sekarang, atau dengan kata
+lain harga saham satu hari yang lalu tidak dapat dapat digunakan untuk
+melakukan peramalan terhadap harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{PTBA} dengan periode
+\texttt{t-2} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{-0.05}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode dua hari sebelumnya dengan harga
+saham saat sekarang, atau dengan kata lain harga saham dua hari yang
+lalu tidak dapat dapat digunakan untuk melakukan peramalan terhadap
+harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{PTBA} dengan periode
+\texttt{t-3} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{-0.02}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode tiga hari sebelumnya dengan harga
+saham saat sekarang, atau dengan kata lain harga saham tiga hari yang
+lalu tidak dapat dapat digunakan untuk melakukan peramalan terhadap
+harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{PTBA} dengan periode
+\texttt{t-4} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.003}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode empat hari sebelumnya dengan harga
+saham saat sekarang, atau dengan kata lain harga saham empat hari yang
+lalu tidak dapat dapat digunakan untuk melakukan peramalan terhadap
+harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{PTBA} dengan periode
+\texttt{t-7} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.02}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode tujuh hari (seminggu) sebelumnya
+dengan harga saham saat sekarang, atau dengan kata lain harga saham
+tujuh hari (seminggu) yang lalu tidak dapat dapat digunakan untuk
+melakukan peramalan terhadap harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{PTBA} dengan periode
+\texttt{t-15} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.01}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode lima belas hari (dua minggu)
+sebelumnya dengan harga saham saat sekarang, atau dengan kata lain
+harga saham lima belas hari (dua minggu) yang lalu tidak dapat dapat
+digunakan untuk melakukan peramalan terhadap harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{PTBA} dengan periode
+\texttt{t-30} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{-0.01}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode tiga puluh hari (sebulan) sebelumnya
+dengan harga saham saat sekarang, atau dengan kata lain harga saham
+tiga puluh hari (sebulan) yang lalu tidak dapat dapat digunakan untuk
+melakukan peramalan terhadap harga saham saat ini.
+ 
+Secara keseluruhan, dengan mengacu pada \texttt{Tabel 1}, uji korelasi
+pada saham \texttt{PTBA} pada berbagai \emph{time lag} menunjukkan
+angka di bawah \texttt{0.25} atau dapat dikatakan \textbf{korelasi di
+  antara keduanya sangat lemah}. Dengan demikian dapat disimpulkan
+bahwa analisis teknikal tidak dapat dilakukan untuk meramalkan harga
+saham di masa yang akan datang.
+
+*** INTP
+Berikut hasil uji korelasi tiap-tiap /time lag/:
+#+BEGIN_LATEX
+  
+  \begin{table}[H]
+  \centering
+  \footnotesize
+  \begin{tabular}{|l|r|r|}
+  \hline
+  {} &     Corr \\
+  \hline
+  t-1  &  0.21349 \\
+  t-2  &  0.20108 \\
+  t-3  &  0.23718 \\
+  t-4  &  0.21857 \\
+  t-7  &  0.18371 \\
+  t-15 &  0.14631 \\
+  t-30 &  0.09770 \\
+  \hline
+  \end{tabular}
+  \caption{Koefisien Korelasi Tiap Time Lag}
+  \label{tab:koef:intp:all}
+  \end{table}
+  
+#+END_LATEX
+
+Dengan menggunakan acuan pada \texttt{Tabel 1}, uji korelasi antara
+harga saham \texttt{INTP} dengan periode \texttt{t-1} dengan harga
+saham sekarang \texttt{t} menunjukkan nilai \texttt{0.21}. Nilai ini
+lebih kecil dibandingkan angka \texttt{0.25}. Hal ini berarti tidak
+ada korelasi yang signifikan antara harga saham dengan periode satu
+hari sebelumnya dengan harga saham saat sekarang, atau dengan kata
+lain harga saham satu hari yang lalu tidak dapat dapat digunakan untuk
+melakukan peramalan terhadap harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{INTP} dengan periode
+\texttt{t-2} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.20}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode dua hari sebelumnya dengan harga
+saham saat sekarang, atau dengan kata lain harga saham dua hari yang
+lalu tidak dapat dapat digunakan untuk melakukan peramalan terhadap
+harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{INTP} dengan periode
+\texttt{t-3} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.24}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode tiga hari sebelumnya dengan harga
+saham saat sekarang, atau dengan kata lain harga saham tiga hari yang
+lalu tidak dapat dapat digunakan untuk melakukan peramalan terhadap
+harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{INTP} dengan periode
+\texttt{t-4} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.22}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode empat hari sebelumnya dengan harga
+saham saat sekarang, atau dengan kata lain harga saham empat hari yang
+lalu tidak dapat dapat digunakan untuk melakukan peramalan terhadap
+harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{INTP} dengan periode
+\texttt{t-7} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.18}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode tujuh hari (seminggu) sebelumnya
+dengan harga saham saat sekarang, atau dengan kata lain harga saham
+tujuh hari (seminggu) yang lalu tidak dapat dapat digunakan untuk
+melakukan peramalan terhadap harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{INTP} dengan periode
+\texttt{t-15} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.15}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode lima belas hari (dua minggu)
+sebelumnya dengan harga saham saat sekarang, atau dengan kata lain
+harga saham lima belas hari (dua minggu) yang lalu tidak dapat dapat
+digunakan untuk melakukan peramalan terhadap harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{INTP} dengan periode
+\texttt{t-30} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.09}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode tiga puluh hari (sebulan) sebelumnya
+dengan harga saham saat sekarang, atau dengan kata lain harga saham
+tiga puluh hari (sebulan) yang lalu tidak dapat dapat digunakan untuk
+melakukan peramalan terhadap harga saham saat ini.
+
+Secara keseluruhan, dengan mengacu pada \texttt{Tabel 1}, uji korelasi
+pada saham \texttt{INTP} pada berbagai \emph{time lag} menunjukkan
+angka di bawah \texttt{0.25} atau dapat dikatakan \textbf{korelasi di
+  antara keduanya sangat lemah}. Dengan demikian dapat disimpulkan
+bahwa analisis teknikal tidak dapat dilakukan untuk meramalkan harga
+saham di masa yang akan datang.
+
+*** UNVR
+Berikut hasil uji korelasi tiap-tiap /time lag/:
+#+BEGIN_LATEX
+  
+  \begin{table}[H]
+  \centering
+  \footnotesize
+  \begin{tabular}{|l|r|r|}
+  \hline
+  {} &     Corr \\
+  \hline
+  t-1  &  0.21234 \\
+  t-2  &  0.21318 \\
+  t-3  &  0.18723 \\
+  t-4  &  0.16013 \\
+  t-7  &  0.13060 \\
+  t-15 &  0.09996 \\
+  t-30 &  0.11591 \\
+  \hline
+  \end{tabular}
+  \caption{Koefisien Korelasi Tiap Time Lag}
+  \label{tab:koef:unvr:all}
+  \end{table}
+  
+#+END_LATEX
+
+Dengan menggunakan acuan pada \texttt{Tabel 1}, uji korelasi antara
+harga saham \texttt{UNVR} dengan periode \texttt{t-1} dengan harga
+saham sekarang \texttt{t} menunjukkan nilai \texttt{0.21}. Nilai ini
+lebih kecil dibandingkan angka \texttt{0.25}. Hal ini berarti tidak
+ada korelasi yang signifikan antara harga saham dengan periode satu
+hari sebelumnya dengan harga saham saat sekarang, atau dengan kata
+lain harga saham satu hari yang lalu tidak dapat dapat digunakan untuk
+melakukan peramalan terhadap harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{UNVR} dengan periode
+\texttt{t-2} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.21}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode dua hari sebelumnya dengan harga
+saham saat sekarang, atau dengan kata lain harga saham dua hari yang
+lalu tidak dapat dapat digunakan untuk melakukan peramalan terhadap
+harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{UNVR} dengan periode
+\texttt{t-3} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.19}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode tiga hari sebelumnya dengan harga
+saham saat sekarang, atau dengan kata lain harga saham tiga hari yang
+lalu tidak dapat dapat digunakan untuk melakukan peramalan terhadap
+harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{UNVR} dengan periode
+\texttt{t-4} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.16}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode empat hari sebelumnya dengan harga
+saham saat sekarang, atau dengan kata lain harga saham empat hari yang
+lalu tidak dapat dapat digunakan untuk melakukan peramalan terhadap
+harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{UNVR} dengan periode
+\texttt{t-7} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.13}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode tujuh hari (seminggu) sebelumnya
+dengan harga saham saat sekarang, atau dengan kata lain harga saham
+tujuh hari (seminggu) yang lalu tidak dapat dapat digunakan untuk
+melakukan peramalan terhadap harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{UNVR} dengan periode
+\texttt{t-15} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.09}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.25}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode lima belas hari (dua minggu)
+sebelumnya dengan harga saham saat sekarang, atau dengan kata lain
+harga saham lima belas hari (dua minggu) yang lalu tidak dapat dapat
+digunakan untuk melakukan peramalan terhadap harga saham saat ini.
+
+Hasil uji korelasi antara harga saham \texttt{UNVR} dengan periode
+\texttt{t-30} dengan harga saat sekarang \texttt{t} menunjukkan angka
+\texttt{0.09}. Nilai ini lebih kecil dibandingkan angka
+\texttt{0.12}. Hal ini berarti tidak ada korelasi yang signifikan
+antara harga saham dengan periode tiga puluh hari (sebulan) sebelumnya
+dengan harga saham saat sekarang, atau dengan kata lain harga saham
+tiga puluh hari (sebulan) yang lalu tidak dapat dapat digunakan untuk
+melakukan peramalan terhadap harga saham saat ini.
+
+Secara umum, dengan mengacu pada \texttt{Tabel 1}, uji korelasi pada
+saham \texttt{UNVR} pada berbagai \emph{time lag} menunjukkan angka di
+bawah \texttt{0.25} atau dapat dikatakan \textbf{korelasi di antara
+  keduanya sangat lemah}. Dengan demikian dapat disimpulkan bahwa
+analisis teknikal tidak dapat dilakukan untuk meramalkan harga saham
+di masa yang akan datang.
+
+* Penutup
+** Kesimpulan
+Beberapa kesimpulan yang dapat diambil dari penelitian iniL
+1. Korelasi antara harga saham saat ini dengan saham di masa lalu
+   sangat rendah. Kelima saham dari emiten yang diteliti memiliki
+   nilai korelasi =< 0.25= (sangat lemah). Rendahnya korelasi ini
+   menunjukkan bahwa harga saham di masa lalu *tidak dapat* digunakan
+   untuk meramalkan harga saham di masa yang akan datang.
+2. Terkait dengan /hipotesis pasar yang efisien/, penelitian ini
+   menunjukkan bahwa pasar saham syariah yang diwakili oleh 5 saham
+   dari JII, menunjukkan efisiensi bentuk lemah.
+** Saran
+1. Penelitian ini hanya menggunakan metode uji korelasi, padahal dari
+   sisi ilmu statistik, ada beberapa uji lainnya yang bisa dilakukan,
+   misalnya /run test/, /filter/, dan uji-uji lainnya. Sebaiknya dalam
+   penelitian mendatang, dilakukan juga uji-uji tersebut.
+2. Hasil penelitian menunjukkan bahwa korelasi antar harga saham
+   sekarang dengan harga di masa datang adalah rendah, namun tetap
+   harus diakui bahwa analisis teknikal dengan menggunakan grafik
+   dapat digunakan untuk melihat kecenderungan tren harga saham dalam
+   jangka panjang.
+
+* Footnotes
+
+[fn:1] Farid Harianto dan Siswanto Sudomo, /Perangkat dan Teknik
+Analisis Investasi di Pasar Modal Indonesia/, (Jakarta: PT. Bursa Efek
+Jakarta, 1998), hlm. 3.
+
+[fn:2] Farid Harianto dan Siswanto Sudomo, /Perangkat dan Teknik
+Analisis Investasi di Pasar Modal Indonesia/ (Jakarta: PT. Bursa Efek
+Jakarta, 1998), hlm. 2.
+
+[fn:4] Farid Harianto dan Siswanto Sudomo, /Perangkat dan Teknik
+Analisis Investasi di Pasar Modal Indonesia/ (Jakarta: PT. Bursa Efek
+Jakarta, 1998), hlm. 3.
+
+[fn:6] http://id.wikipedia.org/wiki/Jakarta\_Islamic\_Index. Akses
+tanggal 11 Mei 2014.
+
+[fn:9] Ayub Laksono, /Proyeksi Harga Saham JII dengan Menggunakan
+Analisis Teknikal dalam Perspektif Hukum Syariah/ (Program Studi
+Kajian Timur Tengah dan Islam Program Pascasarjana Universitas
+Indonesia, 2006), hlm. 21.
+
+[fn:10] Farid Harianto dan Siswanto Sudomo, /Perangkat dan Teknik
+Analisis Investasi di Pasar Modal Indonesia/ (Jakarta: PT. Bursa Efek
+Jakarta, 1998), hlm. 35.
+
+[fn:11] Iggi H. Achsien, /Investasi Syariah di Pasar Modal Menggagas
+Konsep dan Praktek Manajemen Portofolio Syariah/ (Jakarta:
+PT. Gramedia Pustaka Utama, 2000), hlm. 101.
+
+[fn:14] Muhammad Akram Khan, /Time Value of Money/ dalam Skeikh
+Ghazali Sheikh Abod dkk., /An Introduction to Islamic Finance/ (Kuala
+Lumpur: Quill Publishers, 1992), hlm. 127.
+
+[fn:15] Iggi H. Achsien, /Investasi Syariah di Pasar Modal Menggagas
+Konsep dan Praktek Manajemen Portofolio Syariah/ (Jakarta:
+PT. Gramedia Pustaka Utama, 2000), hlm. 52.
+
+[fn:19] [[http://finance.yahoo.com]]
+
+[fn:21] Iggi H. Achsien, /Investasi Syariah di Pasar Modal Menggagas
+Konsep dan Praktek Manajemen Portofolio Syariah/ (Jakarta:
+PT. Gramedia Pustaka Utama, 2000), hlm. 55.
+
+[fn:22] [[http://www.jonathansarwono.info/korelasi/korelasi.htm]]
+
+[fn:23] Data diperoleh dari [[http://www.idx.co.id/id-id/beranda/informasipasar/daftarefek/indekskonstituen.aspx][Indeks konstituen JII]]
+
+[fn:24] [[https://docs.python.org/2/tutorial/datastructures.html
+
+[fn:3] Ayub Laksono, /Proyeksi Harga Saham JII dengan Menggunakan
+Analisis Teknikal dalam Perspektif Hukum Syariah/ (Program Studi
+Kajian Timur Tengah dan Islam Program Pascasarjana Universitas
+Indonesia, 2006), hlm. 11.
+
+[fn:5] [[http://www.python.org]]
+
+[fn:7] [[http://pandas.pydata.org/]]
+
+[fn:8] Iggi H. Achsien, /Investasi Syariah di Pasar Modal Menggagas
+Konsep dan Praktek Manajemen Portofolio Syariah/ (Jakarta:
+PT. Gramedia Pustaka Utama, 2000), hlm. 1.
+
+[fn:12] Iggi H. Achsien, /Investasi Syariah di Pasar Modal Menggagas
+Konsep dan Praktek Manajemen Portofolio Syariah/ (Jakarta:
+PT. Gramedia Pustaka Utama, 2000), hlm. 1.
+
+[fn:13] Iggi H. Achsien, /Investasi Syariah di Pasar Modal Menggagas
+Konsep dan Praktek Manajemen Portofolio Syariah/ (Jakarta:
+PT. Gramedia Pustaka Utama, 2000), hlm. 2.
+
+[fn:16] http://www.globalpolicyjournal.com/blog/23/04/2013/global-growth-islamic-finance-and-policy-challenges
+Akses tanggal 1 September 2014.
+
+[fn:17] Iggi H. Achsien, /Investasi Syariah di Pasar Modal Menggagas
+Konsep dan Praktek Manajemen Portofolio Syariah/ (Jakarta:
+PT. Gramedia Pustaka Utama, 2000), hlm. 4.
+
+[fn:18] http://en.wikipedia.org/wiki/Efficient-market\_hypothesis
+Akses tanggal 1 September 2014.
+
+[fn:20] Muhammad A. Atmeh dan Ian M. Dobbs, /Technical Analysis and
+the Stochastic Properties of the Jordanian Stock Market Index Return/
+(Jordan: Hashemite University, 2006), hlm. 2.
+
+[fn:25] Muhammad A. Atmeh dan Ian M. Dobbs, /Technical Analysis and
+the Stochastic Properties of the Jordanian Stock Market Index Return/
+(Jordan: Hashemite University, 2006), hlm. 2.
+
+[fn:26] Alexander, S., /Price Movements in Speculative Markets: Trends
+of Random Walks/, (Industrial Management Review, 2, 1961), hlm. 7-26.
+
+[fn:27] Muhammad A. Atmeh dan Ian M. Dobbs, /Technical Analysis and
+the Stochastic Properties of the Jordanian Stock Market Index Return/
+(Jordan: Hashemite University, 2006), hlm. 2.
+
+[fn:28] http://www.idx.co.id/id-id/beranda/tentangbei/sejarah.aspx
+Akses tanggal 11 Mei 2014.
+
+[fn:29] Seif El-Din, Tag El-Din dan M. Kabir Hassan, /Islam and
+speculation in the stock exchange/ dalam /Handbook of Islamic
+Banking/. hlm. 254.
+
+[fn:30] Seif El-Din, Tag El-Din dan M. Kabir Hassan, /Islam and
+speculation in the stock exchange/ dalam /Handbook of Islamic
+Banking/. hlm. 254.
+
+[fn:31] Muhammad Akram Khan, /Time Value of Money/ dalam Skeikh
+Ghazali Sheikh Abod dkk., /An Introduction to Islamic Finance/ (Kuala
+Lumpur: Quill Publishers, 1992), hlm. 130.
+
+[fn:32] Muhammad Akram Khan, /Time Value of Money/ dalam Skeikh
+Ghazali Sheikh Abod dkk., /An Introduction to Islamic Finance/ (Kuala
+Lumpur: Quill Publishers, 1992), hlm. 130.
+
+[fn:33] Muhammad Akram Khan, /Time Value of Money/ dalam Skeikh
+Ghazali Sheikh Abod dkk., /An Introduction to Islamic Finance/ (Kuala
+Lumpur: Quill Publishers, 1992), hlm. 131.
+
+[fn:34] Iggi H. Achsien, /Investasi Syariah di Pasar Modal Menggagas
+Konsep dan Praktek Manajemen Portofolio Syariah/ (Jakarta:
+PT. Gramedia Pustaka Utama, 2000), hlm. 50.
+
+[fn:35] Iggi H. Achsien, /Investasi Syariah di Pasar Modal Menggagas
+Konsep dan Praktek Manajemen Portofolio Syariah/ (Jakarta:
+PT. Gramedia Pustaka Utama, 2000), hlm. 50.
+
+[fn:36] Iggi H. Achsien, /Investasi Syariah di Pasar Modal Menggagas
+Konsep dan Praktek Manajemen Portofolio Syariah/ (Jakarta:
+PT. Gramedia Pustaka Utama, 2000), hlm. 59.
+
+[fn:37] Iggi H. Achsien, /Investasi Syariah di Pasar Modal Menggagas
+Konsep dan Praktek Manajemen Portofolio Syariah/ (Jakarta:
+PT. Gramedia Pustaka Utama, 2000), hlm. 60.
+
+[fn:38] Iggi H. Achsien, /Investasi Syariah di Pasar Modal Menggagas
+Konsep dan Praktek Manajemen Portofolio Syariah/ (Jakarta:
+PT. Gramedia Pustaka Utama, 2000), hlm. 34.
+
+[fn:39] Iggi H. Achsien, /Investasi Syariah di Pasar Modal Menggagas
+Konsep dan Praktek Manajemen Portofolio Syariah/ (Jakarta:
+PT. Gramedia Pustaka Utama, 2000), hlm. 34.
+
+[fn:40] Farid Harianto dan Siswanto Sudomo, /Perangkat dan Teknik
+Analisis Investasi di Pasar Modal Indonesia/, (Jakarta: PT. Bursa Efek
+Jakarta, 1998), hlm. 474.
+
+[fn:41] Farid Harianto dan Siswanto Sudomo, /Perangkat dan Teknik
+Analisis Investasi di Pasar Modal Indonesia/ (Jakarta: PT. Bursa Efek
+Jakarta, 1998), hlm. 513.
+
+[fn:42] Alwiyah dan Liyanto, /Analisis Teknikal untuk Mendapatkan
+Profit dalam Forex Trading Online/, (Buletin Studi Ekonomi, Volume 17,
+No. 2, Agustus 2012), hlm. 223.
+
+[fn:43] Charles P. Jones, /Investments: Analysis and Management/,
+(John Wiley & Sons, 2001), hlm. 402.
+
+[fn:44] Levy, A. Robert, /Conceptual Foundations of Technical
+Analysis/, (July-August, 1966), hlm. 83.
+
+[fn:45] Farid Harianto dan Siswanto Sudomo, /Perangkat dan Teknik
+Analisis Investasi di Pasar Modal Indonesia/ (Jakarta: PT. Bursa Efek
+Jakarta, 1998), hlm. 514.
+
+[fn:46] Charles P. Jones, /Investments: Analysis and Management/,
+(John Wiley & Sons, 2001), hlm. 404.
+
+[fn:47] Tandelilin, Eduardus, /Portofolio dan Investasi Teori dan
+Aplikasi/, (Yogyakarta: Kanisius, 2010), hlm. 392.
+
+[fn:48] Charles P. Jones, /Investments: Analysis and Management/,
+(John Wiley & Sons, 2001), hlm. 401.
+
+[fn:49] 
+http://goo.gl/33vtgy. Akses tanggal 2 September 2014.
+
+[fn:50] Hendarto, K., /Belajar Trading: Pahami Trading Sebelum Anda
+Memulai/, (Yogyakarta: Andi Offset, Yogyakarta, 2005), hlm. 87.
+
+[fn:51] Hendarto, K., /Belajar Trading: Pahami Trading Sebelum Anda
+Memulai/, (Yogyakarta: Andi Offset, Yogyakarta, 2005), hlm. 88.
+
+[fn:52] Chopra, N., J. Lakonishok, and J. Ritter, /Performance
+Measurement Methodology and the Question of Whether Stocks Overreact/,
+(Journal of Financial Economics, 31, 1992), hlm. 235-268.
+
+[fn:53] Fama, E. F., and K. R. French, /Permanent and Temporary
+Components of Stock Prices/, (Journal of Political Economy, 98, 1986),
+hlm. 827-842.
+
+[fn:54] Jegadeesh, N. /Evidence of predictable behaviour of security
+returns/, (Journal of Finance, 45, 1990), hlm. 881-898.
+
+[fn:55] Neftci, S. N. /Naive Trading Rules in Financial Markets and
+Wiener- Kolmogorov Prediction Theory: A Study of Technical Analysis/,
+(Journal of Business, 64, 1991), hlm. 549-571.
+
+[fn:56] Hsieh, D., /Non-linear Dynamic in Financial Markets: Evidence
+and Implications/, (Financial Analysts Journal, 51, 1991), hlm. 55-62.
+
+[fn:57] Hsieh, D., /Chaos and Non-linear Dynamics: Application to
+Financial Markets/, (Journal of Finance, 46, 1991), hlm. 1833-1877.
+
+[fn:58] Sweeney, R., /New Filter Rule Tests: Methods and Results/, (Journal of
+Financial and Quantitative Analysis, 23, 1988), hlm. 285-300.
+
+[fn:59] Fama, E., and M. Blume, /Filter Rules and Stock Market
+Trading/, (Journal of Business, 39, 1966), hlm. 226-241.
+
+[fn:60] Neftci, S. N. /Naive Trading Rules in Financial Markets and
+Wiener- Kolmogorov Prediction Theory: A Study of Technical Analysis/,
+(Journal of Business, 64, 1991), hlm. 549-571.
+
+[fn:61] Brock, W., J. Lakonishok, and B. Lebanon, /Simple Technical
+Trading Rules and the Stochastic Properties of Stock Returns/,
+(Journal of Finance, 47, 1992), hlm. 1731-1764.
+
+[fn:62] Neely, C., P. Weller, and R. Dittmar, \emph{Is Technical
+Analysis in the Foreign Exchange Market Profitable? A Genetic
+Programming Approach}, (Journal of Financial and Quantitative
+Analysis, 32, 1997), hlm.  405-426.
+
+[fn:63] Neely, C., and P. Weller, /Technical Trading Rules in the
+European Monetary System/, (Journal of International Money and
+Finance, 18, 1999), hlm. 429-458.
+
+[fn:64] Osler, C., and K. Chang, /Head and Shoulders: Not Just a Flaky
+Pattern/, (Federal Reserve Bank of New York, Staff Report No. 4., 1995)
+
+[fn:65] Ratner, M., and R. Leal, /Tests of Technical Trading Strategies in the
+Emerging Equity Markets of Latin America and Asia/, (Journal of Banking and
+Finance, 23, 1999), hlm. 1887-1905.
+
+[fn:66] Sarwono, J., /Metode Penelitian Kuantitatif dan Kualitatif/,
+(Graha Ilmu, Yogyakarta, 2006), hlm. 150.
+
+[fn:67] Iggi H. Achsien, /Investasi Syariah di Pasar Modal Menggagas
+Konsep dan Praktek Manajemen Portofolio Syariah/ (Jakarta:
+PT. Gramedia Pustaka Utama, 2000), hlm. 3.
+
+[fn:68] http://www.idx.co.id/id-id/beranda/produkdanlayanan/pasarsyariah/fatwadanlandasanhukum.aspx
+Akses tanggal 2 September 2014.
+
+[fn:69] Ratner, M., and R. Leal, /Tests of Technical Trading Strategies in the
+Emerging Equity Markets of Latin America and Asia/, (Journal of Banking and
+Finance, 23, 1999), hlm. 1887-1905.
+
+[fn:70] Harvey, C., /The Cross-Section of Volatility and
+Autocorrelation in Emerging Markets/, (Finanzmarket Management, 9,
+1995), hlm. 12-34.
+
+[fn:71] Fama, E., and M. Blume, /Filter Rules and Stock Market
+Trading/, (Journal of Business, 39, 1966), hlm. 226-241.
+
+[fn:72] Sweeney, R., /New Filter Rule Tests: Methods and Results/, (Journal of
+Financial and Quantitative Analysis, 23, 1988), hlm. 285-300.
+
+[fn:73] Iggi H. Achsien, /Investasi Syariah di Pasar Modal Menggagas
+Konsep dan Praktek Manajemen Portofolio Syariah/ (Jakarta:
+PT. Gramedia Pustaka Utama, 2000), hlm. 20.
+
+[fn:74] Iggi H. Achsien, /Investasi Syariah di Pasar Modal Menggagas
+Konsep dan Praktek Manajemen Portofolio Syariah/ (Jakarta:
+PT. Gramedia Pustaka Utama, 2000), hlm. 45.
+
