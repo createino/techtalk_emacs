@@ -1,0 +1,49 @@
+* Why Emacs?
+  - Divine Editing Experience [fn:1]
+  - Almost every popular programming language is well supported [fn:2]
+  - Emacs is extensible
+  - Integrates well with lots of external tools
+  - Emacs Doesn't Make you repeat yourself
+  - Emacs is Modern
+  - Emacs is constantly evolving
+  - Other prominent tools use Emacs's keybindings
+
+* Emacs vs the World
+  - Emacs vs vim
+    Emacs pros:
+    - it has better default extension language.
+    - it's modeless.
+    - it has better integration with external systems.
+    - it has better support for the things that matter to me.
+    - it has a built-in package manager.
+    Vim pros:
+    - nicer navigation
+    - much smaller core and much faster to load
+    - very simple initial config
+    - it has a more stylish icon than Emacs :)
+
+  - Emacs vs IDEs
+    IDEs pros:
+    - good refactoring support
+    - semantic code analysis
+    - integrated GUI debuggers and GUI design tools
+    - precise auto-completions
+    - good integration with external systems, i.e. version control
+    IDEs cons:
+    - dependent to the mouse and an X environment
+    - not resource efficient
+    - IDEs impair your thinking by thinking instead of you
+
+* Getting Started with Emacs
+  It takes 2 steps:
+  1. run the built-in Emacs tutorial ~C-h t~
+  2. use Emacs day and night for all your work
+
+* Remember, this, of course, is highly subjective :)
+
+* Footnotes
+
+[fn:1] [[./demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
+
+[fn:2] [[./demo/demo.py][demo.py]]
+
