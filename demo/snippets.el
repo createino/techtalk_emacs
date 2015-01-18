@@ -7,3 +7,17 @@
     (if mark-active
 	(buffer-substring (region-beginning) (region-end))
       (read-string "Google: ")))))
+
+
+(defun my/insert-line-before (times)
+  "Inserts a newline(s) above the line containing the cursor."
+  (interactive "P")
+  (save-excursion
+    (move-beginning-of-line 1)
+    (newline times)))
+
+(global-set-key (kbd "C-S-o")
+		'my/insert-line-before)
+
+; line 1
+; line 2

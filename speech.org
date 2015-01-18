@@ -1,9 +1,9 @@
 * Why Emacs?
   - Divine Editing Experience [fn:1]
   - Almost every popular programming language is well supported [fn:2]
-  - Emacs is extensible
+  - Emacs is extensible [fn:3]
   - Integrates well with lots of external tools
-  - Emacs Doesn't Make you repeat yourself
+  - Emacs Doesn't Make you repeat yourself [fn:3]
   - Emacs is Modern
   - Emacs is constantly evolving
   - Other prominent tools use Emacs's keybindings
@@ -34,6 +34,9 @@
     - not resource efficient
     - IDEs impair your thinking by thinking instead of you
 
+Bagaimana pun juga, apa pun editor Anda, selama Anda merasa produktif
+dan efisien, then it's good...
+
 * Getting Started with Emacs
   It takes 2 steps:
   1. run the built-in Emacs tutorial ~C-h t~
@@ -46,4 +49,6 @@
 [fn:1] [[./demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
 
 [fn:2] [[./demo/demo.py][demo.py]]
+
+[fn:3] [[./demo/snippets.el][snippets.el]]
 
