@@ -14,7 +14,7 @@
     - it has better default extension language.
     - it's modeless.
     - it has better integration with external systems.
-    - it has better support for the things that matter to me.
+    - it has better support for the things that matter to me. [fn:4]
     - it has a built-in package manager.
     Vim pros:
     - nicer navigation
@@ -38,11 +38,13 @@ Bagaimana pun juga, apa pun editor Anda, selama Anda merasa produktif
 dan efisien, then it's good...
 
 * Getting Started with Emacs
-  It takes 2 steps:
+  It takes (only) 2 steps:
   1. run the built-in Emacs tutorial ~C-h t~
   2. use Emacs day and night for all your work
 
 * Remember, this, of course, is highly subjective :)
+
+my [[./demo/.emacs][.emacs]] file
 
 * Footnotes
 
@@ -51,4 +53,6 @@ dan efisien, then it's good...
 [fn:2] [[./demo/demo.py][demo.py]]
 
 [fn:3] [[./demo/snippets.el][snippets.el]]
+
+[fn:4] [[./demo/pdf/tesis.org][tesis.org]]
 

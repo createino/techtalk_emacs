@@ -19,5 +19,5 @@
 (global-set-key (kbd "C-S-o")
 		'my/insert-line-before)
 
-; line 1
-; line 2
+; line_1 abcdefghij
+; line_2 klmnopqrst
