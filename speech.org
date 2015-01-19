@@ -1,8 +1,9 @@
 * Why Emacs?
   - Divine Editing Experience [fn:1]
-  - Everything is possible
+  - Everything is possible [ +Almost to be exact+ :) ]
     - good language support [fn:2]
-    - latex support
+    - breeze org-mode <=> latex support
+    - pdf and image viewer [fn:5]
     - chart with graphviz-mode
     - e-mail reader
     - IRC
@@ -13,45 +14,47 @@
   - Emacs is extensible [fn:3]
   - Integrates well with lots of external tools
     - shell-mode, ansi-term, eshell
-    - dired
+    - dired [fn:7]
     - cvs, svn, bazaar, git, mercurial
-    - proced (process manager) ; create python infinite looping for demo
-  - Emacs Doesn't Make you repeat yourself [fn:3]
+    - proced (emacs process manager)
+  - Emacs Doesn't let you repeat yourself [fn:3]
   - Emacs is Modern
     - GTK2/3, Coca, WinAPI
     - OSes clipboard support
-    - TTF Fonts support
+    - TTF Fonts support [fn:6]
     - apt-get or brew like package manager
   - Emacs is constantly evolving
   - Other prominent tools use Emacs's keybindings
     - bash, zsh, Cocoa toolkit use Emacs keybindings by default
 * Emacs vs the World
   - Emacs vs vim
+
     Emacs pros:
     - it has better default extension language.
     - it's modeless.
     - it has better integration with external systems.
     - it has better support for the things that matter to me. [fn:4]
     - it has a built-in package manager.
+
     Vim pros:
     - nicer navigation
     - much smaller core and much faster to load
     - very simple initial config
     - it has a more stylish icon than Emacs :)
   - Emacs vs IDEs
+
     IDEs pros:
     - good refactoring support
     - semantic code analysis
     - integrated GUI debuggers and GUI design tools
     - precise auto-completions
     - good integration with external systems, i.e. version control
+
     IDEs cons:
     - dependent to the mouse and an X environment
     - not resource efficient
     - IDEs impair your thinking by thinking instead of you
 
-*Bagaimana pun juga, apa pun editor Anda, selama Anda merasa produktif
-dan efisien, then it's good...*
 
 * Getting Started with Emacs
   It takes (only) 2 steps:
@@ -59,11 +62,13 @@ dan efisien, then it's good...*
   2. use Emacs day and night for all your work
 
 * Note!
-Remember, this, of course, is highly subjective :)
+  - *Bagaimana pun juga, apa pun editor Anda, selama Anda merasa
+    produktif dan efisien, then it's good...*
+  - *Remember, this, of course, is _highly subjective_ :)*
 
 * Dotfile
 my [[./demo/.emacs][~/.emacs]] file
-more org-mode table demo
+
 * Footnotes
 [fn:1] [[./demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
 
@@ -72,4 +77,10 @@ more org-mode table demo
 [fn:3] [[./demo/snippets.el][snippets.el]]
 
 [fn:4] [[./demo/pdf/tesis.org][tesis.org]]
+
+[fn:5] [[./demo/emacs_docs.pdf][pdf]] [[./demo/emacs_learning_curve.jpg][img]]
+
+[fn:6] [[./demo/arab.txt][arab.txt]]
+
+[fn:7] [[./demo/dired_demo][dired_demo]]
 

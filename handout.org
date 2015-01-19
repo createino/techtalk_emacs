@@ -1,0 +1,177 @@
+* Why Emacs?
+  - Divine Editing Experience [fn:1]
+    - show some little demo tricks
+      - keyboard macro demo
+	- demo-ing macro
+          | Command   | Keterangan               |
+          |-----------+--------------------------|
+          | F3        | start the macro          |
+          | C-a       | go the beginning of line |
+          | C-u 9 C-n | jump down 9 lines        |
+          | C-SPC     | start the mark           |
+          | C-e       | go the end of line       |
+          | M-w       | copy region              |
+          | C-w       | cut the region           |
+          | C-u 9 C-p | jump up 9 lines          |
+          | C-e       | go the end of line       |
+          | SPC       | add space                |
+          | C-y       | paste                    |
+          | C-n       | go next line             |
+          | F4        | end macro                |
+          | C-u 8 F4  | repeat the macro 8 times | 
+	- save the macro into .emacs and you can use it later
+          | Command               | Keterangan                |
+          |-----------------------+---------------------------|
+          | M-x save-macro <name> | custom save macro command |
+          | C-u 9 M-x demo        | call macro demo 9 times   |
+      - clear ring demo
+        | Command | Keterangan              |
+        |---------+-------------------------|
+        | C-x r c | clear the marked region |
+  - Everything is possible
+    - good language support [fn:2] demo-ing repl interaction with
+      python. First open python file, open the repl, and interact with
+      it.
+      | Command         | Keterangan                     |
+      |-----------------+--------------------------------|
+      | C-c C-o         | open the py file               |
+      | C-c C-z         | Start the ipython interpreter  |
+      | mark the region |                                |
+      | C-c C-r         | send the region to interpreter |
+      | execute there   |                                |
+    - breeze org-mode <=> latex support
+      | Command | Keterangan             |
+      |---------+------------------------|
+      | C-c C-e | show the export option |
+    - pdf and image viewer
+    - chart with graphviz-mode
+    - e-mail reader
+    - IRC 
+      | Command          | Keterangan |
+      |------------------+------------|
+      | M-x irc          |            |
+      | /join #python-id |            |
+      | /quit            |            |
+    - terminal session
+      | Command   | Keterangan              |
+      |-----------+-------------------------|
+      | M-x shell | start the shell session |
+    - write blog entry
+    - coffee-mode to control certain kinds of coffee machines
+    - git integration
+      | Command | Keterangan   |
+      |---------+--------------|
+      | C-x g   | magit-status |
+  - Emacs is extensible [fn:3]
+    show arabic font
+  - Integrates well with lots of external tools
+    - shell-mode, ansi-term, eshell
+    - dired
+      | Command                   | Keterangan                   |
+      |---------------------------+------------------------------|
+      | C-x d                     | start dired                  |
+      | +                         | create new directory         |
+      | d x                       | delete selected file         |
+      | C-x C-q                   | swith to editable dired      |
+      | sorot nama file           |                              |
+      | M-x mc/mark-all-like-this |                              |
+      | C-c C-c                   | execute and exit from wdired |
+    - cvs, svn, bazaar, git, mercurial
+    - proced (process manager)
+      | Command                       | Keterangan            |
+      |-------------------------------+-----------------------|
+      | M-x proced                    | start the proced mode |
+      | M-x proced-toggle-auto-update | toggle auto update    |
+      | d                             | mark the process      |
+      | x                             | process the marked    |
+      | Tab                           | see the option        |
+  - Emacs Doesn't Make you repeat yourself [fn:3]
+  - Emacs is Modern
+    - GTK2/3, Coca, WinAPI
+    - OSes clipboard support
+    - TTF Fonts support
+      demoing arabic text
+    - apt-get or brew like package manager
+      demo package-list-packages
+      | Command                   | Keterangan |
+      |---------------------------+------------|
+      | M-x package-list-packages |            |
+  - Emacs is constantly evolving
+  - Other prominent tools use Emacs's keybindings
+    - bash, zsh, Cocoa toolkit use Emacs keybindings by default
+      open terminal
+      demo-ing bash keybinding
+      text error and edit it => sudo spt-get install
+      | Command | Keterangan         |
+      | C-r sp  | backward-search sp |
+      | C-j     | stop the search    |
+      | C-d     | delete char        |
+      | a       | replace with a     |
+* Emacs vs the World
+  - Emacs vs vim
+
+    Emacs pros:
+    - it has better default extension language.
+    - it's modeless.
+    - it has better integration with external systems.
+    - it has better support for the things that matter to me. [fn:4]
+    - it has a built-in package manager.
+
+    Vim pros:
+    - nicer navigation
+    - much smaller core and much faster to load
+    - very simple initial config
+    - it has a more stylish icon than Emacs :)
+  - Emacs vs IDEs
+
+    IDEs pros:
+    - good refactoring support
+    - semantic code analysis
+    - integrated GUI debuggers and GUI design tools
+    - precise auto-completions
+    - good integration with external systems, i.e. version control
+
+    IDEs cons:
+    - dependent to the mouse and an X environment
+    - not resource efficient
+    - IDEs impair your thinking by thinking instead of you
+
+* Getting Started with Emacs
+  It takes (only) 2 steps:
+  1. run the built-in Emacs tutorial ~C-h t~
+  2. use Emacs day and night for all your work
+
+* Note!
+  - *Bagaimana pun juga, apa pun editor Anda, selama Anda merasa
+    produktif dan efisien, then it's good...*
+  - *Remember, this, of course, is highly subjective :)*
+
+* Dotfile
+  + my [[./demo/.emacs][~/.emacs]] file
+  + if there is more time, give org-mode table demo
+
+    | Nama            | Harga |
+    |-----------------+-------|
+    | Beli buku emacs |    40 |
+    | Bensin          |     2 |
+    | Bayar Listrik   |    15 |
+    |-----------------+-------|
+    |                 |    57 |
+    #+TBLFM: $2=vsum(@I..@II)
+
+    | Command               | Keterangan |
+    |-----------------------+------------|
+    | mark pointer on total |            |
+    | C-c =                 |            |
+    | vsum(@I..@II)         |            |
+
+
+* Footnotes
+[fn:1] [[./demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
+
+[fn:2] [[./demo/demo.py][demo.py]]
+
+[fn:3] [[./demo/snippets.el][snippets.el]]
+
+[fn:4] [[./demo/pdf/tesis.org][tesis.org]]
+

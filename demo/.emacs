@@ -55,11 +55,21 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;-------------------------;
-;;; Custom Key Bindinds ;;;
+;;; Custom Key Bindings ;;;
 ;-------------------------;
 
+;; font in/decrease
+(global-set-key (kbd "C-+") 'text-scale-increase)
+(global-set-key (kbd "C--") 'text-scale-decrease)
+
+;; commenting region
+
 (global-set-key (kbd "C-;") 'comment-or-uncomment-region)
+
+;; hippie expand
 (global-set-key (kbd "M-/") 'hippie-expand)
+
+;; magit-status
 (global-set-key (kbd "C-x g") 'magit-status)
 
 ;; make cursor movement keys under right hand's home-row
@@ -142,9 +152,27 @@
 (require 'cl) ;; patch to fix ace-jump-mode
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
+;; save keyboard macro
+(defun my/save-macro (name)
+  "save a macro. Take a name as argument
+     and save the last defined macro under 
+     this name at the end of your .emacs"
+  (interactive "SName of the macro: ")  ; ask for the name of the macro    
+  (kmacro-name-last-macro name)         ; use this name for the macro    
+  (find-file user-init-file)            ; open ~/.emacs or other user init file 
+  (goto-char (point-max))               ; go to the end of the .emacs
+  (newline)                             ; insert a newline
+  (insert-kbd-macro name)               ; copy the macro 
+  (newline)                             ; insert a newline
+  (switch-to-buffer nil))               ; return to the initial buffer
+
 ;; my package
 ; multiple-cursor (mc)
 ; expand-region
 ; magit
 ; slime
 ; ace jump mode
+
+(fset 'demo
+   (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([21 57 14 67108896 5 23 21 57 16 5 32 25 14 1] 0 "%d")) arg)))
+
