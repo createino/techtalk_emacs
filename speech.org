@@ -55,7 +55,6 @@
     - not resource efficient
     - IDEs impair your thinking by thinking instead of you
 
-
 * Getting Started with Emacs
   It takes (only) 2 steps:
   1. run the built-in Emacs tutorial ~C-h t~
@@ -64,7 +63,7 @@
 * Note!
   - *Bagaimana pun juga, apa pun editor Anda, selama Anda merasa
     produktif dan efisien, then it's good...*
-  - *Remember, this, of course, is _highly subjective_ :)*
+  - *Remember, this, of course, is highly subjective :)*
 
 * Dotfile
 my [[./demo/.emacs][~/.emacs]] file
