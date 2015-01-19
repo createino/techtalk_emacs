@@ -1,13 +1,30 @@
 * Why Emacs?
   - Divine Editing Experience [fn:1]
-  - Almost every popular programming language is well supported [fn:2]
+  - Everything is possible
+    - good language support [fn:2]
+    - latex support
+    - chart with graphviz-mode
+    - e-mail reader
+    - IRC
+    - terminal session
+    - write blog entry
+    - coffee-mode to control certain kinds of coffee machines
+    - git integration
   - Emacs is extensible [fn:3]
   - Integrates well with lots of external tools
+    - shell-mode, ansi-term, eshell
+    - dired
+    - cvs, svn, bazaar, git, mercurial
+    - proced (process manager) ; create python infinite looping for demo
   - Emacs Doesn't Make you repeat yourself [fn:3]
   - Emacs is Modern
+    - GTK2/3, Coca, WinAPI
+    - OSes clipboard support
+    - TTF Fonts support
+    - apt-get or brew like package manager
   - Emacs is constantly evolving
   - Other prominent tools use Emacs's keybindings
-
+    - bash, zsh, Cocoa toolkit use Emacs keybindings by default
 * Emacs vs the World
   - Emacs vs vim
     Emacs pros:
@@ -21,7 +38,6 @@
     - much smaller core and much faster to load
     - very simple initial config
     - it has a more stylish icon than Emacs :)
-
   - Emacs vs IDEs
     IDEs pros:
     - good refactoring support
@@ -44,8 +60,10 @@ dan efisien, then it's good...
 
 * Note!
 Remember, this, of course, is highly subjective :)
+
 * Dotfile
 my [[./demo/.emacs][~/.emacs]] file
+more org-mode table demo
 * Footnotes
 [fn:1] [[./demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
 
