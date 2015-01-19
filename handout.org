@@ -1,29 +1,27 @@
 * Why Emacs?
   - Divine Editing Experience [fn:1]
     - show some little demo tricks
-      - keyboard macro demo
-	demo-ing macro
-        | Command   | Keterangan               |
-        |-----------+--------------------------|
-        | F3        | start the macro          |
-        | C-a       | go the beginning of line |
-        | C-u 9 C-n | jump down 9 lines        |
-        | C-SPC     | start the mark           |
-        | C-e       | go the end of line       |
-        | M-w       | copy region              |
-        | C-w       | cut the region           |
-        | C-u 9 C-p | jump up 9 lines          |
-        | C-e       | go the end of line       |
-        | SPC       | add space                |
-        | C-y       | paste                    |
-        | C-n       | go next line             |
-        | F4        | end macro                |
-        | C-u 8 F4  | repeat the macro 8 times | 
+      - keyboard macro demo, demo-ing macro
+        | Command  | Keterangan               |
+        |----------+--------------------------|
+        | F3       | start the macro          |
+        | C-a      | go the beginning of line |
+        | C-9 C-n  | jump down 9 lines        |
+        | C-SPC    | start the mark           |
+        | C-e      | go the end of line       |
+        | C-w      | cut the region           |
+        | C-9 C-p  | jump up 9 lines          |
+        | C-e      | go the end of line       |
+        | SPC      | add space                |
+        | C-y      | paste                    |
+        | C-n      | go next line             |
+        | F4       | end macro                |
+        | C-u 8 F4 | repeat the macro 8 times |
 	save the macro into .emacs and you can use it later
-          | Command               | Keterangan                |
-          |-----------------------+---------------------------|
-          | M-x save-macro <name> | custom save macro command |
-          | C-u 9 M-x demo        | call macro demo 9 times   |
+        | Command               | Keterangan                |
+        |-----------------------+---------------------------|
+        | M-x save-macro <name> | custom save macro command |
+        | C-9 M-x demo          | call macro demo 9 times   |
       - clear ring demo
         | Command | Keterangan              |
         |---------+-------------------------|

@@ -42,14 +42,25 @@
 (require 'package)
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 
-;-----------------------;
-;;; Some other stuffs ;;;
-;-----------------------;
+;---------------------;
+;;; Startup options ;;;
+;---------------------;
 
 ;; Auto-enabled ido-mode
 (require 'ido)
 (ido-mode t)
 (setq ido-enable-flex-matching t)  ; fuzzy matching is a must have
+
+;; change list-buffers to ibuffer
+(defalias 'list-buffers 'ibuffer)
+
+;-----------------------------------------;
+;;; make frequently used commands short ;;;
+;-----------------------------------------;
+
+;; aliasing ace-jump-mode
+(defalias 'ajm 'ace-jump-mode)
+(defalias 'ajcm 'ace-jump-char-mode)
 
 ;; aliasing yes or no to y or n only
 (defalias 'yes-or-no-p 'y-or-n-p)
@@ -57,6 +68,9 @@
 ;-------------------------;
 ;;; Custom Key Bindings ;;;
 ;-------------------------;
+
+;; change Alt-x to F8
+(global-set-key (kbd "<f8>") 'execute-extended-command)
 
 ;; font in/decrease
 (global-set-key (kbd "C-+") 'text-scale-increase)
