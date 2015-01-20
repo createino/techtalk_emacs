@@ -4,6 +4,6 @@
 *.pyg
 *~
 *#
-*.tex
+pdf/*.tex
 *.out
 tesis.pdf

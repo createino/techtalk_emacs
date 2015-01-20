@@ -26,6 +26,10 @@
         | Command | Keterangan              |
         |---------+-------------------------|
         | C-x r c | clear the marked region |
+      - custom jump-start emacs
+        | Command                | Keterangan |
+        |------------------------+------------|
+        | M-x my/demo-jump-start |            |
   - Everything is possible +Almost to be exact+ :)
     - good language support [fn:2] demo-ing repl interaction with
       python. First open python file, open the repl, and interact with
