@@ -89,7 +89,7 @@ my [[./demo/.emacs][~/.emacs]] file
 
 [fn:3] [[./demo/snippets.el][snippets.el]]
 
-[fn:4] [[./demo/pdf/tesis.org][tesis.org]]
+[fn:4] [[./demo/pdf/tesis.org][tesis.org]] [[./demo/beamer.org][beamer.org]]
 
 [fn:5] [[./demo/emacs_docs.pdf][pdf]] [[./demo/emacs_learning_curve.jpg][img]]
 
