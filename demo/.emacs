@@ -162,6 +162,23 @@
 ;; try to automagically figure out indentation
 (setq py-smart-indentation t)
 
+;---------------;
+;;; yasnippet ;;;
+;---------------;
+(add-to-list 'load-path "~/.emacs.d/elpa/yasnippet-0.8.0/")
+(require 'yasnippet)
+(yas-global-mode 1)
+
+;-------------------;
+;;; Auto-complete ;;;
+;-------------------;
+
+(add-to-list 'load-path "~/.emacs.d/elpa/popup-0.5")
+(add-to-list 'load-path "~/.emacs.d/elpa/auto-complete-1.4")
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-1.4/dict")
+(ac-config-default)
+
 ;-----------------;
 ;; ace-jump-mode ;;
 ;-----------------;
@@ -173,13 +190,6 @@
 (add-hook 'org-mode-hook
           (lambda ()
             (local-set-key (kbd "\C-c SPC") 'ace-jump-mode)))
-
-;; my package
-; multiple-cursor (mc)
-; expand-region
-; magit
-; slime
-; ace jump mode
 
 ;----------------------;
 ;;; for demo purpose ;;;
@@ -236,3 +246,11 @@
    macro." (interactive "p") (kmacro-exec-ring-item (quote ([1
    67108921 14 67108896 5 23 67108921 16 5 32 25 14] 0 "%d"))
    arg)))
+
+;; my package
+; multiple-cursor (mc)
+; expand-region
+; magit
+; slime
+; ace jump mode
+; yasnippet
