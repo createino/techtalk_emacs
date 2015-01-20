@@ -1,3 +1,4 @@
+* Define:Emacs
 * Why Emacs?
   - Divine Editing Experience [fn:1]
     - show some little demo tricks
@@ -37,7 +38,7 @@
       | Command         | Keterangan                     |
       |-----------------+--------------------------------|
       | C-c C-o         | open the py file               |
-      | C-c C-z         | Start the ipython interpreter  |
+      | M-x my/ipython  | Start the ipython interpreter  |
       | mark the region |                                |
       | C-c C-r         | send the region to interpreter |
       | execute there   |                                |

@@ -162,9 +162,17 @@
 ;; try to automagically figure out indentation
 (setq py-smart-indentation t)
 
-;; ace-jump-mode
-(require 'cl) ;; patch to fix ace-jump-mode
-(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+;-----------------;
+;; ace-jump-mode ;;
+;-----------------;
+;; patch to fix ace-jump-mode
+(require 'cl)
+;(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+
+;; When org-mode starts it (org-mode-map) overrides the ace-jump-mode.
+(add-hook 'org-mode-hook
+          (lambda ()
+            (local-set-key (kbd "\C-c SPC") 'ace-jump-mode)))
 
 ;; my package
 ; multiple-cursor (mc)
@@ -208,9 +216,23 @@
     (enlarge-window-horizontally 5)
 )
 
+;; quickly open ipython demo
+(defun my/ipython ()
+  (interactive)
+  (split-window-vertically)
+  (other-window 1)
+  (python-shell-switch-to-shell)
+  (switch-to-buffer "speech.org")
+  (other-window 1)
+  ;(switch-to-buffer "~/git/techtalk_emacs/demo/demo.py")
+  (find-file "~/git/techtalk_emacs/demo/demo.py")
+  (other-window 1)
+  ;(switch-to-buffer "*Python[/home/banteng/git/techtalk_emacs/demo/demo.py]*")
+  (switch-to-buffer "*Python*")
+)
+
 (fset 'demo-macro
    (lambda (&optional arg) "Keyboard
    macro." (interactive "p") (kmacro-exec-ring-item (quote ([1
    67108921 14 67108896 5 23 67108921 16 5 32 25 14] 0 "%d"))
    arg)))
-

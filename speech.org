@@ -1,5 +1,10 @@
+* Define:Emacs
 * Why Emacs?
-  - Divine Editing Experience [fn:1]
+  - Divine Editing Experience 
+    - custom jump-start
+    - kbd macro [fn:1]
+    - clear ring
+    - ace jump mode
   - Everything is possible [ +Almost to be exact+ :) ]
     - good language support [fn:2]
     - breeze org-mode <=> latex support
@@ -56,12 +61,12 @@
     - IDEs impair your thinking by thinking instead of you
 
 * Getting Started with Emacs
-  It takes (only) 2 steps:
+  It +only+ takes 2 steps:
   1. run the built-in Emacs tutorial ~C-h t~
   2. use Emacs day and night for all your work
 
 * Note!
-  - *Bagaimana pun juga, apa pun editor Anda, selama Anda merasa
+  - *Bagaimanapun juga, apa pun editor Anda, selama Anda merasa
     produktif dan efisien, then it's good...*
   - *Remember, this, of course, is highly subjective :)*
 
