@@ -241,6 +241,15 @@
   (switch-to-buffer "*Python*")
 )
 
+;; quickly create and name shell
+(defun create-shell ()
+    "creates a shell with a given name"
+    (interactive);; "Prompt\n shell name:")
+    (let ((shell-name (read-string "shell name: " nil)))
+    (shell (concat "*" shell-name "*"))))
+
+(global-set-key (kbd "M-S") 'create-shell)
+
 (fset 'demo-macro
    (lambda (&optional arg) "Keyboard
    macro." (interactive "p") (kmacro-exec-ring-item (quote ([1
