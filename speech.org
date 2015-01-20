@@ -72,6 +72,8 @@
   1. run the built-in Emacs tutorial ~C-h t~
   2. use Emacs day and night for all your work
 
+* My #1 Problem
+  - No adequate embedded browser in Emacs!
 * Note!
   - *Bagaimanapun juga, apa pun editor Anda, selama Anda merasa
     produktif dan efisien, then it's good...*
