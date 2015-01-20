@@ -1,4 +1,10 @@
 * Define:Emacs
+
+  
+  [[./img/emacs-logo.png]]
+
+  [[./img/creator.png]]
+
 * Why Emacs?
   - Divine Editing Experience 
     - custom jump-start
