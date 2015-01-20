@@ -9,7 +9,7 @@
     - IRC
     - terminal session
     - write blog entry
-    - coffee-mode to control certain kinds of coffee machines
+    - coffee-mode [fn:8]
     - git integration
   - Emacs is extensible [fn:3]
   - Integrates well with lots of external tools
@@ -82,4 +82,6 @@ my [[./demo/.emacs][~/.emacs]] file
 [fn:6] [[./demo/arab.txt][arab.txt]]
 
 [fn:7] [[./demo/dired_demo][dired_demo]]
+
+[fn:8] [[http://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol][wikipedia]]
 
