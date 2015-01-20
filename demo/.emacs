@@ -166,6 +166,17 @@
 (require 'cl) ;; patch to fix ace-jump-mode
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
+;; my package
+; multiple-cursor (mc)
+; expand-region
+; magit
+; slime
+; ace jump mode
+
+;----------------------;
+;;; for demo purpose ;;;
+;----------------------;
+
 ;; save keyboard macro
 (defun my/save-macro (name)
   "save a macro. Take a name as argument
@@ -180,13 +191,26 @@
   (newline)                             ; insert a newline
   (switch-to-buffer nil))               ; return to the initial buffer
 
-;; my package
-; multiple-cursor (mc)
-; expand-region
-; magit
-; slime
-; ace jump mode
+;; jumpstarting emacs
+(defun my/demo-jump-start ()
+  (interactive)
+    (find-file "~/git/techtalk_emacs/demo/emacs_docs.tex")
+    (split-window-horizontally)
+    (other-window 1)
+    (find-file "~/git/techtalk_emacs/demo/emacs_docs.pdf")
+    (other-window 1)
+    (split-window-vertically)
+    (other-window 1)
+    (shell)
+    ;(goto-char (point-max))
+    ;(recenter-top-bottom 0)
+    (shrink-window 20)
+    (enlarge-window-horizontally 5)
+)
 
-(fset 'demo
-   (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([21 57 14 67108896 5 23 21 57 16 5 32 25 14 1] 0 "%d")) arg)))
+(fset 'demo-macro
+   (lambda (&optional arg) "Keyboard
+   macro." (interactive "p") (kmacro-exec-ring-item (quote ([1
+   67108921 14 67108896 5 23 67108921 16 5 32 25 14] 0 "%d"))
+   arg)))
 
