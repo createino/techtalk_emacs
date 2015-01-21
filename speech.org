@@ -1,39 +1,48 @@
-* Define:Emacs
+* Emacs at a Glance
+** Definition
+   #+BEGIN_QUOTE
+   GNU Emacs is an *extensible*, *customizable* text editor—and more. At
+   its core is an interpreter for Emacs Lisp, a dialect of the Lisp
+   programming language with extensions to support text editing.[fn:1]
+   #+END_QUOTE
+** Emacs Logo
 
-  
   [[./img/emacs-logo.png]]
-
+** Emacs Creator
   [[./img/creator.png]]
 
 * Why Emacs?
-  - Divine Editing Experience 
+  - Divine Editing Experience [fn:2]
     - custom jump-start
-    - kbd macro [fn:1]
+    - keyboard macro
     - clear ring
-    - ace jump mode
+    - expand-region
+    - multi-cursor
+    - ace-jump-mode
+    - key-chord
   - Everything is possible [ +Almost to be exact+ :) ]
-    - good language support [fn:2]
+    - good language support [fn:3]
     - breeze org-mode <=> latex support
-    - pdf and image viewer [fn:5]
+    - pdf and image viewer [fn:4]
     - chart with graphviz-mode
     - e-mail reader
     - IRC
     - terminal session
     - write blog entry
-    - coffee-mode [fn:8]
+    - coffee-mode [fn:5]
     - git integration
     - many others
-  - Emacs is extensible [fn:3]
+  - Emacs is extensible [fn:6]
   - Integrates well with lots of external tools
     - shell-mode, ansi-term, eshell
     - dired [fn:7]
     - cvs, svn, bazaar, git, mercurial
     - proced (emacs process manager)
-  - Emacs Doesn't let you repeat yourself [fn:3]
+  - Emacs Doesn't let you repeat yourself [fn:6]
   - Emacs is Modern
     - GTK2/3, Coca, WinAPI
     - OSes clipboard support
-    - TTF Fonts support [fn:6]
+    - TTF Fonts support [fn:8]
     - apt-get or brew like package manager
   - Emacs is constantly evolving
   - Other prominent tools use Emacs's keybindings
@@ -45,7 +54,7 @@
     - it has better default extension language.
     - it's modeless.
     - it has better integration with external systems.
-    - it has better support for the things that matter to me. [fn:4]
+    - it has better support for the things that matter to me. [fn:9]
     - it has a built-in package manager.
 
     Vim pros:
@@ -83,19 +92,20 @@
 my [[./demo/.emacs][~/.emacs]] file
 
 * Footnotes
-[fn:1] [[./demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
+[fn:1] https://www.gnu.org/software/emacs/
 
-[fn:2] [[./demo/demo.py][demo.py]]
+[fn:2] [[./demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
 
-[fn:3] [[./demo/snippets.el][snippets.el]]
+[fn:3] [[./demo/demo.py][demo.py]]
 
-[fn:4] [[./demo/pdf/tesis.org][tesis.org]] [[./demo/beamer.org][beamer.org]]
+[fn:4] [[./demo/emacs_docs.pdf][pdf]] [[./demo/emacs_learning_curve.jpg][img]]
 
-[fn:5] [[./demo/emacs_docs.pdf][pdf]] [[./demo/emacs_learning_curve.jpg][img]]
+[fn:5] [[http://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol][wikipedia]]
 
-[fn:6] [[./demo/arab.txt][arab.txt]]
+[fn:6] [[./demo/snippets.el][snippets.el]]
 
 [fn:7] [[./demo/dired_demo][dired_demo]]
 
-[fn:8] [[http://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol][wikipedia]]
+[fn:8] [[./demo/arab.txt][arab.txt]]
 
+[fn:9] [[./demo/pdf/tesis.org][tesis.org]] [[./demo/beamer.org][beamer.org]]

@@ -237,8 +237,8 @@
   ;(switch-to-buffer "~/git/techtalk_emacs/demo/demo.py")
   (find-file "~/git/techtalk_emacs/demo/demo.py")
   (other-window 1)
-  ;(switch-to-buffer "*Python[/home/banteng/git/techtalk_emacs/demo/demo.py]*")
-  (switch-to-buffer "*Python*")
+  (switch-to-buffer "*Python[/home/banteng/git/techtalk_emacs/demo/demo.py]*")
+  ;(switch-to-buffer "*Python*")
 )
 
 ;; quickly create and name shell
