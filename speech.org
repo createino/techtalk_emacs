@@ -1,9 +1,15 @@
 * Emacs at a Glance
-** Definition
+** Define
    #+BEGIN_QUOTE
-   GNU Emacs is an *extensible*, *customizable* text editor—and more. At
-   its core is an interpreter for Emacs Lisp, a dialect of the Lisp
-   programming language with extensions to support text editing.[fn:1]
+   GNU Emacs is an *extensible*, *customizable* text editor—and
+   more. At its core is an interpreter for Emacs Lisp, a dialect of
+   the Lisp programming language with extensions to support text
+   editing. [fn:1]
+   #+END_QUOTE
+
+   #+BEGIN_QUOTE
+   Emacs is not an extensible text-editor. It's a programming
+   environment with a nice built-in library for editing text. [fn:10]
    #+END_QUOTE
 ** Emacs Logo
 
@@ -31,7 +37,10 @@
     - write blog entry
     - coffee-mode [fn:5]
     - git integration
-    - many others
+    - play tetris anyone? :) 
+    - M-x phases-of-moon
+    - M-x doctor
+    - many more...
   - Emacs is extensible [fn:6]
   - Integrates well with lots of external tools
     - shell-mode, ansi-term, eshell
@@ -109,3 +118,5 @@ my [[./demo/.emacs][~/.emacs]] file
 [fn:8] [[./demo/arab.txt][arab.txt]]
 
 [fn:9] [[./demo/pdf/tesis.org][tesis.org]] [[./demo/beamer.org][beamer.org]]
+
+[fn:10] https://www.youtube.com/watch?v=EH_KILXupyU&t=11m35s
