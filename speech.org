@@ -9,7 +9,7 @@
 
    #+BEGIN_QUOTE
    Emacs is not an extensible text-editor. It's a programming
-   environment with a nice built-in library for editing text. [fn:10]
+   environment with a nice built-in library for editing text. [fn:2]
    #+END_QUOTE
 ** Emacs Logo
 
@@ -18,7 +18,7 @@
   [[./img/creator.png]]
 
 * Why Emacs?
-  - Divine Editing Experience [fn:2]
+  - Divine Editing Experience [fn:3]
     - custom jump-start
     - keyboard macro
     - clear ring
@@ -27,9 +27,9 @@
     - ace-jump-mode
     - key-chord
   - Everything is possible [ +Almost to be exact+ :) ]
-    - good language support [fn:3]
+    - good language support [fn:4]
     - breeze org-mode <=> latex support
-    - pdf and image viewer [fn:4]
+    - pdf and image viewer
     - chart with graphviz-mode
     - e-mail reader
     - IRC
@@ -57,7 +57,7 @@
   - Other prominent tools use Emacs's keybindings
     - bash, zsh, Cocoa toolkit use Emacs keybindings by default
 * Emacs vs the World
-  - IDE and Code Editors Stats 2014 [fn:11]
+  - IDE and Code Editors Stats 2014 [fn:9]
     [[./img/editors_stats.jpg]]
 
   - Emacs vs vim
@@ -66,7 +66,7 @@
     - it has better default extension language.
     - it's modeless.
     - it has better integration with external systems.
-    - it has better support for the things that matter to me. [fn:9]
+    - it has better support for the things that matter to me. [fn:10]
     - it has a built-in package manager.
 
     Vim pros:
@@ -89,9 +89,12 @@
     - IDEs impair your thinking by thinking instead of you
 
 * Getting Started with Emacs
+  [[./demo/emacs_learning_curve.jpg][img]]
+
   It +only+ takes 2 steps:
-  1. run the built-in Emacs tutorial ~C-h t~
-  2. use Emacs day and night for all your work
+  1. run the built-in Emacs tutorial ~C-h t~.
+  2. use Emacs day and night for all your work or even use it as
+     your window manager. [fn:11]
 
 * My #1 Problem
   - No adequate embedded browser in Emacs!
@@ -106,11 +109,11 @@ my [[./demo/.emacs][~/.emacs]] file
 * Footnotes
 [fn:1] https://www.gnu.org/software/emacs/
 
-[fn:2] [[./demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
+[fn:2] Austion Bingham at [[https://www.youtube.com/watch?v%3DEH_KILXupyU&t%3D11m35s][Youtube]]
 
-[fn:3] [[./demo/demo.py][demo.py]]
+[fn:3] [[./demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
 
-[fn:4] [[./demo/emacs_docs.pdf][pdf]] [[./demo/emacs_learning_curve.jpg][img]]
+[fn:4] [[./demo/demo.py][demo.py]]
 
 [fn:5] [[http://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol][wikipedia]]
 
@@ -120,8 +123,8 @@ my [[./demo/.emacs][~/.emacs]] file
 
 [fn:8] [[./demo/arab.txt][arab.txt]]
 
-[fn:9] [[./demo/pdf/tesis.org][tesis.org]] [[./demo/beamer.org][beamer.org]]
+[fn:9] [[https://blog.codeanywhere.com/most-popular-ides-code-editors/][codeanywhere]]
 
-[fn:10] Austion Bingham at [[https://www.youtube.com/watch?v%3DEH_KILXupyU&t%3D11m35s][Youtube]]
+[fn:10] [[./demo/pdf/tesis.org][tesis.org]] [[./demo/beamer.org][beamer.org]]
 
-[fn:11] [[https://blog.codeanywhere.com/most-popular-ides-code-editors/][codeanywhere]]
+[fn:11] [[http://www.howardism.org/Technical/Emacs/new-window-manager.html][howardism]]
