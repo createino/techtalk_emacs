@@ -250,11 +250,34 @@
 
 (global-set-key (kbd "M-S") 'create-shell)
 
-(fset 'demo-macro
+
+;------------------------;
+;;; key-chord bindings ;;;
+;------------------------;
+
+(package-initialize)
+(key-chord-mode 1)
+(key-chord-define-global "fg" 'iy-go-to-char)
+(key-chord-define-global "df" 'iy-go-to-char-backward)
+(key-chord-define-global "dc" 'delete-backward-char)
+
+(fset 'my/demo-macro
    (lambda (&optional arg) "Keyboard
    macro." (interactive "p") (kmacro-exec-ring-item (quote ([1
    67108921 14 67108896 5 23 67108921 16 5 32 25 14] 0 "%d"))
    arg)))
+
+;------------------;
+;;; speech start ;;;
+;------------------;
+
+(defun my/speech-start ()
+  (interactive)
+  (set-face-attribute 'default nil :height 140)
+  (find-file "~/git/techtalk_emacs/speech.org")
+  (auto-fill-mode 1)
+  (org-display-inline-images 1)
+  (flymake-mode 1))
 
 ;; my package
 ; multiple-cursor (mc)
@@ -263,3 +286,5 @@
 ; slime
 ; ace jump mode
 ; yasnippet
+; iy-go-to-char.el
+; key-chord.el
