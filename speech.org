@@ -57,6 +57,9 @@
   - Other prominent tools use Emacs's keybindings
     - bash, zsh, Cocoa toolkit use Emacs keybindings by default
 * Emacs vs the World
+  - IDE and Code Editors Stats 2014 [fn:11]
+    [[./img/editors_stats.jpg]]
+
   - Emacs vs vim
 
     Emacs pros:
@@ -119,4 +122,6 @@ my [[./demo/.emacs][~/.emacs]] file
 
 [fn:9] [[./demo/pdf/tesis.org][tesis.org]] [[./demo/beamer.org][beamer.org]]
 
-[fn:10] https://www.youtube.com/watch?v=EH_KILXupyU&t=11m35s
+[fn:10] Austion Bingham at [[https://www.youtube.com/watch?v%3DEH_KILXupyU&t%3D11m35s][Youtube]]
+
+[fn:11] [[https://blog.codeanywhere.com/most-popular-ides-code-editors/][codeanywhere]]
