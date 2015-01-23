@@ -257,9 +257,11 @@
 
 (package-initialize)
 (key-chord-mode 1)
-(key-chord-define-global "fg" 'iy-go-to-char)
-(key-chord-define-global "df" 'iy-go-to-char-backward)
-(key-chord-define-global "dc" 'delete-backward-char)
+(key-chord-define-global "jj" 'save-buffer)
+(key-chord-define-global "jk" 'switch-to-buffer)
+(key-chord-define-global ";;" 'ace-jump-char-mode)
+(key-chord-define-global "io" 'other-window)
+
 
 (fset 'my/demo-macro
    (lambda (&optional arg) "Keyboard
@@ -275,9 +277,14 @@
   (interactive)
   (set-face-attribute 'default nil :height 140)
   (find-file "~/git/techtalk_emacs/speech.org")
-  (auto-fill-mode 1)
-  (org-display-inline-images 1)
-  (flymake-mode 1))
+  (auto-fill-mode 1) ;; auto multi line when 70 chars hitted
+  (org-display-inline-images 1) ;; display image
+  (set-frame-parameter nil 'fullscreen 'fullboth) ;; set full screen
+  (flymake-mode 1)) ;; spelling checker
+
+(defun my/work ()
+  (interactive)
+  (set-frame-parameter nil 'fullscreen 'fullboth))
 
 ;; my package
 ; multiple-cursor (mc)
@@ -288,3 +295,4 @@
 ; yasnippet
 ; iy-go-to-char.el
 ; key-chord.el
+; evil-mode

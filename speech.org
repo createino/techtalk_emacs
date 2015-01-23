@@ -37,7 +37,7 @@
     - write blog entry
     - coffee-mode [fn:5]
     - git integration
-    - play tetris anyone? :) 
+    - play tetris anyone? :)
     - M-x phases-of-moon
     - M-x doctor
     - many more...
@@ -96,12 +96,14 @@
   2. use Emacs day and night for all your work or even use it as
      your window manager. [fn:11]
 
-* My #1 Problem
+* Problems
   - No adequate embedded browser in Emacs!
-* Note!
+  - Still have to learn Lisp to extend Emacs more
+* Conclusion
   - *Bagaimanapun juga, apa pun editor Anda, selama Anda merasa
     produktif dan efisien, then it's good...*
-  - *Remember, this, of course, is highly subjective :)*
+  - *Lastly, you are not picking Emacs vs others, but rather you are
+    picking Emacs and others! Use the best tool for the job.*
 
 * Dotfile
 my [[./demo/.emacs][~/.emacs]] file
@@ -128,3 +130,6 @@ my [[./demo/.emacs][~/.emacs]] file
 [fn:10] [[./demo/pdf/tesis.org][tesis.org]] [[./demo/beamer.org][beamer.org]]
 
 [fn:11] [[http://www.howardism.org/Technical/Emacs/new-window-manager.html][howardism]]
+* Further Readings
+  - http://bling.github.io/blog/2013/10/27/emacs-as-my-leader-vim-survival-guide/
+  - http://www.reddit.com/r/vim/comments/22w1li/a_fair_comparison_between_vim_and_emacs/
