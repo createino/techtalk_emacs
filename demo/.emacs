@@ -259,8 +259,8 @@
 (key-chord-mode 1)
 (key-chord-define-global "jj" 'save-buffer)
 (key-chord-define-global "jk" 'switch-to-buffer)
-(key-chord-define-global ";;" 'ace-jump-char-mode)
-(key-chord-define-global "io" 'other-window)
+;(key-chord-define-global ";;" 'ace-jump-char-mode)
+;(key-chord-define-global "io" 'other-window)
 
 
 (fset 'my/demo-macro
@@ -284,6 +284,7 @@
 
 (defun my/work ()
   (interactive)
+  (find-file "~/Dropbox/todo.org")
   (set-frame-parameter nil 'fullscreen 'fullboth))
 
 ;; my package
@@ -296,3 +297,7 @@
 ; iy-go-to-char.el
 ; key-chord.el
 ; evil-mode
+; undo-tree
+
+(fset 'xml_cleaner
+   (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([1 67108896 19 47 19 19 19 19 13 23 19 46 2 67108896 19 60 47 117 114 108 62 13 23 1 67108896 5 134217848 114 101 112 108 97 9 115 116 114 9 13 13 14 1] 0 "%d")) arg)))
