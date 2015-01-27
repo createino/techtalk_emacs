@@ -11,21 +11,20 @@
    Emacs is not an extensible text-editor. It's a programming
    environment with a nice built-in library for editing text. [fn:2]
    #+END_QUOTE
+** Emacs Creator
+  
+   [[./img/creator.png]]
+
+   Emacs was created by Richard Stallman and Guy L. Steele in 1976,
+   using *Emacs Lisp*, a dialect of Lisp language. There are many
+   Emacs variant, but the most widely used was GNU Emacs by Richard
+   Stallman.
+
 ** Emacs Logo
 
   [[./img/emacs-logo.png]]
-** Emacs Creator
-  [[./img/creator.png]]
 
 * Why Emacs?
-  - Divine Editing Experience [fn:3]
-    - custom jump-start
-    - keyboard macro
-    - clear ring
-    - expand-region
-    - multi-cursor
-    - ace-jump-mode
-    - key-chord
   - Everything is possible [ +Almost to be exact+ :) ]
     - good language support [fn:4]
     - breeze org-mode <=> latex support
@@ -41,6 +40,14 @@
     - M-x phases-of-moon
     - M-x doctor
     - many more...
+  - Divine Editing Experience [fn:3]
+    - custom jump-start
+    - keyboard macro
+    - clear ring
+    - expand-region
+    - multi-cursor
+    - ace-jump-mode
+    - key-chord
   - Emacs is extensible [fn:6]
   - Integrates well with lots of external tools
     - shell-mode, ansi-term, eshell
@@ -87,7 +94,9 @@
     - dependent to the mouse and an X environment
     - not resource efficient
     - IDEs impair your thinking by thinking instead of you
-
+* Problems
+  - No adequate embedded browser in Emacs!
+  - Still have to learn Lisp to extend Emacs more
 * Getting Started with Emacs
   [[./demo/emacs_learning_curve.jpg][img]]
 
@@ -95,13 +104,9 @@
   1. run the built-in Emacs tutorial ~C-h t~.
   2. use Emacs day and night for all your work or even use it as
      your window manager. [fn:11]
-
-* Problems
-  - No adequate embedded browser in Emacs!
-  - Still have to learn Lisp to extend Emacs more
 * Conclusion
-  - *Bagaimanapun juga, apa pun editor Anda, selama Anda merasa
-    produktif dan efisien, then it's good...*
+  - *However, whatever your editor choice is, as long as you feel
+    efficient and productive, then it's good...*
   - *Lastly, you are not picking Emacs vs others, but rather you are
     picking Emacs and others! Use the best tool for the job.*
 

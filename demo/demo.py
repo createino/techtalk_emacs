@@ -13,3 +13,4 @@ class C(object):
 
     def tambah(self):
         return self.x + self.y
+
