@@ -25,7 +25,7 @@
   [[./img/emacs-logo.png]]
 
 * Why Emacs?
-  - Everything is possible [ +Almost to be exact+ :) ]
+  - It's not just an editor, everything is possible [ +Almost to be exact+ :) ]
     - good language support [fn:4]
     - breeze org-mode <=> latex support
     - pdf and image viewer
