@@ -1,5 +1,5 @@
-def func(x):
-    """power x"""
+def kuadrat(x):
+    """power of x"""
     return x * x
 
 

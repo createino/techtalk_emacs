@@ -27,11 +27,11 @@
 * Why Emacs?
   - It's not just an editor, everything is possible [ +Almost to be exact+ :) ]
     - good language support [fn:4]
-    - breeze org-mode <=> latex support
     - pdf and image viewer
-    - chart with graphviz-mode
     - e-mail reader
     - IRC
+    - breeze org-mode <=> latex support
+    - chart with graphviz-mode
     - terminal session
     - write blog entry
     - coffee-mode [fn:5]
@@ -118,7 +118,7 @@ my [[./demo/.emacs][~/.emacs]] file
 
 [fn:2] Austion Bingham at [[https://www.youtube.com/watch?v%3DEH_KILXupyU&t%3D11m35s][Youtube]]
 
-[fn:3] [[./demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
+[fn:3] [[./Demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
 
 [fn:4] [[./demo/demo.py][demo.py]]
 

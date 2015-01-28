@@ -260,10 +260,10 @@
 (key-chord-mode 1)
 (key-chord-define-global "jj" 'save-buffer)
 (key-chord-define-global "jk" 'switch-to-buffer)
-;(key-chord-define-global ";;" 'ace-jump-char-mode)
+;(key-chord-define-global "ajcm" 'ace-jump-char-mode)
 ;(key-chord-define-global "io" 'other-window)
-(key-chord-define-global "dd" 'dired-at-point)
-(key-chord-define-global "gg" 'magit-status)
+;(key-chord-define-global "dd" 'dired-at-point)
+;(key-chord-define-global "gg" 'magit-status)
 
 
 (fset 'my/demo-macro
