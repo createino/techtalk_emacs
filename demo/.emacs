@@ -19,14 +19,12 @@
 ;; No splash screen ...
 (setq inhibit-startup-message t)
 
-;; Disable menubar
-(menu-bar-mode -1)
-
-;; Disable toolbar
-(tool-bar-mode -1)
-
-;; Disable scrollbar
-(scroll-bar-mode -1)
+;; If using gui version
+(when window-system
+  (menu-bar-mode -1) ;; Disable menubar
+  (tool-bar-mode -1) ;; Disable toolbar
+  (scroll-bar-mode -1) ;; Disable scrollbar
+  (tooltip-mode -1)) ;; Disable tooltip
 
 ;; always use spaces, not tabs, when indenting
 (setq indent-tabs-mode nil)
@@ -64,6 +62,9 @@
 
 ;; aliasing yes or no to y or n only
 (defalias 'yes-or-no-p 'y-or-n-p)
+
+;; set backup directory
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
 
 ;-------------------------;
 ;;; Custom Key Bindings ;;;
@@ -284,20 +285,40 @@
 
 (defun my/work ()
   (interactive)
-  (find-file "~/Dropbox/todo.org")
+  (find-file "~/Dropbox/agenda/coret.org")  ;; open todo.org agenda
   (set-frame-parameter nil 'fullscreen 'fullboth))
 
-;; my package
-; multiple-cursor (mc)
-; expand-region
-; magit
-; slime
-; ace jump mode
-; yasnippet
-; iy-go-to-char.el
-; key-chord.el
-; evil-mode
-; undo-tree
+;; F11 key to toggle full screen mode
+(defun toggle-fullscreen ()
+  (interactive)
+  (set-frame-parameter nil 'fullscreen 
+		       (if (frame-parameter nil 'fullscreen)
+			   nil
+			 'fullboth)))
+
+(global-set-key [f11] 'toggle-fullscreen)
+
+
+;----------------;
+;;; my package ;;;
+;----------------;
+
+;; 0. multiple-cursor (mc)
+;; 1. expand-region
+;; 2. magit
+;; 3. slime
+;; 4. ace jump mode
+;; 5. yasnippet
+;; 6. iy-go-to-char.el
+;; 7. key-chord.el
+;; 8. evil-mode
+;; 9. undo-tree
+;; 10. markdown-mode
+
+
+;-----------------------;
+;;; xml cleaner macro ;;;
+;-----------------------;
 
 (fset 'xml_cleaner
    (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([1 67108896 19 47 19 19 19 19 13 23 19 46 2 67108896 19 60 47 117 114 108 62 13 23 1 67108896 5 134217848 114 101 112 108 97 9 115 116 114 9 13 13 14 1] 0 "%d")) arg)))
