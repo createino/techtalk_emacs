@@ -97,6 +97,7 @@
 * Problems
   - No adequate embedded browser in Emacs!
   - Still have to learn Lisp to extend Emacs more
+  - Emacs Pinky
 * Getting Started with Emacs
   [[./demo/emacs_learning_curve.jpg][img]]
 
@@ -118,7 +119,7 @@ my [[./demo/.emacs][~/.emacs]] file
 
 [fn:2] Austion Bingham at [[https://www.youtube.com/watch?v%3DEH_KILXupyU&t%3D11m35s][Youtube]]
 
-[fn:3] [[./Demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
+[fn:3] [[./demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
 
 [fn:4] [[./demo/demo.py][demo.py]]
 
@@ -138,3 +139,5 @@ my [[./demo/.emacs][~/.emacs]] file
 * Further Readings
   - http://bling.github.io/blog/2013/10/27/emacs-as-my-leader-vim-survival-guide/
   - http://www.reddit.com/r/vim/comments/22w1li/a_fair_comparison_between_vim_and_emacs/
+  - http://endlessparentheses.com/
+   
