@@ -39,6 +39,7 @@
 ;; load marmalade repo
 (require 'package)
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
 
 ;---------------------;
 ;;; Startup options ;;;
@@ -59,6 +60,8 @@
 ;; aliasing ace-jump-mode
 (defalias 'ajm 'ace-jump-mode)
 (defalias 'ajcm 'ace-jump-char-mode)
+
+(define-key global-map (kbd "C-c a") 'ace-jump-char-mode)
 
 ;; aliasing yes or no to y or n only
 (defalias 'yes-or-no-p 'y-or-n-p)
@@ -260,10 +263,10 @@
 (key-chord-mode 1)
 (key-chord-define-global "jj" 'save-buffer)
 (key-chord-define-global "jk" 'switch-to-buffer)
-;(key-chord-define-global "ajcm" 'ace-jump-char-mode)
+;(key-chord-define-global ";;" 'ace-jump-char-mode)
 ;(key-chord-define-global "io" 'other-window)
-;(key-chord-define-global "dd" 'dired-at-point)
-;(key-chord-define-global "gg" 'magit-status)
+(key-chord-define-global "dd" 'dired-at-point)
+(key-chord-define-global "gg" 'magit-status)
 
 
 (fset 'my/demo-macro
@@ -316,6 +319,8 @@
 ;; 8. evil-mode
 ;; 9. undo-tree
 ;; 10. markdown-mode
+;; 11. visual-regexp
+;; 12. visual-regexp-steroids
 
 
 ;-----------------------;
@@ -324,3 +329,44 @@
 
 (fset 'xml_cleaner
    (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([1 67108896 19 47 19 19 19 19 13 23 19 46 2 67108896 19 60 47 117 114 108 62 13 23 1 67108896 5 134217848 114 101 112 108 97 9 115 116 114 9 13 13 14 1] 0 "%d")) arg)))
+
+
+;-------------------------------;
+;;; activate windmove package ;;;
+;-------------------------------;
+
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings))
+
+(global-set-key (kbd "C-c <left>")  'windmove-left)
+(global-set-key (kbd "C-c <right>") 'windmove-right)
+(global-set-key (kbd "C-c <up>")    'windmove-up)
+(global-set-key (kbd "C-c <down>")  'windmove-down)
+
+
+;-------------------------;
+;;; flask server runner ;;;
+;-------------------------;
+
+(defun add-to-PATH (dir)
+  """Add the specified path element to the Emacs PATH
+  https://dreid.org/2010/02/mimicing-source-virtualenvbinactivate.html/"""
+  ;(interactive "DEnter directory to be added to PATH: ")
+  (if (file-directory-p dir)
+      (setenv "PATH"
+              (concat (expand-file-name dir)
+                      path-separator
+                      (getenv "PATH")))))
+ 
+(defun virtualenv-activate (dir)
+  ;(interactive "DEnter directory to be run: ")
+  (setenv "VIRTUAL_ENV" dir)
+  (add-to-PATH (concat dir "/bin"))
+  (add-to-list 'exec-path (concat dir "/bin"))
+  (let ((default-directory dir))
+    (shell-command (concat dir "bin/python " dir "run.py &"))))
+
+(defun flask-run (dir)
+  (interactive "DEnter the directory to be run: ")
+  (add-to-PATH dir)
+  (virtualenv-activate dir))
