@@ -1,8 +1,4 @@
 * Emacs at a Glance
-  CLOCK: [2015-01-30 Jum 08:01]
-  :PROPERTIES:
-  :Effort:   0:30
-  :END:
 ** Define
    #+BEGIN_QUOTE
    GNU Emacs is an *extensible*, *customizable* text editor—and
@@ -156,7 +152,20 @@ my [[./demo/.emacs][~/.emacs]] file
 [fn:12] http://www.youtube.com/results?search_query=emacs
 
 * Further Readings
+  - http://www.emacswiki.org/
+  - http://ergoemacs.org/emacs/emacs.html
+  - http://www.masteringemacs.org/
+  - http://emacsrocks.com/
+  - http://sachachua.com/
+  - http://www.howardism.org/
+  - http://endlessparentheses.com/
   - http://bling.github.io/blog/2013/10/27/emacs-as-my-leader-vim-survival-guide/
   - http://www.reddit.com/r/vim/comments/22w1li/a_fair_comparison_between_vim_and_emacs/
-  - http://endlessparentheses.com/
    
+* Q/A
+  Ask me for questions
+* Thank You
+  About me:
+  - twitter: https://twitter.com/sopier
+  - fb: https://www.facebook.com/kholid.fuadi
+  - github: https://github.com/sopier
