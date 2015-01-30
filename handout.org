@@ -1,3 +1,8 @@
+start clocking with 
+C-c C-x C-i : in
+C-c C-x C-e : estimates in 40 minutes
+C-c C-x C-o : out
+
 * Define:Emacs
 * Why Emacs?
   - Divine Editing Experience [fn:1]
