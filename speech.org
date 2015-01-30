@@ -152,7 +152,7 @@ my [[./demo/.emacs][~/.emacs]] file
 
 [fn:12] http://www.youtube.com/results?search_query=emacs
 
-[fn:13] [[https://www.youtube.com/watch?v%3D16Rd46SE-20][video 1]] [[https://www.youtube.com/watch?v%3DP2Q_WL0h-mY][video 2]]
+[fn:13] [[./demo/emacs_survival.txt][survival guide]] [[https://www.youtube.com/watch?v%3D16Rd46SE-20][video 1]] [[https://www.youtube.com/watch?v%3DP2Q_WL0h-mY][video 2]]
 
 * Further Readings
   - http://www.emacswiki.org/
