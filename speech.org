@@ -66,6 +66,7 @@
     - bash, zsh, Cocoa toolkit use Emacs keybindings by default
 * Emacs vs the World
   - IDE and Code Editors Stats 2014 [fn:9]
+
     [[./img/editors_stats.jpg]]
 
   - Emacs vs vim
