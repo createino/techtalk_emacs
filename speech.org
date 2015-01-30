@@ -109,14 +109,14 @@
      your window manager. [fn:11]
 
 ** This is how I learn Emacs (actually):
-   1. Learn basic survival guide:
+   1. Learn basic survival guide: [fn:13]
+      - opening/closing file/buffer
       - movement
       - search (forward/backward)
-      - file/buffer management
       - basic region, copy, paste
       - getting help
    2. Read/listen/watch emacs tutorial
-      For me, youtube is the best source for learning.[fn:12]
+      For me, youtube is the best resource for learning.[fn:12]
 
 * Conclusion
   - *However, whatever your editor choice is, as long as you feel
@@ -151,6 +151,8 @@ my [[./demo/.emacs][~/.emacs]] file
 [fn:11] [[http://www.howardism.org/Technical/Emacs/new-window-manager.html][howardism]]
 
 [fn:12] http://www.youtube.com/results?search_query=emacs
+
+[fn:13] [[https://www.youtube.com/watch?v%3D16Rd46SE-20][video 1]] [[https://www.youtube.com/watch?v%3DP2Q_WL0h-mY][video 2]]
 
 * Further Readings
   - http://www.emacswiki.org/

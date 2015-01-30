@@ -1,0 +1,51 @@
+; basic buffer 
+
+C-x C-f : visit a file
+C-x C-s : save the buffer into file
+C-x C-k : close buffer (not deleting the file)
+C-x C-c : quit from emacs
+
+
+; basic movement
+
+C-f : forward 1 point
+C-b : backward 1 point
+C-p : move up 1 line
+C-n : move down 1 line
+M-f : forward 1 word
+M-b : backward 1 word
+C-a : go-to-beginning of line
+C-e : go-to-end of line
+C-l : make the pointer in the center of the screen
+C-v : scroll downward
+M-v : scroll upward
+M-< : move to the beginning of buffer
+M-> : move to the end of buffer
+
+
+; erasing
+
+C-d		: delete 1 char after point
+<Backspace> 	: delete 1 char before point
+C-k 		: delete to the end of file
+M-d 		: delete 1 word forward
+M-<Backspace> 	: delete 1 word backward
+
+
+; search
+
+C-s <word> <RET> : search forward
+C-r <word> <RET> : search backward
+
+
+; region
+
+C-<SPC> : mark/unmark the region
+M-w 	: copy the region
+C-w 	: cut / kill the region
+C-y 	: paste / yank the region
+
+
+; help
+
+C-h t	: tutorial
