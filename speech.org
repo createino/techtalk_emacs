@@ -1,4 +1,8 @@
 * Emacs at a Glance
+  CLOCK: [2015-01-30 Jum 08:01]
+  :PROPERTIES:
+  :Effort:   0:30
+  :END:
 ** Define
    #+BEGIN_QUOTE
    GNU Emacs is an *extensible*, *customizable* text editor—and
@@ -23,7 +27,8 @@
 ** Emacs Logo
 
   [[./img/emacs-logo.png]]
-
+** Emacs Terminology
+   [[./img/emacs-terminology.png]]
 * Why Emacs?
   - It's not just an editor, everything is possible [ +Almost to be exact+ :) ]
     - good language support [fn:4]
@@ -99,12 +104,21 @@
   - Still have to learn Lisp to extend Emacs more
   - Emacs Pinky
 * Getting Started with Emacs
-  [[./demo/emacs_learning_curve.jpg][img]]
+  [[./demo/emacs_learning_curve.jpg]]
 
   It +only+ takes 2 steps:
   1. run the built-in Emacs tutorial ~C-h t~.
   2. use Emacs day and night for all your work or even use it as
      your window manager. [fn:11]
+
+** This is how I learn Emacs (actually):
+   1. Learn basic survival guide:
+      - movement
+      - search (forward/backward)
+      - file/buffer management
+      - basic region, copy, paste
+      - getting help
+
 * Conclusion
   - *However, whatever your editor choice is, as long as you feel
     efficient and productive, then it's good...*
