@@ -1,3 +1,6 @@
+#+TITLE: Intro into Emacs
+#+AUTHOR: Kholid Fuadi
+
 * Emacs at a Glance
 ** Define
    #+BEGIN_QUOTE

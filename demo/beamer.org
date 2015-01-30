@@ -1,6 +1,6 @@
 #+TITLE: Emacs + org-mode
 #+AUTHOR: Kholid Fuadi
-#+DATE: <2015-01-21 Rab>
+#+DATE: <2015-02-04 Rab>
 #+OPTIONS: H:1 texht:t
 #+LATEX_CLASS: beamer
 #+LATEX_CLASS_OPTIONS: [presentation]
@@ -8,5 +8,16 @@
 #+LATEX_HEADER: \institute{TechTalk JDV \\Emacs Intro\\Jogjakarta}
 #+LATEX_HEADER: \mode<beamer>{\usetheme{Madrid}}
 
-* satu
-* dua
+* Slide satu
+
+  - Foo
+    + baz
+    + qux
+  - Bar
+
+* Slide dua
+
+  - Foo
+    + baz
+    + qux
+  - Bar
