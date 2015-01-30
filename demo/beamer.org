@@ -8,7 +8,7 @@
 #+LATEX_HEADER: \institute{TechTalk JDV \\Emacs Intro\\Jogjakarta}
 #+LATEX_HEADER: \mode<beamer>{\usetheme{Madrid}}
 
-* Slide satu
+* Slide One
 
   - Foo
     + baz

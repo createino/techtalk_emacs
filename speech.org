@@ -1,5 +1,6 @@
 #+TITLE: Intro into Emacs
 #+AUTHOR: Kholid Fuadi
+#+DATE: <2015-02-04 Rab>
 
 * Emacs at a Glance
 ** Define
