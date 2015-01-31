@@ -163,6 +163,7 @@ my [[./demo/.emacs][~/.emacs]] file
   - http://ergoemacs.org/emacs/emacs.html
   - http://www.masteringemacs.org/
   - http://emacsrocks.com/
+  - http://emacsredux.com/
   - http://sachachua.com/
   - https://www.youtube.com/watch?v=16Rd46SE-20
   - http://www.howardism.org/
