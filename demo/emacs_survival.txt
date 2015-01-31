@@ -2,7 +2,7 @@
 
 C-x C-f : visit a file
 C-x C-s : save the buffer into file
-C-x C-k : close buffer (not deleting the file)
+C-x k 	: close buffer (not deleting the file)
 C-x C-c : quit from emacs
 
 
@@ -44,6 +44,11 @@ C-<SPC> : mark/unmark the region
 M-w 	: copy the region
 C-w 	: cut / kill the region
 C-y 	: paste / yank the region
+
+
+; prefix argument
+
+C-4 C-n : go next line 4 times
 
 
 ; help
