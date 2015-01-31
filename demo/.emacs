@@ -261,12 +261,12 @@
 
 (package-initialize)
 (key-chord-mode 1)
-(key-chord-define-global "jj" 'save-buffer)
+;(key-chord-define-global "jj" 'save-buffer)
 (key-chord-define-global "jk" 'switch-to-buffer)
 ;(key-chord-define-global ";;" 'ace-jump-char-mode)
 ;(key-chord-define-global "io" 'other-window)
-(key-chord-define-global "dd" 'dired-at-point)
-(key-chord-define-global "gg" 'magit-status)
+;(key-chord-define-global "dd" 'dired-at-point)
+;(key-chord-define-global "gg" 'magit-status)
 
 
 (fset 'my/demo-macro
@@ -285,7 +285,8 @@
   (find-file "~/git/techtalk_emacs/speech.org")
   (auto-fill-mode 1) ;; auto multi line when 70 chars hitted
   (org-display-inline-images 1) ;; display image
-  (set-frame-parameter nil 'fullscreen 'fullboth) ;; set full screen
+  ;(set-frame-parameter nil 'fullscreen 'fullboth) ;; set full screen
+  (set-frame-parameter nil 'fullscreen 'maximized) ;; set maximized
   (flymake-mode 1)) ;; spelling checker
 
 (defun my/work ()
@@ -302,6 +303,21 @@
 			 'fullboth)))
 
 (global-set-key [f11] 'toggle-fullscreen)
+
+;; switch to default font interface
+(defun my/default-font ()
+  (interactive)
+  (set-face-attribute 'default nil :height 100))
+
+;; switch to bigger font
+(defun my/bigger-font ()
+  (interactive)
+  (set-face-attribute 'default nil :height 200))
+
+;; switch to custom font size
+(defun my/set-font (n)
+  (interactive "P")
+  (set-face-attribute 'default nil :height n))
 
 
 ;----------------;
@@ -321,7 +337,14 @@
 ;; 10. markdown-mode
 ;; 11. visual-regexp
 ;; 12. visual-regexp-steroids
+;; 13. helm
 
+
+;---------------;
+;;; helm mode ;;;
+;---------------;
+
+(helm-mode t)
 
 ;-----------------------;
 ;;; xml cleaner macro ;;;
@@ -364,9 +387,79 @@
   (add-to-PATH (concat dir "/bin"))
   (add-to-list 'exec-path (concat dir "/bin"))
   (let ((default-directory dir))
-    (shell-command (concat dir "bin/python " dir "run.py &"))))
+    (shell-command (concat dir "bin/python " dir "run.py &")
+		   (get-buffer-create "*flask-out*"))))
 
 (defun flask-run (dir)
   (interactive "DEnter the directory to be run: ")
   (add-to-PATH dir)
   (virtualenv-activate dir))
+
+;-------------------------;
+;;; toggle window split ;;;
+;-------------------------;
+
+(defun toggle-window-split ()
+  "quickly switch from horizontal to vertical, vice versa"
+  (interactive)
+  (if (= (count-windows) 2)
+      (let* ((this-win-buffer (window-buffer))
+	     (next-win-buffer (window-buffer (next-window)))
+	     (this-win-edges (window-edges (selected-window)))
+	     (next-win-edges (window-edges (next-window)))
+	     (this-win-2nd (not (and (<= (car this-win-edges)
+					 (car next-win-edges))
+				     (<= (cadr this-win-edges)
+					 (cadr next-win-edges)))))
+	     (splitter
+	      (if (= (car this-win-edges)
+		     (car (window-edges (next-window))))
+		  'split-window-horizontally
+		'split-window-vertically)))
+	(delete-other-windows)
+	(let ((first-win (selected-window)))
+	  (funcall splitter)
+	  (if this-win-2nd (other-window 1))
+	  (set-window-buffer (selected-window) this-win-buffer)
+	  (set-window-buffer (next-window) next-win-buffer)
+	  (select-window first-win)
+	  (if this-win-2nd (other-window 1))))))
+
+(define-key ctl-x-4-map "t" 'toggle-window-split)
+
+
+;--------------------------------;
+;;; let me google that for you ;;;
+;--------------------------------;
+
+(defun my/lmgtfy ()
+  "Googles a query or region if any."
+  (interactive)
+  (browse-url
+   (concat
+    "http://www.google.com/search?ie=utf-8&oe=utf-8&q="
+    (if mark-active
+	(buffer-substring (region-beginning) (region-end))
+      (read-string "Google: ")))))
+
+
+;--------------------------------------------------------;
+;;; quick newline up and above                         ;;;
+;--------------------------------------------------------;
+; http://whattheemacsd.com/editing-defuns.el-01.html
+
+(defun open-line-below ()
+  (interactive)
+  (end-of-line)
+  (newline)
+  (indent-for-tab-command))
+
+(defun open-line-above ()
+  (interactive)
+  (beginning-of-line)
+  (newline)
+  (forward-line -1)
+  (indent-for-tab-command))
+
+(global-set-key (kbd "<C-return>") 'open-line-below)
+(global-set-key (kbd "<C-S-return>") 'open-line-above)

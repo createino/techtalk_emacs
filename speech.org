@@ -29,6 +29,7 @@
   [[./img/emacs-logo.png]]
 ** Emacs Terminology
    [[./img/emacs-terminology.png]]
+
 * Why Emacs?
   - It's not just an editor, everything is possible [ +Almost to be exact+ :) ]
     - good language support [fn:4]
@@ -163,6 +164,7 @@ my [[./demo/.emacs][~/.emacs]] file
   - http://ergoemacs.org/emacs/emacs.html
   - http://www.masteringemacs.org/
   - http://emacsrocks.com/
+  - http://whattheemacsd.com/
   - http://emacsredux.com/
   - http://sachachua.com/
   - https://www.youtube.com/watch?v=16Rd46SE-20
