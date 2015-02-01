@@ -3,7 +3,7 @@
 #+DATE: <2015-02-04 Rab>
 #+EMAIL: sopier@gmail.com
 #+STYLE: <link rel="stylesheet" type="text/css" href="./static/stylesheet.css" />
-#+TEXT: github url: https://github.com/sopier/techtalk_emacs
+
 
 * Emacs at a Glance
 ** Define
@@ -137,33 +137,6 @@
 * Dotfile
 my [[./demo/.emacs][~/.emacs]] file
 
-* Footnotes
-[fn:1] https://www.gnu.org/software/emacs/
-
-[fn:2] Austion Bingham at [[https://www.youtube.com/watch?v%3DEH_KILXupyU&t%3D11m35s][Youtube]]
-
-[fn:5] [[./demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
-
-[fn:3] [[./demo/demo.py][demo.py]]
-
-[fn:4] [[http://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol][wikipedia]]
-
-[fn:6] [[./demo/snippets.el][snippets.el]]
-
-[fn:7] [[./demo/dired_demo][dired\_demo]]
-
-[fn:8] [[./demo/arab.txt][arab.txt]]
-
-[fn:9] [[https://blog.codeanywhere.com/most-popular-ides-code-editors/][codeanywhere]]
-
-[fn:10] [[./demo/pdf/tesis.org][tesis.org]] [[./demo/beamer.org][beamer.org]]
-
-[fn:11] [[http://www.howardism.org/Technical/Emacs/new-window-manager.html][howardism]]
-
-[fn:13] http://www.youtube.com/results?search_query=emacs
-
-[fn:12] [[./demo/emacs_survival.txt][survival guide]] [[https://www.youtube.com/watch?v%3D16Rd46SE-20][video 1]] [[https://www.youtube.com/watch?v%3DP2Q_WL0h-mY][video 2]]
-
 * Further References
   - http://www.emacswiki.org/
   - http://ergoemacs.org/emacs/emacs.html
@@ -183,6 +156,35 @@ my [[./demo/.emacs][~/.emacs]] file
   Ask me for questions
 * Thank You
   About me:
-  - twitter: https://twitter.com/sopier
-  - fb: https://www.facebook.com/kholid.fuadi
-  - github: https://github.com/sopier
+  - *twitter*: https://twitter.com/sopier
+  - *fb*: https://www.facebook.com/kholid.fuadi
+  - *github*: https://github.com/sopier
+* Github version
+  Materi /techtalk/ ini juga tersedia di /github/ berikut: https://github.com/sopier/techtalk_emacs
+
+* Footnotes
+[fn:1] https://www.gnu.org/software/emacs/
+
+[fn:2] Austion Bingham at [[https://www.youtube.com/watch?v%3DEH_KILXupyU&t%3D11m35s][Youtube]]
+
+[fn:5] [[./demo/demo.txt][demo.txt]] :: [[./demo/demo.js][demo.js]]
+
+[fn:3] [[./demo/demo.py][demo.py]]
+
+[fn:4] [[http://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol][wikipedia]]
+
+[fn:6] [[./demo/snippets.el][snippets.el]]
+
+[fn:7] [[./demo/dired_demo][dired\_demo]]
+
+[fn:8] [[./demo/arab.txt][arab.txt]]
+
+[fn:9] [[https://blog.codeanywhere.com/most-popular-ides-code-editors/][codeanywhere]]
+
+[fn:10] [[./demo/pdf/tesis.org][tesis.org]] :: [[./demo/beamer.org][beamer.org]]
+
+[fn:11] [[http://www.howardism.org/Technical/Emacs/new-window-manager.html][howardism]]
+
+[fn:13] http://www.youtube.com/results?search_query=emacs
+
+[fn:12] [[./demo/emacs_survival.txt][survival guide]] :: [[https://www.youtube.com/watch?v%3D16Rd46SE-20][video 1]] :: [[https://www.youtube.com/watch?v%3DP2Q_WL0h-mY][video 2]]
