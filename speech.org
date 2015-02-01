@@ -35,7 +35,7 @@
 
 * Why Emacs?
   - It's not just an editor, everything is possible [ +Almost to be exact+ :) ]
-    - good language support [fn:4]
+    - good language support [fn:3]
     - pdf and image viewer
     - e-mail reader
     - IRC
@@ -43,13 +43,13 @@
     - chart with graphviz-mode
     - terminal session
     - write blog entry
-    - coffee-mode [fn:5]
+    - coffee-mode [fn:4]
     - git integration
     - play tetris anyone? :)
     - M-x phases-of-moon
     - M-x doctor
     - many more...
-  - Divine Editing Experience [fn:3]
+  - Divine Editing Experience [fn:5]
     - custom jump-start
     - org-mode
     - keyboard macro
@@ -119,14 +119,14 @@
      your window manager. [fn:11]
 
 ** This is how I learn Emacs (actually):
-   1. Learn basic survival guide: [fn:13]
+   1. Learn basic survival guide: [fn:12]
       - opening/closing file/buffer
       - movement
       - search (forward/backward)
       - basic region, copy, paste
       - getting help
    2. Read/listen/watch emacs tutorial
-      For me, youtube is the best resource for learning.[fn:12]
+      For me, youtube is the best resource for learning.[fn:13]
 
 * Conclusion
   - *However, whatever your editor choice is, as long as you feel
@@ -142,11 +142,11 @@ my [[./demo/.emacs][~/.emacs]] file
 
 [fn:2] Austion Bingham at [[https://www.youtube.com/watch?v%3DEH_KILXupyU&t%3D11m35s][Youtube]]
 
-[fn:3] [[./demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
+[fn:5] [[./demo/demo.txt][demo.txt]] [[./demo/demo.js][demo.js]]
 
-[fn:4] [[./demo/demo.py][demo.py]]
+[fn:3] [[./demo/demo.py][demo.py]]
 
-[fn:5] [[http://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol][wikipedia]]
+[fn:4] [[http://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol][wikipedia]]
 
 [fn:6] [[./demo/snippets.el][snippets.el]]
 
@@ -160,9 +160,9 @@ my [[./demo/.emacs][~/.emacs]] file
 
 [fn:11] [[http://www.howardism.org/Technical/Emacs/new-window-manager.html][howardism]]
 
-[fn:12] http://www.youtube.com/results?search_query=emacs
+[fn:13] http://www.youtube.com/results?search_query=emacs
 
-[fn:13] [[./demo/emacs_survival.txt][survival guide]] [[https://www.youtube.com/watch?v%3D16Rd46SE-20][video 1]] [[https://www.youtube.com/watch?v%3DP2Q_WL0h-mY][video 2]]
+[fn:12] [[./demo/emacs_survival.txt][survival guide]] [[https://www.youtube.com/watch?v%3D16Rd46SE-20][video 1]] [[https://www.youtube.com/watch?v%3DP2Q_WL0h-mY][video 2]]
 
 * Further References
   - http://www.emacswiki.org/
