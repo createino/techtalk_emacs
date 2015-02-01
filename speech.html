@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Intro into Emacs (Techtalk #60)</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="Intro into Emacs (Techtalk #60)"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2015-02-04"/>
+<meta name="author" content="Kholid Fuadi"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="./static/stylesheet.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">Intro into Emacs (Techtalk #60)</h1>
+
+<p>github url: <a href="https://github.com/sopier/techtalk_emacs">https://github.com/sopier/techtalk_emacs</a>
+</p>
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Emacs at a Glance</a>
+<ul>
+<li><a href="#sec-1-1">1.1 Define</a></li>
+<li><a href="#sec-1-2">1.2 Emacs Creator</a></li>
+<li><a href="#sec-1-3">1.3 Emacs Logo</a></li>
+<li><a href="#sec-1-4">1.4 Emacs Terminology</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 Why Emacs?</a></li>
+<li><a href="#sec-3">3 Emacs vs the World</a></li>
+<li><a href="#sec-4">4 Problems</a></li>
+<li><a href="#sec-5">5 Getting Started with Emacs</a>
+<ul>
+<li><a href="#sec-5-1">5.1 This is how I learn Emacs (actually):</a></li>
+</ul>
+</li>
+<li><a href="#sec-6">6 Conclusion</a></li>
+<li><a href="#sec-7">7 Dotfile</a></li>
+<li><a href="#sec-8">8 Further References</a></li>
+<li><a href="#sec-9">9 Q/A</a></li>
+<li><a href="#sec-10">10 Thank You</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Emacs at a Glance</h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Define</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<blockquote>
+
+<p>GNU Emacs is an <b>extensible</b>, <b>customizable</b> text editor—and
+more. At its core is an interpreter for Emacs Lisp, a dialect of
+the Lisp programming language with extensions to support text
+editing. <sup><a class="footref" name="fnr-.1" href="#fn-.1">1</a></sup>
+</p>
+</blockquote>
+
+
+<blockquote>
+
+<p>Emacs is not an extensible text-editor. It's a programming
+environment with a nice built-in library for editing text. <sup><a class="footref" name="fnr-.2" href="#fn-.2">2</a></sup>
+</p>
+</blockquote>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Emacs Creator</h3>
+<div class="outline-text-3" id="text-1-2">
+
+
+<p>  
+   <img src="./img/creator.png"  alt="./img/creator.png" />
+</p>
+<p>
+   Emacs was created by Richard Stallman and Guy L. Steele in 1976,
+   using <b>Emacs Lisp</b>, a dialect of Lisp language. There are many
+   Emacs variant, but the most widely used was GNU Emacs by Richard
+   Stallman.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Emacs Logo</h3>
+<div class="outline-text-3" id="text-1-3">
+
+
+<p>
+  <img src="./img/emacs-logo.png"  alt="./img/emacs-logo.png" />
+</p></div>
+
+</div>
+
+<div id="outline-container-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Emacs Terminology</h3>
+<div class="outline-text-3" id="text-1-4">
+
+<p>   <img src="./img/emacs-terminology.png"  alt="./img/emacs-terminology.png" />
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Why Emacs?</h2>
+<div class="outline-text-2" id="text-2">
+
+<ul>
+<li>It's not just an editor, everything is possible [ <del>Almost to be exact</del> :) ]
+<ul>
+<li>good language support <sup><a class="footref" name="fnr-.3" href="#fn-.3">3</a></sup>
+</li>
+<li>pdf and image viewer
+</li>
+<li>e-mail reader
+</li>
+<li>IRC
+</li>
+<li>breeze org-mode &lt;=&gt; latex support
+</li>
+<li>chart with graphviz-mode
+</li>
+<li>terminal session
+</li>
+<li>write blog entry
+</li>
+<li>coffee-mode <sup><a class="footref" name="fnr-.4" href="#fn-.4">4</a></sup>
+</li>
+<li>git integration
+</li>
+<li>play tetris anyone? :)
+</li>
+<li>M-x phases-of-moon
+</li>
+<li>M-x doctor
+</li>
+<li>many more&hellip;
+</li>
+</ul>
+
+</li>
+<li>Divine Editing Experience <sup><a class="footref" name="fnr-.5" href="#fn-.5">5</a></sup>
+<ul>
+<li>custom jump-start
+</li>
+<li>org-mode
+</li>
+<li>keyboard macro
+</li>
+<li>clear ring
+</li>
+<li>expand-region
+</li>
+<li>multi-cursor
+</li>
+<li>ace-jump-mode
+</li>
+<li>key-chord
+</li>
+<li>helm-mode
+</li>
+</ul>
+
+</li>
+<li>Emacs is extensible <sup><a class="footref" name="fnr-.6" href="#fn-.6">6</a></sup>
+</li>
+<li>Integrates well with lots of external tools
+<ul>
+<li>shell-mode, ansi-term, eshell
+</li>
+<li>dired <sup><a class="footref" name="fnr-.7" href="#fn-.7">7</a></sup>
+</li>
+<li>cvs, svn, bazaar, git, mercurial
+</li>
+<li>proced (emacs process manager)
+</li>
+</ul>
+
+</li>
+<li>Emacs Doesn't let you repeat yourself <sup><a class="footref" name="fnr-.6.2" href="#fn-.6">6</a></sup>
+</li>
+<li>Emacs is Modern
+<ul>
+<li>GTK2/3, Coca, WinAPI
+</li>
+<li>OSes clipboard support
+</li>
+<li>TTF Fonts support <sup><a class="footref" name="fnr-.8" href="#fn-.8">8</a></sup>
+</li>
+<li>apt-get or brew like package manager
+</li>
+</ul>
+
+</li>
+<li>Emacs is constantly evolving
+</li>
+<li>Other prominent tools use Emacs's keybindings
+<ul>
+<li>bash, zsh, Cocoa toolkit use Emacs keybindings by default
+</li>
+</ul>
+
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Emacs vs the World</h2>
+<div class="outline-text-2" id="text-3">
+
+<ul>
+<li>IDE and Code Editors Stats 2014 <sup><a class="footref" name="fnr-.9" href="#fn-.9">9</a></sup>
+
+<p>
+    <img src="./img/editors_stats.jpg"  alt="./img/editors_stats.jpg" />
+</p>
+</li>
+<li>Emacs vs vim
+
+<p>
+    Emacs pros:
+</p><ul>
+<li>it has better default extension language.
+</li>
+<li>it's modeless.
+</li>
+<li>it has better integration with external systems.
+</li>
+<li>it has better support for the things that matter to me. <sup><a class="footref" name="fnr-.10" href="#fn-.10">10</a></sup>
+</li>
+<li>it has a built-in package manager.
+
+</li>
+</ul>
+
+<p>    Vim pros:
+</p><ul>
+<li>nicer navigation
+</li>
+<li>much smaller core and much faster to load
+</li>
+<li>very simple initial config
+</li>
+<li>it has a more stylish icon than Emacs :)
+</li>
+</ul>
+
+</li>
+<li>Emacs vs IDEs
+
+<p>
+    IDEs pros:
+</p><ul>
+<li>good refactoring support
+</li>
+<li>semantic code analysis
+</li>
+<li>integrated GUI debuggers and GUI design tools
+</li>
+<li>precise auto-completions
+</li>
+<li>good integration with external systems, i.e. version control
+
+</li>
+</ul>
+
+<p>    IDEs cons:
+</p><ul>
+<li>dependent to the mouse and an X environment
+</li>
+<li>not resource efficient
+</li>
+<li>IDEs impair your thinking by thinking instead of you
+</li>
+</ul>
+
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Problems</h2>
+<div class="outline-text-2" id="text-4">
+
+<ul>
+<li>No adequate embedded browser in Emacs!
+</li>
+<li>Still have to learn Lisp to extend Emacs more
+</li>
+<li>Emacs Pinky
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Getting Started with Emacs</h2>
+<div class="outline-text-2" id="text-5">
+
+<p>  <img src="./demo/emacs_learning_curve.jpg"  alt="./demo/emacs_learning_curve.jpg" />
+</p>
+<p>
+  It <del>only</del> takes 2 steps:
+</p><ol>
+<li>run the built-in Emacs tutorial <code>C-h t</code>.
+</li>
+<li>use Emacs day and night for all your work or even use it as
+     your window manager. <sup><a class="footref" name="fnr-.11" href="#fn-.11">11</a></sup>
+</li>
+</ol>
+
+
+
+</div>
+
+<div id="outline-container-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> This is how I learn Emacs (actually):</h3>
+<div class="outline-text-3" id="text-5-1">
+
+<ol>
+<li>Learn basic survival guide: <sup><a class="footref" name="fnr-.12" href="#fn-.12">12</a></sup>
+<ul>
+<li>opening/closing file/buffer
+</li>
+<li>movement
+</li>
+<li>search (forward/backward)
+</li>
+<li>basic region, copy, paste
+</li>
+<li>getting help
+</li>
+</ul>
+
+</li>
+<li>Read/listen/watch emacs tutorial
+      For me, youtube is the best resource for learning.<sup><a class="footref" name="fnr-.13" href="#fn-.13">13</a></sup>
+</li>
+</ol>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Conclusion</h2>
+<div class="outline-text-2" id="text-6">
+
+<ul>
+<li><b>However, whatever your editor choice is, as long as you feel     efficient and productive, then it's good&hellip;</b>
+</li>
+<li><b>Lastly, you are not picking Emacs vs others, but rather you are     picking Emacs and others! Use the best tool for the job.</b>
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Dotfile</h2>
+<div class="outline-text-2" id="text-7">
+
+<p>my <a href="./demo/.emacs">~/.emacs</a> file
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Further References</h2>
+<div class="outline-text-2" id="text-8">
+
+<ul>
+<li><a href="http://www.emacswiki.org/">http://www.emacswiki.org/</a>
+</li>
+<li><a href="http://ergoemacs.org/emacs/emacs.html">http://ergoemacs.org/emacs/emacs.html</a>
+</li>
+<li><a href="http://www.masteringemacs.org/">http://www.masteringemacs.org/</a>
+</li>
+<li><a href="http://emacsrocks.com/">http://emacsrocks.com/</a>
+</li>
+<li><a href="http://whattheemacsd.com/">http://whattheemacsd.com/</a>
+</li>
+<li><a href="http://emacsredux.com/">http://emacsredux.com/</a>
+</li>
+<li><a href="http://sachachua.com/">http://sachachua.com/</a>
+</li>
+<li><a href="https://www.youtube.com/watch?v=16Rd46SE-20">https://www.youtube.com/watch?v=16Rd46SE-20</a>
+</li>
+<li><a href="https://www.youtube.com/playlist?list=PL8tzorAO7s0he-pp7Y_JDl7-Kz2Qlr_Pj">https://www.youtube.com/playlist?list=PL8tzorAO7s0he-pp7Y_JDl7-Kz2Qlr_Pj</a>
+</li>
+<li><a href="http://www.howardism.org/">http://www.howardism.org/</a>
+</li>
+<li><a href="http://endlessparentheses.com/">http://endlessparentheses.com/</a>
+</li>
+<li><a href="http://bling.github.io/blog/2013/10/27/emacs-as-my-leader-vim-survival-guide/">http://bling.github.io/blog/2013/10/27/emacs-as-my-leader-vim-survival-guide/</a>
+</li>
+<li><a href="http://www.reddit.com/r/vim/comments/22w1li/a_fair_comparison_between_vim_and_emacs/">http://www.reddit.com/r/vim/comments/22w1li/a_fair_comparison_between_vim_and_emacs/</a>
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> Q/A</h2>
+<div class="outline-text-2" id="text-9">
+
+<p>  Ask me for questions
+</p></div>
+
+</div>
+
+<div id="outline-container-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> Thank You</h2>
+<div class="outline-text-2" id="text-10">
+
+<p>  About me:
+</p><ul>
+<li>twitter: <a href="https://twitter.com/sopier">https://twitter.com/sopier</a>
+</li>
+<li>fb: <a href="https://www.facebook.com/kholid.fuadi">https://www.facebook.com/kholid.fuadi</a>
+</li>
+<li>github: <a href="https://github.com/sopier">https://github.com/sopier</a>
+</li>
+</ul>
+
+
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+<p class="footnote"><sup><a class="footnum" name="fn-.1" href="#fnr-.1">1</a></sup> github url: <a href="https://github.com/sopier/techtalk_emacs">https://github.com/sopier/techtalk_emacs</a>
+<a href="https://www.gnu.org/software/emacs/">https://www.gnu.org/software/emacs/</a>
+</p>
+
+
+<p class="footnote"><sup><a class="footnum" name="fn-.2" href="#fnr-.2">2</a></sup> github url: <a href="https://github.com/sopier/techtalk_emacs">https://github.com/sopier/techtalk_emacs</a>
+Austion Bingham at <a href="https://www.youtube.com/watch?v=EH_KILXupyU&amp;t=11m35s">Youtube</a>
+</p>
+
+
+<p class="footnote"><sup><a class="footnum" name="fn-.3" href="#fnr-.3">3</a></sup> github url: <a href="https://github.com/sopier/techtalk_emacs">https://github.com/sopier/techtalk_emacs</a>
+<a href="./demo/demo.py">demo.py</a>
+</p>
+
+
+<p class="footnote"><sup><a class="footnum" name="fn-.4" href="#fnr-.4">4</a></sup> github url: <a href="https://github.com/sopier/techtalk_emacs">https://github.com/sopier/techtalk_emacs</a>
+<a href="http://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol">wikipedia</a>
+</p>
+
+
+<p class="footnote"><sup><a class="footnum" name="fn-.5" href="#fnr-.5">5</a></sup> github url: <a href="https://github.com/sopier/techtalk_emacs">https://github.com/sopier/techtalk_emacs</a>
+<a href="./demo/demo.txt">demo.txt</a> <a href="./demo/demo.js">demo.js</a>
+</p>
+
+
+<p class="footnote"><sup><a class="footnum" name="fn-.6" href="#fnr-.6">6</a></sup> github url: <a href="https://github.com/sopier/techtalk_emacs">https://github.com/sopier/techtalk_emacs</a>
+<a href="./demo/snippets.el">snippets.el</a>
+</p>
+
+
+<p class="footnote"><sup><a class="footnum" name="fn-.7" href="#fnr-.7">7</a></sup> github url: <a href="https://github.com/sopier/techtalk_emacs">https://github.com/sopier/techtalk_emacs</a>
+<a href="./demo/dired_demo">dired_demo</a>
+</p>
+
+
+<p class="footnote"><sup><a class="footnum" name="fn-.8" href="#fnr-.8">8</a></sup> github url: <a href="https://github.com/sopier/techtalk_emacs">https://github.com/sopier/techtalk_emacs</a>
+<a href="./demo/arab.txt">arab.txt</a>
+</p>
+
+
+<p class="footnote"><sup><a class="footnum" name="fn-.9" href="#fnr-.9">9</a></sup> github url: <a href="https://github.com/sopier/techtalk_emacs">https://github.com/sopier/techtalk_emacs</a>
+<a href="https://blog.codeanywhere.com/most-popular-ides-code-editors/">codeanywhere</a>
+</p>
+
+
+<p class="footnote"><sup><a class="footnum" name="fn-.10" href="#fnr-.10">10</a></sup> github url: <a href="https://github.com/sopier/techtalk_emacs">https://github.com/sopier/techtalk_emacs</a>
+<a href="./demo/pdf/tesis.html">tesis.org</a> <a href="./demo/beamer.html">beamer.org</a>
+</p>
+
+
+<p class="footnote"><sup><a class="footnum" name="fn-.11" href="#fnr-.11">11</a></sup> github url: <a href="https://github.com/sopier/techtalk_emacs">https://github.com/sopier/techtalk_emacs</a>
+<a href="http://www.howardism.org/Technical/Emacs/new-window-manager.html">howardism</a>
+</p>
+
+
+<p class="footnote"><sup><a class="footnum" name="fn-.12" href="#fnr-.12">12</a></sup> github url: <a href="https://github.com/sopier/techtalk_emacs">https://github.com/sopier/techtalk_emacs</a>
+<a href="./demo/emacs_survival.txt">survival guide</a> <a href="https://www.youtube.com/watch?v=16Rd46SE-20">video 1</a> <a href="https://www.youtube.com/watch?v=P2Q_WL0h-mY">video 2</a>
+</p>
+
+
+<p class="footnote"><sup><a class="footnum" name="fn-.13" href="#fnr-.13">13</a></sup> github url: <a href="https://github.com/sopier/techtalk_emacs">https://github.com/sopier/techtalk_emacs</a>
+<a href="http://www.youtube.com/results?search_query=emacs">http://www.youtube.com/results?search_query=emacs</a>
+</p></div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2015-02-04</p>
+<p class="author">Author: Kholid Fuadi</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>

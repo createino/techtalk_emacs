@@ -1,8 +1,9 @@
-#+TITLE: Intro into Emacs
+#+TITLE: Intro into Emacs (Techtalk #60)
 #+AUTHOR: Kholid Fuadi
 #+DATE: <2015-02-04 Rab>
 #+EMAIL: sopier@gmail.com
-#+TEXT: resource => https://github.com/sopier/techtalk_emacs
+#+STYLE: <link rel="stylesheet" type="text/css" href="./static/stylesheet.css" />
+#+TEXT: github url: https://github.com/sopier/techtalk_emacs
 
 * Emacs at a Glance
 ** Define
@@ -50,12 +51,14 @@
     - many more...
   - Divine Editing Experience [fn:3]
     - custom jump-start
+    - org-mode
     - keyboard macro
     - clear ring
     - expand-region
     - multi-cursor
     - ace-jump-mode
     - key-chord
+    - helm-mode
   - Emacs is extensible [fn:6]
   - Integrates well with lots of external tools
     - shell-mode, ansi-term, eshell
@@ -147,7 +150,7 @@ my [[./demo/.emacs][~/.emacs]] file
 
 [fn:6] [[./demo/snippets.el][snippets.el]]
 
-[fn:7] [[./demo/dired_demo][dired_demo]]
+[fn:7] [[./demo/dired_demo][dired\_demo]]
 
 [fn:8] [[./demo/arab.txt][arab.txt]]
 
@@ -161,7 +164,7 @@ my [[./demo/.emacs][~/.emacs]] file
 
 [fn:13] [[./demo/emacs_survival.txt][survival guide]] [[https://www.youtube.com/watch?v%3D16Rd46SE-20][video 1]] [[https://www.youtube.com/watch?v%3DP2Q_WL0h-mY][video 2]]
 
-* Further Readings
+* Further References
   - http://www.emacswiki.org/
   - http://ergoemacs.org/emacs/emacs.html
   - http://www.masteringemacs.org/
@@ -170,6 +173,7 @@ my [[./demo/.emacs][~/.emacs]] file
   - http://emacsredux.com/
   - http://sachachua.com/
   - https://www.youtube.com/watch?v=16Rd46SE-20
+  - https://www.youtube.com/playlist?list=PL8tzorAO7s0he-pp7Y_JDl7-Kz2Qlr_Pj
   - http://www.howardism.org/
   - http://endlessparentheses.com/
   - http://bling.github.io/blog/2013/10/27/emacs-as-my-leader-vim-survival-guide/
