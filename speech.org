@@ -1,6 +1,8 @@
 #+TITLE: Intro into Emacs
 #+AUTHOR: Kholid Fuadi
 #+DATE: <2015-02-04 Rab>
+#+EMAIL: sopier@gmail.com
+#+TEXT: resource => https://github.com/sopier/techtalk_emacs
 
 * Emacs at a Glance
 ** Define
