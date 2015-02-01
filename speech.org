@@ -51,6 +51,7 @@
     - many more...
   - Divine Editing Experience [fn:5]
     - custom jump-start
+    - bookmark
     - org-mode
     - keyboard macro
     - clear ring
