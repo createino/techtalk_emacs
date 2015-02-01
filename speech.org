@@ -145,6 +145,7 @@ my [[./demo/.emacs][~/.emacs]] file
   - http://whattheemacsd.com/
   - http://emacsredux.com/
   - http://sachachua.com/
+  - http://sachachua.com/blog/2013/05/how-to-learn-emacs-a-hand-drawn-one-pager-for-beginners/
   - https://www.youtube.com/watch?v=16Rd46SE-20
   - https://www.youtube.com/playlist?list=PL8tzorAO7s0he-pp7Y_JDl7-Kz2Qlr_Pj
   - http://www.howardism.org/
