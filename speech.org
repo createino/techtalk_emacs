@@ -139,6 +139,7 @@
 my [[./demo/.emacs][~/.emacs]] file
 
 * Further References
+** Beginner Tuts and Blogs
   - http://www.emacswiki.org/
   - http://ergoemacs.org/emacs/emacs.html
   - http://www.masteringemacs.org/
@@ -151,6 +152,8 @@ my [[./demo/.emacs][~/.emacs]] file
   - https://www.youtube.com/playlist?list=PL8tzorAO7s0he-pp7Y_JDl7-Kz2Qlr_Pj
   - http://www.howardism.org/
   - http://endlessparentheses.com/
+** Why Choose Emacs over Vim?
+  - http://blog.aaronbieber.com/blog/2015/01/11/learning-to-love-emacs/
   - http://bling.github.io/blog/2013/10/27/emacs-as-my-leader-vim-survival-guide/
   - http://www.reddit.com/r/vim/comments/22w1li/a_fair_comparison_between_vim_and_emacs/
    
