@@ -32,6 +32,21 @@
 ;; require final newlines in files when they are saved
 (setq require-final-newline t)
 
+;; display datetime in status bar
+(defface egoge-display-time
+  '((((type x w32 mac))
+     ;; #060525 is the background colour of my default face.
+     (:foreground "#060525" :inherit bold))
+    (((type tty))
+     (:foreground "blue")))
+  "Face used to display the time in the mode line.")
+
+(setq display-time-string-forms
+      '((propertize (concat " " 24-hours ":" minutes " WIB")
+ 		    'face 'egoge-display-time)))
+
+(display-time)
+
 ;----------------;
 ;;; Extra Repo ;;;
 ;----------------;
@@ -338,7 +353,7 @@
 ;; 11. visual-regexp
 ;; 12. visual-regexp-steroids
 ;; 13. helm
-
+;; 14. helm-projectile
 
 ;---------------;
 ;;; helm mode ;;;
@@ -387,7 +402,7 @@
   (add-to-PATH (concat dir "/bin"))
   (add-to-list 'exec-path (concat dir "/bin"))
   (let ((default-directory dir))
-    (shell-command (concat dir "bin/python " dir "run.py &")
+    (shell-command (concat dir "/bin/python " dir "/run.py &")
 		   (get-buffer-create "*flask-out*"))))
 
 (defun flask-run (dir)

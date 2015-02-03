@@ -172,11 +172,11 @@ my [[./demo/.emacs][~/.emacs]] file
 
 [fn:2] Austion Bingham at [[https://www.youtube.com/watch?v%3DEH_KILXupyU&t%3D11m35s][Youtube]]
 
-[fn:5] [[./demo/demo.txt][demo.txt]] :: [[./demo/demo.js][demo.js]]
-
 [fn:3] [[./demo/demo.py][demo.py]]
 
 [fn:4] [[http://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol][wikipedia]]
+
+[fn:5] [[./demo/demo.txt][demo.txt]] :: [[./demo/demo.js][demo.js]]
 
 [fn:6] [[./demo/snippets.el][snippets.el]]
 
@@ -190,6 +190,6 @@ my [[./demo/.emacs][~/.emacs]] file
 
 [fn:11] [[http://www.howardism.org/Technical/Emacs/new-window-manager.html][howardism]]
 
-[fn:13] http://www.youtube.com/results?search_query=emacs
-
 [fn:12] [[./demo/emacs_survival.txt][survival guide]] :: [[https://www.youtube.com/watch?v%3D16Rd46SE-20][video 1]] :: [[https://www.youtube.com/watch?v%3DP2Q_WL0h-mY][video 2]]
+
+[fn:13] http://www.youtube.com/results?search_query=emacs
