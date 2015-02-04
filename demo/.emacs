@@ -115,6 +115,11 @@
 ; (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
 
+;; multiple-cursors key bindings
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
 ;------------------------------;
 ;;; org-html-publisher setup ;;;
 ;------------------------------;
@@ -478,3 +483,27 @@
 
 (global-set-key (kbd "<C-return>") 'open-line-below)
 (global-set-key (kbd "<C-S-return>") 'open-line-above)
+
+
+;---------------;
+;;; guide-key ;;;
+;---------------;
+
+(setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-x 8"))
+(guide-key-mode 1)
+(setq guide-key/recursive-key-sequence-flag t)
+(setq guide-key/popup-window-position 'bottom)
+
+
+;--------------------------------------------;
+;;; org-babel for org-mode code evaluation ;;;
+;--------------------------------------------;
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+  '( (perl . t)         
+     (ruby . t)
+     (sh . t)
+     (python . t)
+     (emacs-lisp . t)   
+   ))
