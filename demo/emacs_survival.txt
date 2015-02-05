@@ -28,7 +28,7 @@ M-> : move to the end of buffer
 
 C-d		: delete 1 char after point
 <Backspace> 	: delete 1 char before point
-C-k 		: delete to the end of file
+C-k 		: delete to the end of line
 M-d 		: delete 1 word forward
 M-<Backspace> 	: delete 1 word backward
 
