@@ -9,7 +9,7 @@
 ** Define
    #+BEGIN_QUOTE
    GNU Emacs is an *extensible*, *customizable* text editor—and
-   more. At its core is an interpreter for Emacs Lisp, a dialect of
+   more. At its core is an *interpreter* for Emacs Lisp, a dialect of
    the Lisp programming language with extensions to support text
    editing. [fn:1]
    #+END_QUOTE

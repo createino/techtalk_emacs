@@ -1,4 +1,4 @@
-; basic buffer 
+; basic buffer management
 
 C-x C-f : visit a file / buffer
 C-x b	: create / switch to other buffer
