@@ -3,6 +3,7 @@
 #+DATE: <2015-02-04 Rab>
 #+EMAIL: sopier@gmail.com
 #+STYLE: <link rel="stylesheet" type="text/css" href="./static/stylesheet.css" />
+#+STARTUP: indent
 
 
 * Emacs at a Glance
@@ -160,6 +161,8 @@ my [[./demo/.emacs][~/.emacs]] file
 ** Introduction to Evil Mode
   - https://www.youtube.com/watch?v=PeVQwYUxYEg
    
+** Power Users Tips
+- https://sites.google.com/site/steveyegge2/effective-emacs
 * Q/A
   Ask me for questions
 * Thank You
