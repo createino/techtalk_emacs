@@ -163,6 +163,8 @@ my [[./demo/.emacs][~/.emacs]] file
    
 ** Power Users Tips
 - https://sites.google.com/site/steveyegge2/effective-emacs
+** Emacs and Vi Rivalry
+- http://www.slate.com/articles/technology/bitwise/2014/05/oldest_software_rivalry_emacs_and_vi_two_text_editors_used_by_programmers.html
 * Q/A
   Ask me for questions
 * Thank You
