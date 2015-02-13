@@ -1,51 +1,24 @@
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
- '(custom-enabled-themes (quote (manoj-dark))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:family "DejaVu Sans Mono" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
+;----------------;
+;;; my package ;;;
+;----------------;
 
-;--------------------;
-;;; User Interface ;;;
-;--------------------;
+;; 0. multiple-cursor (mc)
+;; 1. expand-region
+;; 2. magit
+;; 3. slime
+;; 4. ace jump mode
+;; 5. yasnippet
+;; 6. iy-go-to-char.el
+;; 7. evil-mode
+;; 8. undo-tree
+;; 9. markdown-mode
+;; 10. visual-regexp
+;; 11. visual-regexp-steroids
+;; 12. helm
+;; 13. helm-projectile
+;; 14. command-log-mode <= penting untuk taming emacs quickly :)
+;; 15. symon
 
-;; No splash screen ...
-(setq inhibit-startup-message t)
-
-;; If using gui version
-(when window-system
-  (menu-bar-mode -1) ;; Disable menubar
-  (tool-bar-mode -1) ;; Disable toolbar
-  (scroll-bar-mode -1) ;; Disable scrollbar
-  (tooltip-mode -1)) ;; Disable tooltip
-
-;; always use spaces, not tabs, when indenting
-(setq indent-tabs-mode nil)
-
-;; require final newlines in files when they are saved
-(setq require-final-newline t)
-
-;; display datetime in status bar
-(defface egoge-display-time
-  '((((type x w32 mac))
-     ;; #060525 is the background colour of my default face.
-     (:foreground "#060525" :inherit bold))
-    (((type tty))
-     (:foreground "blue")))
-  "Face used to display the time in the mode line.")
-
-(setq display-time-string-forms
-      '((propertize (concat " " 24-hours ":" minutes " WIB")
- 		    'face 'egoge-display-time)))
-
-(display-time)
 
 ;----------------;
 ;;; Extra Repo ;;;
@@ -56,17 +29,10 @@
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
 
-;---------------------;
-;;; Startup options ;;;
-;---------------------;
+;; then initialize packages
+;; needed by helm, etc.
+(package-initialize)
 
-;; Auto-enabled ido-mode
-(require 'ido)
-(ido-mode t)
-(setq ido-enable-flex-matching t)  ; fuzzy matching is a must have
-
-;; change list-buffers to ibuffer
-(defalias 'list-buffers 'ibuffer)
 
 ;-----------------------------------------;
 ;;; make frequently used commands short ;;;
@@ -78,15 +44,25 @@
 
 (define-key global-map (kbd "C-c a") 'ace-jump-char-mode)
 
-;; aliasing yes or no to y or n only
-(defalias 'yes-or-no-p 'y-or-n-p)
-
-;; set backup directory
-(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
 
 ;-------------------------;
 ;;; Custom Key Bindings ;;;
 ;-------------------------;
+
+;; unset org-mode key binding for C-k
+;; (add-hook 'org-mode-hook
+;;       (lambda ()
+;;         (local-unset-key (kbd "C-k"))))
+
+;; change C-k behavior to delete the whole line
+;; (defun my/kill-line ()
+;;   """redefined kill line function."""
+;;   (interactive)
+;;   (beginning-of-line)
+;;   (kill-line))
+
+;; (global-unset-key (kbd "C-k"))
+;; (global-set-key (kbd "C-k") 'my/kill-line)
 
 ;; change Alt-x to F8
 (global-set-key (kbd "<f8>") 'execute-extended-command)
@@ -279,100 +255,41 @@
 ;;; key-chord bindings ;;;
 ;------------------------;
 
-(package-initialize)
-(key-chord-mode 1)
+
+;(key-chord-mode 1)
 ;(key-chord-define-global "jj" 'save-buffer)
-(key-chord-define-global "jk" 'switch-to-buffer)
+;(key-chord-define-global "jk" 'switch-to-buffer)
 ;(key-chord-define-global ";;" 'ace-jump-char-mode)
 ;(key-chord-define-global "io" 'other-window)
 ;(key-chord-define-global "dd" 'dired-at-point)
 ;(key-chord-define-global "gg" 'magit-status)
 
 
-(fset 'my/demo-macro
-   (lambda (&optional arg) "Keyboard
-   macro." (interactive "p") (kmacro-exec-ring-item (quote ([1
-   67108921 14 67108896 5 23 67108921 16 5 32 25 14] 0 "%d"))
-   arg)))
-
 ;------------------;
 ;;; speech start ;;;
 ;------------------;
 
-(defun my/speech-start ()
-  (interactive)
-  (set-face-attribute 'default nil :height 140)
-  (find-file "~/git/techtalk_emacs/speech.org")
-  (auto-fill-mode 1) ;; auto multi line when 70 chars hitted
-  (org-display-inline-images 1) ;; display image
-  ;(set-frame-parameter nil 'fullscreen 'fullboth) ;; set full screen
-  (set-frame-parameter nil 'fullscreen 'maximized) ;; set maximized
-  (flymake-mode 1)) ;; spelling checker
+;; (defun my/speech-start ()
+;;   (interactive)
+;;   (set-face-attribute 'default nil :height 140)
+;;   (find-file "~/git/techtalk_emacs/speech.org")
+;;   (auto-fill-mode 1) ;; auto multi line when 70 chars hitted
+;;   (org-display-inline-images 1) ;; display image
+;;   (set-frame-parameter nil 'fullscreen 'fullboth) ;; set full screen
+;;   (set-frame-parameter nil 'fullscreen 'maximized) ;; set maximized
+;;   (flymake-mode 1)) ;; spelling checker
 
-(defun my/work ()
-  (interactive)
-  (find-file "~/Dropbox/agenda/coret.org")  ;; open todo.org agenda
-  (set-frame-parameter nil 'fullscreen 'fullboth))
+;; (defun my/work ()
+;;   (interactive)
+;;   (find-file "~/Dropbox/agenda/coret.org")  ;; open todo.org agenda
+;;   (set-frame-parameter nil 'fullscreen 'fullboth))
 
-;; F11 key to toggle full screen mode
-(defun toggle-fullscreen ()
-  (interactive)
-  (set-frame-parameter nil 'fullscreen 
-		       (if (frame-parameter nil 'fullscreen)
-			   nil
-			 'fullboth)))
-
-(global-set-key [f11] 'toggle-fullscreen)
-
-;; switch to default font interface
-(defun my/default-font ()
-  (interactive)
-  (set-face-attribute 'default nil :height 100))
-
-;; switch to bigger font
-(defun my/bigger-font ()
-  (interactive)
-  (set-face-attribute 'default nil :height 200))
-
-;; switch to custom font size
-(defun my/set-font (n)
-  (interactive "P")
-  (set-face-attribute 'default nil :height n))
-
-
-;----------------;
-;;; my package ;;;
-;----------------;
-
-;; 0. multiple-cursor (mc)
-;; 1. expand-region
-;; 2. magit
-;; 3. slime
-;; 4. ace jump mode
-;; 5. yasnippet
-;; 6. iy-go-to-char.el
-;; 7. key-chord.el
-;; 8. evil-mode
-;; 9. undo-tree
-;; 10. markdown-mode
-;; 11. visual-regexp
-;; 12. visual-regexp-steroids
-;; 13. helm
-;; 14. helm-projectile
 
 ;---------------;
 ;;; helm mode ;;;
 ;---------------;
 
 (helm-mode t)
-
-;-----------------------;
-;;; xml cleaner macro ;;;
-;-----------------------;
-
-(fset 'xml_cleaner
-   (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([1 67108896 19 47 19 19 19 19 13 23 19 46 2 67108896 19 60 47 117 114 108 62 13 23 1 67108896 5 134217848 114 101 112 108 97 9 115 116 114 9 13 13 14 1] 0 "%d")) arg)))
-
 
 ;-------------------------------;
 ;;; activate windmove package ;;;
@@ -484,7 +401,6 @@
 (global-set-key (kbd "<C-return>") 'open-line-below)
 (global-set-key (kbd "<C-S-return>") 'open-line-above)
 
-
 ;---------------;
 ;;; guide-key ;;;
 ;---------------;
@@ -493,7 +409,6 @@
 (guide-key-mode 1)
 (setq guide-key/recursive-key-sequence-flag t)
 (setq guide-key/popup-window-position 'bottom)
-
 
 ;--------------------------------------------;
 ;;; org-babel for org-mode code evaluation ;;;
@@ -507,3 +422,133 @@
      (python . t)
      (emacs-lisp . t)   
    ))
+
+
+;------------------------;
+;;; coding environment ;;;
+;------------------------;
+
+;; always use spaces, not tabs, when indenting
+(setq indent-tabs-mode nil)
+
+;; require final newlines in files when they are saved
+(setq require-final-newline t)
+
+
+;----------------------------------------;
+;;; User Interface and Startup Options ;;;
+;----------------------------------------;
+
+;; custom theme and font set
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
+ '(custom-enabled-themes (quote (manoj-dark)))
+ '(send-mail-function (quote smtpmail-send-it))
+ '(smtpmail-smtp-server "smtp.gmail.com")
+ '(smtpmail-smtp-service 587))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "DejaVu Sans Mono" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
+
+;; No splash screen ...
+(setq inhibit-startup-message t)
+
+;; If using gui version
+(when window-system
+  (menu-bar-mode -1) ;; Disable menubar
+  (tool-bar-mode -1) ;; Disable toolbar
+  (scroll-bar-mode -1) ;; Disable scrollbar
+  (tooltip-mode -1)) ;; Disable tooltip
+
+;; display datetime in status bar
+(defface egoge-display-time
+  '((((type x w32 mac))
+     ;; #060525 is the background colour of my default face.
+     (:foreground "#060525" :inherit bold))
+    (((type tty))
+     (:foreground "blue")))
+  "Face used to display the time in the mode line.")
+
+(setq display-time-string-forms
+      '((propertize (concat " " 24-hours ":" minutes " WIB")
+ 		    'face 'egoge-display-time)))
+
+(display-time)
+
+;; set initial frame-size
+(add-to-list 'default-frame-alist '(height . 24))
+(add-to-list 'default-frame-alist '(width . 82))
+
+;; F11 key to toggle full screen mode
+(defun toggle-fullscreen ()
+  (interactive)
+  (set-frame-parameter nil 'fullscreen 
+		       (if (frame-parameter nil 'fullscreen)
+			   nil
+			 'fullboth)))
+
+(global-set-key [f11] 'toggle-fullscreen)
+
+;; switch to default font interface
+(defun my/default-font ()
+  (interactive)
+  (set-face-attribute 'default nil :height 100))
+
+;; switch to bigger font
+(defun my/bigger-font ()
+  (interactive)
+  (set-face-attribute 'default nil :height 200))
+
+;; switch to custom font size
+(defun my/set-font (n)
+  (interactive "P")
+  (set-face-attribute 'default nil :height n))
+
+;; aliasing yes or no to y or n only
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+;; set backup directory
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+
+;; Auto-enabled ido-mode
+(require 'ido)
+(ido-mode t)
+(setq ido-enable-flex-matching t)  ; fuzzy matching is a must have
+
+;; change list-buffers to ibuffer
+(defalias 'list-buffers 'ibuffer)
+
+;; turn on image viewing
+(auto-image-file-mode t)
+
+;; autostart with bookmark list instead of those ugly scratch
+(bookmark-bmenu-list)
+(switch-to-buffer "*Bookmark List*")
+
+
+;-----------------------;
+;;; Tramp-mode config ;;;
+;-----------------------;
+
+(setq tramp-default-user "sopier")
+
+
+;------------------------------------------;
+;;; defalias-ing most used command (moc) ;;;
+;------------------------------------------;
+
+(defalias 'qrr 'query-replace-regexp)
+
+
+;-----------------------------;
+;;; use system monitor mode ;;;
+;-----------------------------;
+
+(symon-mode)
