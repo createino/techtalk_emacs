@@ -1,1 +1,0 @@
-Techtalk :: Emacs :: JDV
